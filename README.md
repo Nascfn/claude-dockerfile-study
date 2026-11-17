@@ -13,6 +13,8 @@ run, every results table, the caveats, and how to reproduce.
 | Path | What it is |
 |---|---|
 | `FINDINGS.md` | All findings, tables, limitations |
+| `docs/facts/` | Nine short single-topic fact sheets (start at `docs/facts/README.md`) |
+| `docs/FINDINGS.template.md` | Source of `FINDINGS.md` before the tables are inserted |
 | `scripts/` | The pipeline, one script per stage (`01_` … `10_`) plus helpers |
 | `scripts/prompt.txt` | The exact prompt every model received |
 | `data/candidates_raw.json` | All 545 repositories returned by the GitHub search |
@@ -52,6 +54,7 @@ identified by its GitHub name and commit hash in `data/selection.json`.
 10_features.py      structural features of each Dockerfile
 11_stats.py         paired sign and Wilcoxon tests
 12_render_findings.py  FINDINGS.md from docs/FINDINGS.template.md + tables
+13_fact_sheets.py    the fact sheets in docs/facts/
 ```
 
 Helpers: `scan_static.py` (Hadolint + Trivy config, weighted score),
