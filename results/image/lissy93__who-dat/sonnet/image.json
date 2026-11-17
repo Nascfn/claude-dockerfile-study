@@ -1,0 +1,35 @@
+{
+ "tag": "study/lissy93__who-dat:sonnet",
+ "size_bytes": 27529564,
+ "user": "whodat",
+ "runs_as_root": false,
+ "exposed_ports": [
+  "8080/tcp"
+ ],
+ "has_healthcheck": true,
+ "trivy_ok": true,
+ "vulns": {
+  "CRITICAL": 0,
+  "HIGH": 0,
+  "MEDIUM": 1,
+  "LOW": 0,
+  "UNKNOWN": 0
+ },
+ "vulns_fixable": {
+  "CRITICAL": 0,
+  "HIGH": 0,
+  "MEDIUM": 1,
+  "LOW": 0,
+  "UNKNOWN": 0
+ },
+ "vulns_by_class": {
+  "os-pkgs": 1
+ },
+ "secrets": 0,
+ "os": {
+  "Family": "alpine",
+  "Name": "3.21.10",
+  "EOSL": true
+ },
+ "vulns_total": 1
+}

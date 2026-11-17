@@ -1,0 +1,34 @@
+{
+ "tag": "study/chelunfu__qiluo_admin:haiku",
+ "size_bytes": 191961851,
+ "user": "qiluo",
+ "runs_as_root": false,
+ "exposed_ports": [
+  "5001/tcp"
+ ],
+ "has_healthcheck": false,
+ "trivy_ok": true,
+ "vulns": {
+  "CRITICAL": 1,
+  "HIGH": 37,
+  "MEDIUM": 108,
+  "LOW": 87,
+  "UNKNOWN": 5
+ },
+ "vulns_fixable": {
+  "CRITICAL": 0,
+  "HIGH": 0,
+  "MEDIUM": 0,
+  "LOW": 0,
+  "UNKNOWN": 0
+ },
+ "vulns_by_class": {
+  "os-pkgs": 238
+ },
+ "secrets": 0,
+ "os": {
+  "Family": "debian",
+  "Name": "12.15"
+ },
+ "vulns_total": 238
+}

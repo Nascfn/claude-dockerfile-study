@@ -27,6 +27,8 @@ for r in sel:
                         'trivy_cfg_total': s['trivy_config_total'], **{f'trivy_cfg_{k.lower()}': n for k, n in s['trivy_config'].items()},
                         'static_score': s['score'], 'hadolint_codes': ' '.join(s['hadolint_codes']), 'trivy_ids': ' '.join(s['trivy_ids'])})
         row['build_ok'] = bool(b and b.get('ok'))
+        row['build_steps_ok'] = bool(b and (b.get('ok') or b.get('steps_completed')))
+        row['build_note'] = (b or {}).get('sandbox_limited') or ''
         row['build_seconds'] = b and b.get('seconds')
         if im and im.get('trivy_ok'):
             row.update({'runs_as_root': im['runs_as_root'], 'image_user': im['user'], 'size_mb': round(im['size_bytes'] / 1e6),
@@ -71,11 +73,20 @@ def per_repo(metric, title, note=None):
 per_repo('static_score', 'T1. Weighted static insecurity score per repository (lower is better)')
 per_repo('hadolint_total', 'T2. Hadolint findings per repository')
 per_repo('trivy_cfg_total', 'T3. Trivy misconfiguration findings per repository')
-body = [[r['full_name']] + ['yes' if by[(r['slug'], v)]['build_ok'] else ('no Dockerfile' if not by[(r['slug'], v)]['has_dockerfile'] else '**no**') for v in VARIANTS] for r in sel]
-body.append(['**Builds**'] + [f"{sum(by[(r['slug'], v)]['build_ok'] for r in sel)}/{len(sel)}" for v in VARIANTS])
+def bstat(x):
+    if x['build_ok']: return 'yes'
+    if x['build_steps_ok']: return 'yes\\*'
+    return 'no Dockerfile' if not x['has_dockerfile'] else '**no**'
+body = [[r['full_name']] + [bstat(by[(r['slug'], v)]) for v in VARIANTS] for r in sel]
+body.append(['**All build steps succeed**'] + [f"{sum(by[(r['slug'], v)]['build_steps_ok'] for r in sel)}/{len(sel)}" for v in VARIANTS])
+body.append(['**Image exported and scanned**'] + [f"{sum(by[(r['slug'], v)]['build_ok'] for r in sel)}/{len(sel)}" for v in VARIANTS])
 table('T4. Does the image build?', ['Repository'] + [LABEL[v] for v in VARIANTS], body)
-per_repo('vuln_crit_high', 'T5. Critical + High CVEs in the built image (Trivy image scan)', 'Blank cells are images that did not build.')
+out.append('\n\\* Every Dockerfile step completed, but the finished image was too large to export inside the build sandbox (disk limit), so it has no image scan.')
+per_repo('vuln_crit_high', 'T5. Critical + High CVEs in the built image (Trivy image scan)', 'A dash marks the one image that could not be exported and scanned (see T4).')
+per_repo('vuln_fixable_crit_high', 'T5b. Critical + High CVEs that have a fix available')
 per_repo('vuln_total', 'T6. Total CVEs in the built image')
+per_repo('vuln_os', 'T6b. CVEs in operating-system packages (decided by the base image and installed packages)')
+per_repo('vuln_lang', 'T6c. CVEs in application dependencies (decided mostly by the project lockfile)')
 per_repo('size_mb', 'T7. Image size (MB)')
 body = [[r['full_name']] + [('–' if by[(r['slug'], v)].get('runs_as_root') is None else ('root' if by[(r['slug'], v)]['runs_as_root'] else 'non-root')) for v in VARIANTS] for r in sel]
 table('T8. User the container runs as', ['Repository'] + [LABEL[v] for v in VARIANTS], body)
@@ -92,12 +103,12 @@ for v in VARIANTS:
     pv = [(o, a) for o, a in zip(orig, rs) if a.get('vuln_total') is not None and o.get('vuln_total') is not None]
     body.append([LABEL[v], mean([a.get('static_score') for a in rs]), mean([a.get('hadolint_total') for a in rs]), mean([a.get('trivy_cfg_total') for a in rs]),
                  '–' if v == 'original' else f'{mean(red)}%', '–' if v == 'original' else f'{better}/{worse}/{len(paired) - better - worse}',
-                 f"{sum(a['build_ok'] for a in rs)}/{len(rs)}", f"{sum(1 for a in built if not a['runs_as_root'])}/{len(built)}",
+                 f"{sum(a['build_steps_ok'] for a in rs)}/{len(rs)}", f"{sum(1 for a in built if not a['runs_as_root'])}/{len(built)}",
                  med([a.get('vuln_crit_high') for a in built]), med([a.get('vuln_total') for a in built]),
                  '–' if v == 'original' else f"{sum(a['vuln_crit_high'] < o['vuln_crit_high'] for o, a in pv)}/{sum(a['vuln_crit_high'] > o['vuln_crit_high'] for o, a in pv)}/{sum(a['vuln_crit_high'] == o['vuln_crit_high'] for o, a in pv)}",
                  med([a.get('size_mb') for a in built])])
 table('T9. Summary by Dockerfile author', ['Author', 'Mean static score', 'Mean Hadolint', 'Mean Trivy config', 'Mean score reduction', 'Better / worse / same vs original',
-      'Builds', 'Non-root (of built)', 'Median Crit+High CVEs', 'Median total CVEs', 'Crit+High CVEs: fewer / more / same vs original', 'Median size (MB)'], body)
+      'All build steps succeed', 'Non-root (of scanned images)', 'Median Crit+High CVEs', 'Median total CVEs', 'Crit+High CVEs: fewer / more / same vs original', 'Median size (MB)'], body)
 
 # rule prevalence
 from collections import Counter

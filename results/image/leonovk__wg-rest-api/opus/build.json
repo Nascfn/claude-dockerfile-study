@@ -1,0 +1,11 @@
+{
+ "tag": "study/leonovk__wg-rest-api:opus",
+ "ok": true,
+ "seconds": 51.1,
+ "bases": [
+  "ruby:4.0.6-slim",
+  "ruby:4.0.6-slim"
+ ],
+ "error": null,
+ "log_tail": []
+}

@@ -1,0 +1,36 @@
+{
+ "tag": "study/leonovk__wg-rest-api:sonnet",
+ "size_bytes": 293955449,
+ "user": "root",
+ "runs_as_root": true,
+ "exposed_ports": [
+  "3000/tcp",
+  "51820/udp"
+ ],
+ "has_healthcheck": true,
+ "trivy_ok": true,
+ "vulns": {
+  "CRITICAL": 4,
+  "HIGH": 123,
+  "MEDIUM": 172,
+  "LOW": 117,
+  "UNKNOWN": 8
+ },
+ "vulns_fixable": {
+  "CRITICAL": 4,
+  "HIGH": 21,
+  "MEDIUM": 56,
+  "LOW": 26,
+  "UNKNOWN": 3
+ },
+ "vulns_by_class": {
+  "os-pkgs": 420,
+  "lang-pkgs": 4
+ },
+ "secrets": 0,
+ "os": {
+  "Family": "debian",
+  "Name": "13.6"
+ },
+ "vulns_total": 424
+}

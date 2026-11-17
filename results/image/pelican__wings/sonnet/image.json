@@ -1,0 +1,36 @@
+{
+ "tag": "study/pelican__wings:sonnet",
+ "size_bytes": 80990543,
+ "user": "root",
+ "runs_as_root": true,
+ "exposed_ports": [
+  "2022/tcp",
+  "8080/tcp"
+ ],
+ "has_healthcheck": false,
+ "trivy_ok": true,
+ "vulns": {
+  "CRITICAL": 0,
+  "HIGH": 2,
+  "MEDIUM": 7,
+  "LOW": 0,
+  "UNKNOWN": 1
+ },
+ "vulns_fixable": {
+  "CRITICAL": 0,
+  "HIGH": 2,
+  "MEDIUM": 7,
+  "LOW": 0,
+  "UNKNOWN": 1
+ },
+ "vulns_by_class": {
+  "os-pkgs": 1,
+  "lang-pkgs": 9
+ },
+ "secrets": 0,
+ "os": {
+  "Family": "alpine",
+  "Name": "3.24.4"
+ },
+ "vulns_total": 10
+}

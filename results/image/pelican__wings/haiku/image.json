@@ -1,0 +1,36 @@
+{
+ "tag": "study/pelican__wings:haiku",
+ "size_bytes": 183515433,
+ "user": "root",
+ "runs_as_root": true,
+ "exposed_ports": [
+  "2022/tcp",
+  "8080/tcp"
+ ],
+ "has_healthcheck": false,
+ "trivy_ok": true,
+ "vulns": {
+  "CRITICAL": 1,
+  "HIGH": 39,
+  "MEDIUM": 114,
+  "LOW": 87,
+  "UNKNOWN": 6
+ },
+ "vulns_fixable": {
+  "CRITICAL": 0,
+  "HIGH": 2,
+  "MEDIUM": 6,
+  "LOW": 0,
+  "UNKNOWN": 1
+ },
+ "vulns_by_class": {
+  "os-pkgs": 238,
+  "lang-pkgs": 9
+ },
+ "secrets": 0,
+ "os": {
+  "Family": "debian",
+  "Name": "12.15"
+ },
+ "vulns_total": 247
+}

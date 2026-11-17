@@ -1,0 +1,11 @@
+{
+ "tag": "study/pelican__wings:sonnet",
+ "ok": true,
+ "seconds": 108.2,
+ "bases": [
+  "golang:1.27-alpine",
+  "alpine:3"
+ ],
+ "error": null,
+ "log_tail": []
+}

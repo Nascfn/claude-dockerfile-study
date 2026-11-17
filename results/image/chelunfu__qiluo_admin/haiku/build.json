@@ -1,0 +1,11 @@
+{
+ "tag": "study/chelunfu__qiluo_admin:haiku",
+ "ok": true,
+ "seconds": 13.8,
+ "bases": [
+  "rust:1-bookworm",
+  "debian:bookworm-slim"
+ ],
+ "error": null,
+ "log_tail": []
+}

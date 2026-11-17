@@ -1,0 +1,34 @@
+{
+ "tag": "study/lissy93__who-dat:haiku",
+ "size_bytes": 18023792,
+ "user": "nonroot:nonroot",
+ "runs_as_root": false,
+ "exposed_ports": [
+  "8080/tcp"
+ ],
+ "has_healthcheck": false,
+ "trivy_ok": true,
+ "vulns": {
+  "CRITICAL": 0,
+  "HIGH": 0,
+  "MEDIUM": 0,
+  "LOW": 0,
+  "UNKNOWN": 4
+ },
+ "vulns_fixable": {
+  "CRITICAL": 0,
+  "HIGH": 0,
+  "MEDIUM": 0,
+  "LOW": 0,
+  "UNKNOWN": 4
+ },
+ "vulns_by_class": {
+  "os-pkgs": 4
+ },
+ "secrets": 0,
+ "os": {
+  "Family": "debian",
+  "Name": "12.15"
+ },
+ "vulns_total": 4
+}

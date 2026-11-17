@@ -1,0 +1,35 @@
+{
+ "tag": "study/zhravan__github-readme-quotes:opus",
+ "size_bytes": 225033412,
+ "user": "node",
+ "runs_as_root": false,
+ "exposed_ports": [
+  "3002/tcp"
+ ],
+ "has_healthcheck": false,
+ "trivy_ok": true,
+ "vulns": {
+  "CRITICAL": 2,
+  "HIGH": 43,
+  "MEDIUM": 44,
+  "LOW": 42,
+  "UNKNOWN": 0
+ },
+ "vulns_fixable": {
+  "CRITICAL": 2,
+  "HIGH": 43,
+  "MEDIUM": 44,
+  "LOW": 42,
+  "UNKNOWN": 0
+ },
+ "vulns_by_class": {
+  "os-pkgs": 54,
+  "lang-pkgs": 77
+ },
+ "secrets": 0,
+ "os": {
+  "Family": "alpine",
+  "Name": "3.23.4"
+ },
+ "vulns_total": 131
+}

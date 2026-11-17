@@ -1,0 +1,20 @@
+{
+ "tag": "study/climate-vision__climatevision:haiku",
+ "ok": false,
+ "steps_completed": true,
+ "sandbox_limited": "disk",
+ "error": "All 27 Dockerfile steps completed, but exporting the image failed with \"no space left on device\" (two attempts, the second starting from ~25 GB free). The image could not be scanned.",
+ "bases": [
+  "node:22-slim",
+  "python:3.12-slim-bookworm"
+ ],
+ "seconds": null,
+ "log_tail": [
+  "#28 unpacking to docker.io/study/climate-vision__climatevision:haiku 31.2s done",
+  "#28 ERROR: failed to extract layer sha256:acbac41ec690f74c9d0439c7625e92f0fcbe8353508e880bd21f4a1d5c5d4967: write /var/lib/docker/containerd/daemon/io.containerd.snapshotter.v1.overlayfs/snapshots/3595/fs/opt/venv/lib/python3.12/site-packages/scipy/optimize/__pycache__/_differentiable_functions.cpyt",
+  "------",
+  " > exporting to image:",
+  "------",
+  "ERROR: failed to build: failed to solve: failed to extract layer sha256:acbac41ec690f74c9d0439c7625e92f0fcbe8353508e880bd21f4a1d5c5d4967: write /var/lib/docker/containerd/daemon/io.containerd.snapshotter.v1.overlayfs/snapshots/3595/fs/opt/venv/lib/python3.12/site-packages/scipy/optimize/__pycache__/"
+ ]
+}

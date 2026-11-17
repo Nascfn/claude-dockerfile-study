@@ -1,0 +1,12 @@
+{
+ "tag": "study/zhravan__github-readme-quotes:opus",
+ "ok": true,
+ "seconds": 54.0,
+ "bases": [
+  "node:20-bookworm-slim",
+  "node:20-alpine",
+  "node:20-alpine"
+ ],
+ "error": null,
+ "log_tail": []
+}

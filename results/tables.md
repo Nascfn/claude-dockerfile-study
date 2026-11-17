@@ -54,14 +54,17 @@
 | rdborg/Mediarium | yes | yes | yes | yes |
 | zebbern/claude-code-discord | yes | yes | yes | yes |
 | zqbxdev/webchat2api | yes | yes | yes | yes |
-| Climate-Vision/ClimateVision | yes | yes | yes | **no** |
-| zhravan/github-readme-quotes | yes | **no** | **no** | **no** |
-| coolstartnow/isms-builder | yes | **no** | **no** | **no** |
-| pelican/wings | yes | **no** | **no** | **no** |
-| lissy93/who-dat | yes | **no** | **no** | **no** |
-| leonovk/wg-rest-api | yes | **no** | **no** | **no** |
-| chelunfu/qiluo_admin | yes | **no** | **no** | **no** |
-| **Builds** | 10/10 | 4/10 | 4/10 | 3/10 |
+| Climate-Vision/ClimateVision | yes | yes | yes | yes\* |
+| zhravan/github-readme-quotes | yes | yes | yes | yes |
+| coolstartnow/isms-builder | yes | yes | yes | yes |
+| pelican/wings | yes | yes | yes | yes |
+| lissy93/who-dat | yes | yes | yes | yes |
+| leonovk/wg-rest-api | yes | yes | yes | yes |
+| chelunfu/qiluo_admin | yes | yes | yes | yes |
+| **All build steps succeed** | 10/10 | 10/10 | 10/10 | 10/10 |
+| **Image exported and scanned** | 10/10 | 10/10 | 10/10 | 9/10 |
+
+\* Every Dockerfile step completed, but the finished image was too large to export inside the build sandbox (disk limit), so it has no image scan.
 
 ### T5. Critical + High CVEs in the built image (Trivy image scan)
 
@@ -71,15 +74,31 @@
 | zebbern/claude-code-discord | 132 | 232 | 150 | 140 |
 | zqbxdev/webchat2api | 785 | 585 | 781 | 709 |
 | Climate-Vision/ClimateVision | 364 | 64 | 65 | – |
-| zhravan/github-readme-quotes | 2008 | – | – | – |
-| coolstartnow/isms-builder | 6 | – | – | – |
-| pelican/wings | 2 | – | – | – |
-| lissy93/who-dat | 0 | – | – | – |
-| leonovk/wg-rest-api | 13 | – | – | – |
-| chelunfu/qiluo_admin | 0 | – | – | – |
-| **Mean** | 331.1 | 220.25 | 249 | 318 |
+| zhravan/github-readme-quotes | 2008 | 45 | 45 | 64 |
+| coolstartnow/isms-builder | 6 | 48 | 48 | 48 |
+| pelican/wings | 2 | 2 | 2 | 40 |
+| lissy93/who-dat | 0 | 0 | 0 | 0 |
+| leonovk/wg-rest-api | 13 | 135 | 127 | 135 |
+| chelunfu/qiluo_admin | 0 | 38 | 38 | 38 |
+| **Mean** | 331.1 | 114.9 | 125.6 | 142.11 |
 
-Blank cells are images that did not build.
+A dash marks the one image that could not be exported and scanned (see T4).
+
+### T5b. Critical + High CVEs that have a fix available
+
+| Repository | Original (human) | Opus 5.5 | Sonnet 5.5 | Haiku 5.5 |
+|---|---|---|---|---|
+| rdborg/Mediarium | 1 | 0 | 0 | 0 |
+| zebbern/claude-code-discord | 11 | 63 | 27 | 27 |
+| zqbxdev/webchat2api | 157 | 81 | 157 | 81 |
+| Climate-Vision/ClimateVision | 2 | 2 | 3 | – |
+| zhravan/github-readme-quotes | 1493 | 45 | 45 | 26 |
+| coolstartnow/isms-builder | 6 | 10 | 10 | 10 |
+| pelican/wings | 2 | 2 | 2 | 2 |
+| lissy93/who-dat | 0 | 0 | 0 | 0 |
+| leonovk/wg-rest-api | 13 | 32 | 25 | 32 |
+| chelunfu/qiluo_admin | 0 | 0 | 0 | 0 |
+| **Mean** | 168.5 | 23.5 | 26.9 | 19.78 |
 
 ### T6. Total CVEs in the built image
 
@@ -89,13 +108,45 @@ Blank cells are images that did not build.
 | zebbern/claude-code-discord | 501 | 675 | 567 | 491 |
 | zqbxdev/webchat2api | 2550 | 1469 | 1822 | 1790 |
 | Climate-Vision/ClimateVision | 2895 | 290 | 297 | – |
-| zhravan/github-readme-quotes | 10450 | – | – | – |
-| coolstartnow/isms-builder | 20 | – | – | – |
-| pelican/wings | 9 | – | – | – |
-| lissy93/who-dat | 1 | – | – | – |
-| leonovk/wg-rest-api | 58 | – | – | – |
-| chelunfu/qiluo_admin | 1 | – | – | – |
-| **Mean** | 1648.8 | 608.75 | 671.75 | 904.33 |
+| zhravan/github-readme-quotes | 10450 | 131 | 131 | 287 |
+| coolstartnow/isms-builder | 20 | 249 | 249 | 249 |
+| pelican/wings | 9 | 13 | 10 | 247 |
+| lissy93/who-dat | 1 | 4 | 1 | 4 |
+| leonovk/wg-rest-api | 58 | 457 | 424 | 456 |
+| chelunfu/qiluo_admin | 1 | 238 | 238 | 238 |
+| **Mean** | 1648.8 | 352.7 | 374 | 466 |
+
+### T6b. CVEs in operating-system packages (decided by the base image and installed packages)
+
+| Repository | Original (human) | Opus 5.5 | Sonnet 5.5 | Haiku 5.5 |
+|---|---|---|---|---|
+| rdborg/Mediarium | 1 | 1 | 1 | 432 |
+| zebbern/claude-code-discord | 475 | 626 | 495 | 419 |
+| zqbxdev/webchat2api | 2322 | 1351 | 1594 | 1672 |
+| Climate-Vision/ClimateVision | 2885 | 287 | 287 | – |
+| zhravan/github-readme-quotes | 10202 | 54 | 54 | 226 |
+| coolstartnow/isms-builder | 1 | 226 | 226 | 226 |
+| pelican/wings | 0 | 4 | 1 | 238 |
+| lissy93/who-dat | 1 | 4 | 1 | 4 |
+| leonovk/wg-rest-api | 23 | 422 | 420 | 421 |
+| chelunfu/qiluo_admin | 1 | 238 | 238 | 238 |
+| **Mean** | 1591.1 | 321.3 | 331.7 | 430.67 |
+
+### T6c. CVEs in application dependencies (decided mostly by the project lockfile)
+
+| Repository | Original (human) | Opus 5.5 | Sonnet 5.5 | Haiku 5.5 |
+|---|---|---|---|---|
+| rdborg/Mediarium | 2 | 0 | 0 | 0 |
+| zebbern/claude-code-discord | 26 | 49 | 72 | 72 |
+| zqbxdev/webchat2api | 228 | 118 | 228 | 118 |
+| Climate-Vision/ClimateVision | 10 | 3 | 10 | – |
+| zhravan/github-readme-quotes | 248 | 77 | 77 | 61 |
+| coolstartnow/isms-builder | 19 | 23 | 23 | 23 |
+| pelican/wings | 9 | 9 | 9 | 9 |
+| lissy93/who-dat | 0 | 0 | 0 | 0 |
+| leonovk/wg-rest-api | 35 | 35 | 4 | 35 |
+| chelunfu/qiluo_admin | 0 | 0 | 0 | 0 |
+| **Mean** | 57.7 | 31.4 | 42.3 | 35.33 |
 
 ### T7. Image size (MB)
 
@@ -105,13 +156,13 @@ Blank cells are images that did not build.
 | zebbern/claude-code-discord | 638 | 817 | 1393 | 821 |
 | zqbxdev/webchat2api | 2351 | 1625 | 2153 | 1936 |
 | Climate-Vision/ClimateVision | 6852 | 4693 | 12150 | – |
-| zhravan/github-readme-quotes | 2487 | – | – | – |
-| coolstartnow/isms-builder | 598 | – | – | – |
-| pelican/wings | 63 | – | – | – |
-| lissy93/who-dat | 27 | – | – | – |
-| leonovk/wg-rest-api | 636 | – | – | – |
-| chelunfu/qiluo_admin | 67 | – | – | – |
-| **Mean** | 1384.4 | 1814.75 | 3955.25 | 1001.67 |
+| zhravan/github-readme-quotes | 2487 | 225 | 229 | 362 |
+| coolstartnow/isms-builder | 598 | 525 | 723 | 521 |
+| pelican/wings | 63 | 63 | 81 | 184 |
+| lissy93/who-dat | 27 | 18 | 28 | 18 |
+| leonovk/wg-rest-api | 636 | 326 | 294 | 334 |
+| chelunfu/qiluo_admin | 67 | 260 | 193 | 192 |
+| **Mean** | 1384.4 | 867.6 | 1736.9 | 512.89 |
 
 ### T8. User the container runs as
 
@@ -121,21 +172,21 @@ Blank cells are images that did not build.
 | zebbern/claude-code-discord | non-root | non-root | non-root | non-root |
 | zqbxdev/webchat2api | root | root | root | root |
 | Climate-Vision/ClimateVision | root | non-root | non-root | – |
-| zhravan/github-readme-quotes | root | – | – | – |
-| coolstartnow/isms-builder | root | – | – | – |
-| pelican/wings | root | – | – | – |
-| lissy93/who-dat | non-root | – | – | – |
-| leonovk/wg-rest-api | root | – | – | – |
-| chelunfu/qiluo_admin | non-root | – | – | – |
+| zhravan/github-readme-quotes | root | non-root | non-root | non-root |
+| coolstartnow/isms-builder | root | non-root | non-root | non-root |
+| pelican/wings | root | root | root | root |
+| lissy93/who-dat | non-root | non-root | non-root | non-root |
+| leonovk/wg-rest-api | root | root | root | root |
+| chelunfu/qiluo_admin | non-root | non-root | non-root | non-root |
 
 ### T9. Summary by Dockerfile author
 
-| Author | Mean static score | Mean Hadolint | Mean Trivy config | Mean score reduction | Better / worse / same vs original | Builds | Non-root (of built) | Median Crit+High CVEs | Median total CVEs | Crit+High CVEs: fewer / more / same vs original | Median size (MB) |
+| Author | Mean static score | Mean Hadolint | Mean Trivy config | Mean score reduction | Better / worse / same vs original | All build steps succeed | Non-root (of scanned images) | Median Crit+High CVEs | Median total CVEs | Crit+High CVEs: fewer / more / same vs original | Median size (MB) |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | Original (human) | 13.3 | 5.1 | 2.1 | – | – | 10/10 | 3/10 | 9.5 | 39 | – | 617 |
-| Opus 5.5 | 7.4 | 3 | 1.1 | 43.64% | 8/0/2 | 4/10 | 2/4 | 148 | 482.5 | 3/1/0 | 1221 |
-| Sonnet 5.5 | 7.3 | 3.1 | 1 | 45.16% | 9/0/1 | 4/10 | 2/4 | 107.5 | 432 | 3/1/0 | 1773 |
-| Haiku 5.5 | 6.3 | 2.5 | 1 | 52.86% | 10/0/0 | 3/10 | 1/3 | 140 | 491 | 1/2/0 | 821 |
+| Opus 5.5 | 7.4 | 3 | 1.1 | 43.64% | 8/0/2 | 10/10 | 6/10 | 46.5 | 243.5 | 4/4/2 | 293 |
+| Sonnet 5.5 | 7.3 | 3.1 | 1 | 45.16% | 9/0/1 | 10/10 | 6/10 | 46.5 | 243.5 | 4/4/2 | 261.5 |
+| Haiku 5.5 | 6.3 | 2.5 | 1 | 52.86% | 10/0/0 | 10/10 | 5/9 | 64 | 287 | 2/6/1 | 334 |
 
 ### T10. Number of Dockerfiles (of 10) that trigger each rule
 

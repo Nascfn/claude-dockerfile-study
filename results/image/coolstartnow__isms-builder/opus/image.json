@@ -1,0 +1,35 @@
+{
+ "tag": "study/coolstartnow__isms-builder:opus",
+ "size_bytes": 525156344,
+ "user": "node",
+ "runs_as_root": false,
+ "exposed_ports": [
+  "3000/tcp"
+ ],
+ "has_healthcheck": true,
+ "trivy_ok": true,
+ "vulns": {
+  "CRITICAL": 1,
+  "HIGH": 47,
+  "MEDIUM": 110,
+  "LOW": 86,
+  "UNKNOWN": 5
+ },
+ "vulns_fixable": {
+  "CRITICAL": 0,
+  "HIGH": 10,
+  "MEDIUM": 12,
+  "LOW": 1,
+  "UNKNOWN": 0
+ },
+ "vulns_by_class": {
+  "os-pkgs": 226,
+  "lang-pkgs": 23
+ },
+ "secrets": 0,
+ "os": {
+  "Family": "debian",
+  "Name": "12.15"
+ },
+ "vulns_total": 249
+}

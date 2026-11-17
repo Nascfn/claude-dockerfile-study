@@ -8,7 +8,7 @@ the files the model wrote. The documentation edits made for the model's
 reading copy are NOT applied to the build context, because some projects
 consume their own docs at build time.
 """
-import json, os, shutil, sys
+import fcntl, json, os, shutil, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from scan_static import scan
 from image_eval import evaluate
@@ -31,8 +31,19 @@ def build_context(slug, model):
             sp = os.path.join(d, f); dp = os.path.join(ctx, os.path.relpath(sp, src))
             os.makedirs(os.path.dirname(dp), exist_ok=True); shutil.copy2(sp, dp)
     return ctx
+ONLY = set(sys.argv[1:])            # optional: restrict to these repository slugs (lets two workers run in parallel)
+LOCK = open(f'{WORK}/docker.lock', 'w')
+
+def prune(images):
+    # Builds hold a shared lock; pruning takes it exclusively so it never removes a base image another build is about to use.
+    fcntl.flock(LOCK, fcntl.LOCK_EX)
+    os.system('docker builder prune -af >/dev/null 2>&1')
+    if images: os.system('docker image prune -af >/dev/null 2>&1')
+    fcntl.flock(LOCK, fcntl.LOCK_UN)
+
 for r in json.load(open('data/selection.json'))['selected']:
     slug = r['slug']
+    if ONLY and slug not in ONLY: continue
     scan(f'data/originals/{slug}/Dockerfile', f'results/static/study/{slug}/original')
     for m in MODELS:
         df = f'results/generated/{slug}/{m}/files/Dockerfile'
@@ -42,10 +53,10 @@ for r in json.load(open('data/selection.json'))['selected']:
         scan(df, f'results/static/study/{slug}/{m}')
         if os.path.exists(f'{out}/build.json'): continue
         ctx = build_context(slug, m)
+        fcntl.flock(LOCK, fcntl.LOCK_SH)
         b, s = evaluate(ctx, f'{ctx}/Dockerfile', f'study/{slug.lower()}:{m}', out, timeout=1200)
+        fcntl.flock(LOCK, fcntl.LOCK_UN)
         shutil.rmtree(ctx, ignore_errors=True)
         print(slug, m, 'ok' if b.get('ok') else 'BUILD FAILED', b.get('seconds'), s and s.get('vulns'), flush=True)
-        os.system('docker builder prune -af >/dev/null 2>&1')
-        if shutil.disk_usage('/').free < 15e9:
-            os.system('docker image prune -af >/dev/null 2>&1')
-    os.system('docker image prune -af >/dev/null 2>&1')      # the sandbox disk is small: drop base images per repository
+        if shutil.disk_usage('/').free < 12e9:       # the sandbox disk is small
+            prune(images=True)

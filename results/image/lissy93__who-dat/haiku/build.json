@@ -1,0 +1,11 @@
+{
+ "tag": "study/lissy93__who-dat:haiku",
+ "ok": true,
+ "seconds": 42.0,
+ "bases": [
+  "golang:1.26",
+  "gcr.io/distroless/static-debian12:nonroot"
+ ],
+ "error": null,
+ "log_tail": []
+}

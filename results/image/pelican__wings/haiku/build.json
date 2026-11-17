@@ -1,0 +1,11 @@
+{
+ "tag": "study/pelican__wings:haiku",
+ "ok": true,
+ "seconds": 94.8,
+ "bases": [
+  "golang:1.27-bookworm",
+  "debian:bookworm-slim"
+ ],
+ "error": null,
+ "log_tail": []
+}

@@ -1,0 +1,11 @@
+{
+ "tag": "study/lissy93__who-dat:opus",
+ "ok": true,
+ "seconds": 35.5,
+ "bases": [
+  "golang:1.26-alpine",
+  "gcr.io/distroless/static-debian12:nonroot"
+ ],
+ "error": null,
+ "log_tail": []
+}

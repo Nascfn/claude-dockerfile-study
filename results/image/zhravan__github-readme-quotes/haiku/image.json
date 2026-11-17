@@ -1,0 +1,35 @@
+{
+ "tag": "study/zhravan__github-readme-quotes:haiku",
+ "size_bytes": 362214916,
+ "user": "node",
+ "runs_as_root": false,
+ "exposed_ports": [
+  "3002/tcp"
+ ],
+ "has_healthcheck": false,
+ "trivy_ok": true,
+ "vulns": {
+  "CRITICAL": 2,
+  "HIGH": 62,
+  "MEDIUM": 125,
+  "LOW": 93,
+  "UNKNOWN": 5
+ },
+ "vulns_fixable": {
+  "CRITICAL": 1,
+  "HIGH": 25,
+  "MEDIUM": 27,
+  "LOW": 8,
+  "UNKNOWN": 0
+ },
+ "vulns_by_class": {
+  "os-pkgs": 226,
+  "lang-pkgs": 61
+ },
+ "secrets": 0,
+ "os": {
+  "Family": "debian",
+  "Name": "12.15"
+ },
+ "vulns_total": 287
+}

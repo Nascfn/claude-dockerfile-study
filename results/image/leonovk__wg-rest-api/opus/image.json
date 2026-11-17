@@ -1,0 +1,36 @@
+{
+ "tag": "study/leonovk__wg-rest-api:opus",
+ "size_bytes": 325731843,
+ "user": "root",
+ "runs_as_root": true,
+ "exposed_ports": [
+  "3000/tcp",
+  "51820/udp"
+ ],
+ "has_healthcheck": true,
+ "trivy_ok": true,
+ "vulns": {
+  "CRITICAL": 5,
+  "HIGH": 130,
+  "MEDIUM": 186,
+  "LOW": 121,
+  "UNKNOWN": 15
+ },
+ "vulns_fixable": {
+  "CRITICAL": 5,
+  "HIGH": 27,
+  "MEDIUM": 70,
+  "LOW": 29,
+  "UNKNOWN": 10
+ },
+ "vulns_by_class": {
+  "os-pkgs": 422,
+  "lang-pkgs": 35
+ },
+ "secrets": 0,
+ "os": {
+  "Family": "debian",
+  "Name": "13.6"
+ },
+ "vulns_total": 457
+}

@@ -1,0 +1,11 @@
+{
+ "tag": "study/lissy93__who-dat:sonnet",
+ "ok": true,
+ "seconds": 22.6,
+ "bases": [
+  "golang:1.26-alpine",
+  "alpine:3.21"
+ ],
+ "error": null,
+ "log_tail": []
+}
