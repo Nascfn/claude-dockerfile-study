@@ -1,0 +1,64 @@
+{
+ "queries": 19,
+ "pages_per_query": 3,
+ "found": 545,
+ "with_root_dockerfile": 152,
+ "examined": 391,
+ "pool": 43,
+ "pool_by_group": {
+  "python": 10,
+  "node": 12,
+  "go": 8,
+  "java": 4,
+  "ruby": 3,
+  "php": 2,
+  "rust": 4
+ },
+ "rejected": {
+  "not exactly one Dockerfile": 34,
+  "no root Dockerfile": 302,
+  "old base image": 9,
+  "uses git submodules": 1,
+  "GPU base image": 2
+ },
+ "selected": 10,
+ "selection_skipped": [
+  [
+   5,
+   "imdhemy__laravel-in-app-purchases",
+   "original Dockerfile does not build"
+  ],
+  [
+   6,
+   "imtaqin__waxum",
+   "original Dockerfile does not build"
+  ],
+  [
+   8,
+   "physhik__ecg-mit-bih",
+   "original Dockerfile does not build"
+  ],
+  [
+   13,
+   "MGeurts__genealogy",
+   "original Dockerfile does not build"
+  ]
+ ],
+ "score_range_pool": [
+  1,
+  19
+ ],
+ "score_median_pool": 7,
+ "score_selected": [
+  19,
+  17,
+  16,
+  14,
+  12,
+  11,
+  11,
+  11,
+  11,
+  11
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "tag": "study/climate-vision__climatevision:opus",
+ "size_bytes": 4692620102,
+ "user": "climatevision",
+ "runs_as_root": false,
+ "exposed_ports": [
+  "8000/tcp"
+ ],
+ "has_healthcheck": true,
+ "trivy_ok": true,
+ "vulns": {
+  "CRITICAL": 1,
+  "HIGH": 63,
+  "MEDIUM": 119,
+  "LOW": 100,
+  "UNKNOWN": 7
+ },
+ "vulns_fixable": {
+  "CRITICAL": 0,
+  "HIGH": 2,
+  "MEDIUM": 2,
+  "LOW": 1,
+  "UNKNOWN": 0
+ },
+ "vulns_by_class": {
+  "os-pkgs": 287,
+  "lang-pkgs": 3
+ },
+ "secrets": 0,
+ "os": {
+  "Family": "debian",
+  "Name": "13.7"
+ },
+ "vulns_total": 290
+}

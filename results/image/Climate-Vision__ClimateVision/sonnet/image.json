@@ -1,0 +1,35 @@
+{
+ "tag": "study/climate-vision__climatevision:sonnet",
+ "size_bytes": 12150018215,
+ "user": "appuser",
+ "runs_as_root": false,
+ "exposed_ports": [
+  "8000/tcp"
+ ],
+ "has_healthcheck": true,
+ "trivy_ok": true,
+ "vulns": {
+  "CRITICAL": 1,
+  "HIGH": 64,
+  "MEDIUM": 124,
+  "LOW": 101,
+  "UNKNOWN": 7
+ },
+ "vulns_fixable": {
+  "CRITICAL": 0,
+  "HIGH": 3,
+  "MEDIUM": 7,
+  "LOW": 2,
+  "UNKNOWN": 0
+ },
+ "vulns_by_class": {
+  "os-pkgs": 287,
+  "lang-pkgs": 10
+ },
+ "secrets": 0,
+ "os": {
+  "Family": "debian",
+  "Name": "13.7"
+ },
+ "vulns_total": 297
+}

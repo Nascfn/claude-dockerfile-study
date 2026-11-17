@@ -1,0 +1,33 @@
+{
+ "tag": "study/zebbern__claude-code-discord:sonnet",
+ "size_bytes": 1392522287,
+ "user": "bot",
+ "runs_as_root": false,
+ "exposed_ports": [],
+ "has_healthcheck": false,
+ "trivy_ok": true,
+ "vulns": {
+  "CRITICAL": 1,
+  "HIGH": 149,
+  "MEDIUM": 209,
+  "LOW": 201,
+  "UNKNOWN": 7
+ },
+ "vulns_fixable": {
+  "CRITICAL": 0,
+  "HIGH": 27,
+  "MEDIUM": 34,
+  "LOW": 11,
+  "UNKNOWN": 0
+ },
+ "vulns_by_class": {
+  "os-pkgs": 495,
+  "lang-pkgs": 72
+ },
+ "secrets": 0,
+ "os": {
+  "Family": "debian",
+  "Name": "12.15"
+ },
+ "vulns_total": 567
+}

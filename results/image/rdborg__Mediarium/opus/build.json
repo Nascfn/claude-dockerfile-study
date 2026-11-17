@@ -1,0 +1,12 @@
+{
+ "tag": "study/rdborg__mediarium:opus",
+ "ok": true,
+ "seconds": 108.9,
+ "bases": [
+  "node:24-bookworm-slim",
+  "golang:1.26-alpine",
+  "alpine:3.21"
+ ],
+ "error": null,
+ "log_tail": []
+}

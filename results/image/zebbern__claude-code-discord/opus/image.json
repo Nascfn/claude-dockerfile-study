@@ -1,0 +1,33 @@
+{
+ "tag": "study/zebbern__claude-code-discord:opus",
+ "size_bytes": 817151163,
+ "user": "deno",
+ "runs_as_root": false,
+ "exposed_ports": [],
+ "has_healthcheck": false,
+ "trivy_ok": true,
+ "vulns": {
+  "CRITICAL": 5,
+  "HIGH": 227,
+  "MEDIUM": 257,
+  "LOW": 177,
+  "UNKNOWN": 9
+ },
+ "vulns_fixable": {
+  "CRITICAL": 0,
+  "HIGH": 63,
+  "MEDIUM": 67,
+  "LOW": 26,
+  "UNKNOWN": 2
+ },
+ "vulns_by_class": {
+  "os-pkgs": 626,
+  "lang-pkgs": 49
+ },
+ "secrets": 0,
+ "os": {
+  "Family": "debian",
+  "Name": "13.1"
+ },
+ "vulns_total": 675
+}

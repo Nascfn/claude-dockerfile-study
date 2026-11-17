@@ -1,0 +1,10 @@
+{
+ "tag": "study/zebbern__claude-code-discord:opus",
+ "ok": true,
+ "seconds": 36.3,
+ "bases": [
+  "denoland/deno:debian-2.5.6"
+ ],
+ "error": null,
+ "log_tail": []
+}

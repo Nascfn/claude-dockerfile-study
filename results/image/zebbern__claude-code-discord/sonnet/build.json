@@ -1,0 +1,11 @@
+{
+ "tag": "study/zebbern__claude-code-discord:sonnet",
+ "ok": true,
+ "seconds": 54.6,
+ "bases": [
+  "denoland/deno:bin-2.5.6",
+  "node:22-bookworm-slim"
+ ],
+ "error": null,
+ "log_tail": []
+}

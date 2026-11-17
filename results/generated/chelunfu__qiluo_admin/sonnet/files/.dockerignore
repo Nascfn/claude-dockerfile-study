@@ -1,0 +1,16 @@
+target/
+**/target/
+.git/
+.gitignore
+.env
+Dockerfile
+.dockerignore
+*.md
+*.sql
+data/log/
+data/upload/*
+!data/upload/.gitkeep
+data/static/*
+!data/static/.gitkeep
+data/web/*
+!data/web/.gitkeep

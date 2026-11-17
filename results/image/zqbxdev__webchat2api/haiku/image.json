@@ -1,0 +1,35 @@
+{
+ "tag": "study/zqbxdev__webchat2api:haiku",
+ "size_bytes": 1936494150,
+ "user": "root",
+ "runs_as_root": true,
+ "exposed_ports": [
+  "83/tcp"
+ ],
+ "has_healthcheck": true,
+ "trivy_ok": true,
+ "vulns": {
+  "CRITICAL": 15,
+  "HIGH": 694,
+  "MEDIUM": 594,
+  "LOW": 446,
+  "UNKNOWN": 41
+ },
+ "vulns_fixable": {
+  "CRITICAL": 8,
+  "HIGH": 73,
+  "MEDIUM": 32,
+  "LOW": 5,
+  "UNKNOWN": 0
+ },
+ "vulns_by_class": {
+  "os-pkgs": 1672,
+  "lang-pkgs": 118
+ },
+ "secrets": 0,
+ "os": {
+  "Family": "debian",
+  "Name": "13.7"
+ },
+ "vulns_total": 1790
+}

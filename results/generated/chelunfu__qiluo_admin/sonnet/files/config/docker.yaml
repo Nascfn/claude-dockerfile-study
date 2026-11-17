@@ -1,0 +1,118 @@
+# Container configuration (selected with environment=docker).
+# Mirrors config/development.yaml, but database / cache / secrets come from
+# environment variables so the image can be pointed at external services.
+# Values are rendered with Tera before being parsed as YAML.
+server:
+  domainname: {{ get_env(name="SERVER_DOMAINNAME", default="http://localhost:5001") }}
+  port: 5001
+  host: 0.0.0.0
+  static_dir: data/static
+  web_dir: data/web
+  upload_dir: data/upload
+  ssl:
+    enable: false
+    key: data/ssl/key.pem
+    cert: data/ssl/cert.pem
+  middlewares:
+    etag:
+      enable: true
+    limit_payload:
+      enable: true
+      body_limit: 5mb
+    logger:
+      enable: true
+    catch_panic:
+      enable: true
+    timeout_request:
+      enable: false
+      timeout: 5000
+    cors:
+      enable: true
+      allow_origins:
+        - {{ get_env(name="CORS_ALLOW_ORIGIN", default="http://localhost:4000") }}
+      max_age: 3600
+
+workers:
+  queues:
+    - default
+    - mailer
+  num_workers: 2
+
+# MySQL connection URL, e.g. mysql://user:pass@host:3306/dbname
+databases:
+  - name: primary
+    uri: "{{ get_env(name='DATABASE_URL', default='mysql://qiluo:Qiluo123@mysql:3306/qiluoopen') }}"
+    max_connections: 16
+    min_connections: 2
+    connect_timeout: 3000
+    idle_timeout: 300000
+    enable_logging: false
+
+  - name: replica1
+    uri: "{{ get_env(name='DATABASE_URL', default='mysql://qiluo:Qiluo123@mysql:3306/qiluoopen') }}"
+    max_connections: 8
+    min_connections: 1
+    connect_timeout: 3000
+    idle_timeout: 300000
+    enable_logging: false
+
+  - name: replica2
+    uri: "{{ get_env(name='DATABASE_URL', default='mysql://qiluo:Qiluo123@mysql:3306/qiluoopen') }}"
+    max_connections: 8
+    min_connections: 1
+    connect_timeout: 3000
+    idle_timeout: 300000
+    enable_logging: false
+db_routing:
+  default: "primary"
+  write: "primary"
+  reads: ["replica1", "replica2"]
+  read_strategy: "weighted"
+  read_weights:
+    replica1: 3
+    replica2: 1
+  retry_attempts: 2
+  circuit_break_ms: 30000
+  fallback_to_write: true
+
+logger:
+  enable: true
+  pretty_backtrace: false
+  level: {{ get_env(name="LOG_LEVEL", default="info") }}
+  format: compact
+  log_file_cache: true
+  log_dir: data/log
+  file_name: app_log
+
+cache:
+  # Cache type, options: redis, memory
+  cache_type: {{ get_env(name="CACHE_TYPE", default="memory") }}
+  namespace: qiluo
+  pool_size: 12
+  url: {{ get_env(name="REDIS_URL", default="redis://127.0.0.1") }}
+
+mailer:
+  stub: false
+  smtp:
+    enable: true
+    host: smtp.163.com
+    port: 465
+    secure: true
+    auth:
+      user: xx@163.com
+      password: xxxxxx
+    from: "Rust祺洛系统 <xx@163.com>"
+
+auth:
+  jwt:
+    # Override JWT_SECRET in production!
+    secret: {{ get_env(name="JWT_SECRET", default="arxWd8PStcwb0jyRBENMQVE4Mn6T89Sl") }}
+    expiration: 604800
+
+snowgenera:
+  machine_id: 1001
+  node_id: 1
+
+system:
+  super_role:
+    - 1

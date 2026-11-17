@@ -1,0 +1,121 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.76.2"
+  },
+  "ReportID": "01a1eb3f-b227-7977-b6f2-64909785e780",
+  "CreatedAt": "2026-11-17T20:43:02.567622681Z",
+  "ArtifactName": "/tmp/tmpxqcqdx57",
+  "ArtifactType": "filesystem",
+  "Results": [
+    {
+      "Target": "Dockerfile",
+      "Class": "config",
+      "Type": "dockerfile",
+      "MisconfSummary": {
+        "Successes": 25,
+        "Failures": 2
+      },
+      "Misconfigurations": [
+        {
+          "Type": "Dockerfile Security Check",
+          "ID": "DS-0002",
+          "Title": "Image user should not be 'root'",
+          "Description": "Running containers with 'root' user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a 'USER' statement to the Dockerfile.",
+          "Message": "Specify at least 1 USER command in Dockerfile with non-root user as argument",
+          "Namespace": "builtin.dockerfile.DS002",
+          "Query": "data.builtin.dockerfile.DS002.deny",
+          "Resolution": "Add 'USER \u003cnon root user name\u003e' line to the Dockerfile",
+          "Severity": "HIGH",
+          "PrimaryURL": "https://avd.aquasec.com/misconfig/ds-0002",
+          "References": [
+            "https://docs.docker.com/develop/develop-images/dockerfile_best-practices/",
+            "https://avd.aquasec.com/misconfig/ds-0002"
+          ],
+          "Status": "FAIL",
+          "CauseMetadata": {
+            "Provider": "Dockerfile",
+            "Service": "general"
+          }
+        },
+        {
+          "Type": "Dockerfile Security Check",
+          "ID": "DS-0031",
+          "Title": "Secrets passed via `build-args` or envs or copied secret files",
+          "Description": "Passing secrets via `build-args` or envs or copying secret files can leak them out",
+          "Message": "Possible exposure of secret env \"DEV_HEADER_AUTH\" in ENV",
+          "Namespace": "builtin.dockerfile.DS031",
+          "Query": "data.builtin.dockerfile.DS031.deny",
+          "Resolution": "Use secret mount if secrets are needed during image build. Use volume mount if secret files are needed during container runtime.",
+          "Severity": "CRITICAL",
+          "PrimaryURL": "https://avd.aquasec.com/misconfig/ds-0031",
+          "References": [
+            "https://docs.docker.com/build/building/secrets/",
+            "https://avd.aquasec.com/misconfig/ds-0031"
+          ],
+          "Status": "FAIL",
+          "CauseMetadata": {
+            "Provider": "Dockerfile",
+            "Service": "general",
+            "StartLine": 59,
+            "EndLine": 63,
+            "Code": {
+              "Lines": [
+                {
+                  "Number": 59,
+                  "Content": "ENV NODE_ENV=production \\",
+                  "IsCause": true,
+                  "Annotation": "",
+                  "Truncated": false,
+                  "Highlighted": "\u001b[38;5;64mENV\u001b[0m \u001b[38;5;33mNODE_ENV\u001b[0m\u001b[38;5;245m=\u001b[0mproduction \u001b[38;5;124m\\",
+                  "FirstCause": true,
+                  "LastCause": false
+                },
+                {
+                  "Number": 60,
+                  "Content": "    PORT=3000 \\",
+                  "IsCause": true,
+                  "Annotation": "",
+                  "Truncated": false,
+                  "Highlighted": "\u001b[0m    \u001b[38;5;33mPORT\u001b[0m\u001b[38;5;245m=\u001b[0m\u001b[38;5;37m3000\u001b[0m \u001b[38;5;124m\\",
+                  "FirstCause": false,
+                  "LastCause": false
+                },
+                {
+                  "Number": 61,
+                  "Content": "    JWT_EXPIRES_IN=8h \\",
+                  "IsCause": true,
+                  "Annotation": "",
+                  "Truncated": false,
+                  "Highlighted": "\u001b[0m    \u001b[38;5;33mJWT_EXPIRES_IN\u001b[0m\u001b[38;5;245m=\u001b[0m8h \u001b[38;5;124m\\",
+                  "FirstCause": false,
+                  "LastCause": false
+                },
+                {
+                  "Number": 62,
+                  "Content": "    DEV_HEADER_AUTH=false \\",
+                  "IsCause": true,
+                  "Annotation": "",
+                  "Truncated": false,
+                  "Highlighted": "\u001b[0m    \u001b[38;5;33mDEV_HEADER_AUTH\u001b[0m\u001b[38;5;245m=\u001b[0m\u001b[38;5;33mfalse\u001b[0m \u001b[38;5;124m\\",
+                  "FirstCause": false,
+                  "LastCause": false
+                },
+                {
+                  "Number": 63,
+                  "Content": "    STORAGE_BACKEND=json",
+                  "IsCause": true,
+                  "Annotation": "",
+                  "Truncated": false,
+                  "Highlighted": "\u001b[0m    \u001b[38;5;33mSTORAGE_BACKEND\u001b[0m\u001b[38;5;245m=\u001b[0mjson",
+                  "FirstCause": false,
+                  "LastCause": true
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

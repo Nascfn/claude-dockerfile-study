@@ -1,0 +1,12 @@
+{
+ "tag": "study/rdborg__mediarium:sonnet",
+ "ok": true,
+ "seconds": 86.8,
+ "bases": [
+  "node:24-alpine",
+  "golang:1.26-alpine",
+  "alpine:3.22"
+ ],
+ "error": null,
+ "log_tail": []
+}

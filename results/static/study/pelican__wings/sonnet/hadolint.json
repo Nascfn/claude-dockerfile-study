@@ -1,0 +1,1 @@
+[{"code":"DL3018","column":1,"file":"results/generated/pelican__wings/sonnet/files/Dockerfile","level":"warning","line":31,"message":"Pin versions in apk add. Instead of `apk add <package>` use `apk add <package>=<version>`"}]

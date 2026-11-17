@@ -1,0 +1,33 @@
+{
+ "tag": "study/zebbern__claude-code-discord:haiku",
+ "size_bytes": 820632030,
+ "user": "node",
+ "runs_as_root": false,
+ "exposed_ports": [],
+ "has_healthcheck": false,
+ "trivy_ok": true,
+ "vulns": {
+  "CRITICAL": 1,
+  "HIGH": 139,
+  "MEDIUM": 187,
+  "LOW": 157,
+  "UNKNOWN": 7
+ },
+ "vulns_fixable": {
+  "CRITICAL": 0,
+  "HIGH": 27,
+  "MEDIUM": 34,
+  "LOW": 11,
+  "UNKNOWN": 0
+ },
+ "vulns_by_class": {
+  "os-pkgs": 419,
+  "lang-pkgs": 72
+ },
+ "secrets": 0,
+ "os": {
+  "Family": "debian",
+  "Name": "12.15"
+ },
+ "vulns_total": 491
+}

@@ -1,0 +1,12 @@
+target/
+migration/target/
+debug/
+**/*.rs.bk
+.git/
+.gitignore
+.env
+Dockerfile
+.dockerignore
+data/log/
+*.sql
+doc.md

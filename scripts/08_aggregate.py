@@ -41,7 +41,8 @@ for r in sel:
             row.update({'gen_model': ','.join(g.get('models_seen') or []), 'gen_turns': g.get('num_turns'), 'gen_seconds': g.get('wall_seconds'),
                         'gen_cost_usd': g.get('total_cost_usd'), 'gen_tool_calls': g.get('n_tool_calls'),
                         'gen_output_tokens': u.get('output_tokens'), 'gen_files_added': ' '.join(g.get('files_added') or []),
-                        'gen_files_modified': len(g.get('files_modified') or []), 'gen_outside_access': len(g.get('outside_workspace_access') or [])})
+                        'gen_files_modified': len(g.get('files_modified') or []),
+                        'gen_disallowed_tool_attempts': sum(1 for t in g.get('tool_calls') or [] if t[0] not in ('Read', 'Glob', 'Grep', 'Write')), 'gen_outside_access': len(g.get('outside_workspace_access') or [])})
         rows.append(row)
 
 json.dump(rows, open('results/summary.json', 'w'), indent=1)
@@ -93,10 +94,10 @@ for v in VARIANTS:
                  '–' if v == 'original' else f'{mean(red)}%', '–' if v == 'original' else f'{better}/{worse}/{len(paired) - better - worse}',
                  f"{sum(a['build_ok'] for a in rs)}/{len(rs)}", f"{sum(1 for a in built if not a['runs_as_root'])}/{len(built)}",
                  med([a.get('vuln_crit_high') for a in built]), med([a.get('vuln_total') for a in built]),
-                 '–' if v == 'original' else f"{sum(a['vuln_crit_high'] < o['vuln_crit_high'] for o, a in pv)}/{len(pv)}",
+                 '–' if v == 'original' else f"{sum(a['vuln_crit_high'] < o['vuln_crit_high'] for o, a in pv)}/{sum(a['vuln_crit_high'] > o['vuln_crit_high'] for o, a in pv)}/{sum(a['vuln_crit_high'] == o['vuln_crit_high'] for o, a in pv)}",
                  med([a.get('size_mb') for a in built])])
 table('T9. Summary by Dockerfile author', ['Author', 'Mean static score', 'Mean Hadolint', 'Mean Trivy config', 'Mean score reduction', 'Better / worse / same vs original',
-      'Builds', 'Non-root (of built)', 'Median Crit+High CVEs', 'Median total CVEs', 'Fewer Crit+High than original', 'Median size (MB)'], body)
+      'Builds', 'Non-root (of built)', 'Median Crit+High CVEs', 'Median total CVEs', 'Crit+High CVEs: fewer / more / same vs original', 'Median size (MB)'], body)
 
 # rule prevalence
 from collections import Counter
@@ -121,8 +122,9 @@ for v in VARIANTS[1:]:
     rs = [by[(r['slug'], v)] for r in sel]
     body.append([LABEL[v], rs[0].get('gen_model'), mean([a.get('gen_seconds') for a in rs]), mean([a.get('gen_turns') for a in rs]), mean([a.get('gen_tool_calls') for a in rs]),
                  mean([a.get('gen_output_tokens') for a in rs]), round(sum(a.get('gen_cost_usd') or 0 for a in rs), 2),
-                 sum(a.get('gen_files_modified') or 0 for a in rs), sum(a.get('gen_outside_access') or 0 for a in rs)])
+                 sum(a.get('gen_files_modified') or 0 for a in rs), sum(a.get('gen_outside_access') or 0 for a in rs),
+                 sum(a.get('gen_disallowed_tool_attempts') or 0 for a in rs)])
 table('T11. Generation effort per model', ['Model', 'Model ID reported', 'Mean seconds', 'Mean turns', 'Mean tool calls', 'Mean output tokens', 'Total cost (USD, as reported by the CLI)',
-      'Existing files modified', 'Reads outside workspace'], body)
+      'Existing files modified', 'Reads outside workspace', 'Attempts to call a tool that was not offered (all rejected)'], body)
 open('results/tables.md', 'w').write('\n'.join(out) + '\n')
 print('\n'.join(out))

@@ -1,0 +1,12 @@
+{
+ "tag": "study/zqbxdev__webchat2api:haiku",
+ "ok": true,
+ "seconds": 136.4,
+ "bases": [
+  "node:22-alpine",
+  "python:3.13-slim",
+  "python:3.13-slim"
+ ],
+ "error": null,
+ "log_tail": []
+}

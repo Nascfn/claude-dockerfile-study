@@ -1,0 +1,125 @@
+{#- Container configuration. Selected by the Docker image via `environment=docker`.
+    Every deployment-specific value can be overridden with an environment variable.
+    Rendered with Tera before being parsed as YAML (see src/config/appconfig.rs). -#}
+{%- set db_url = get_env(name="DATABASE_URL", default="mysql://qiluo:Qiluo123@mysql:3306/qiluoopen") -%}
+# Web server configuration
+server:
+  domainname: "{{ get_env(name="SERVER_DOMAINNAME", default="http://localhost:5001") }}"
+  binding: "0.0.0.0"
+  port: {{ get_env(name="PORT", default="5001") }}
+  host: "{{ get_env(name="SERVER_HOST", default="0.0.0.0") }}"
+  static_dir: data/static
+  web_dir: data/web
+  upload_dir: data/upload
+  ssl:
+    enable: {{ get_env(name="SSL_ENABLE", default="false") }}
+    key: "{{ get_env(name="SSL_KEY", default="data/ssl/key.pem") }}"
+    cert: "{{ get_env(name="SSL_CERT", default="data/ssl/cert.pem") }}"
+  middlewares:
+    etag:
+      enable: true
+    limit_payload:
+      enable: true
+      body_limit: "{{ get_env(name="BODY_LIMIT", default="5mb") }}"
+    logger:
+      enable: true
+    catch_panic:
+      enable: true
+    timeout_request:
+      enable: false
+      timeout: 5000
+    cors:
+      enable: true
+      allow_origins:
+        - "{{ get_env(name="CORS_ALLOW_ORIGIN", default="http://localhost:4000") }}"
+      max_age: 3600
+
+# Worker Configuration
+workers:
+  queues:
+    - default
+    - mailer
+  num_workers: {{ get_env(name="NUM_WORKERS", default="2") }}
+
+# Database Configuration
+databases:
+  - name: primary
+    uri: "{{ db_url }}"
+    max_connections: 16
+    min_connections: 2
+    connect_timeout: 3000
+    idle_timeout: 300000
+    enable_logging: false
+
+  - name: replica1
+    uri: "{{ get_env(name="DATABASE_REPLICA1_URL", default=db_url) }}"
+    max_connections: 8
+    min_connections: 1
+    connect_timeout: 3000
+    idle_timeout: 300000
+    enable_logging: false
+
+  - name: replica2
+    uri: "{{ get_env(name="DATABASE_REPLICA2_URL", default=db_url) }}"
+    max_connections: 8
+    min_connections: 1
+    connect_timeout: 3000
+    idle_timeout: 300000
+    enable_logging: false
+db_routing:
+  default: "primary"
+  write:   "primary"
+  reads:   ["replica1", "replica2"]
+  read_strategy: "weighted"
+  read_weights:
+    replica1: 3
+    replica2: 1
+  retry_attempts: 2
+  circuit_break_ms: 30000
+  fallback_to_write: true
+
+# Application logging configuration
+logger:
+  enable: true
+  pretty_backtrace: false
+  level: {{ get_env(name="LOG_LEVEL", default="info") }}
+  format: compact
+  log_file_cache: true
+  log_dir: data/log
+  file_name: app_log
+
+cache:
+  # Cache type, options: redis, memory
+  cache_type: {{ get_env(name="CACHE_TYPE", default="memory") }}
+  namespace: qiluo
+  pool_size: 12
+  url: "{{ get_env(name="REDIS_URL", default="redis://redis:6379") }}"
+
+# Mailer Configuration.
+mailer:
+  stub: {{ get_env(name="SMTP_STUB", default="false") }}
+  smtp:
+    enable: {{ get_env(name="SMTP_ENABLE", default="false") }}
+    host: "{{ get_env(name="SMTP_HOST", default="smtp.163.com") }}"
+    port: {{ get_env(name="SMTP_PORT", default="465") }}
+    secure: {{ get_env(name="SMTP_SECURE", default="true") }}
+    auth:
+      user: "{{ get_env(name="SMTP_USER", default="xx@163.com") }}"
+      password: "{{ get_env(name="SMTP_PASSWORD", default="xxxxxx") }}"
+    from: "{{ get_env(name="SMTP_FROM", default="Qiluo <xx@163.com>") }}"
+
+# Authentication Configuration
+auth:
+  jwt:
+    # CHANGE THIS in production via the JWT_SECRET environment variable.
+    secret: "{{ get_env(name="JWT_SECRET", default="arxWd8PStcwb0jyRBENMQVE4Mn6T89Sl") }}"
+    expiration: {{ get_env(name="JWT_EXPIRATION", default="604800") }}
+
+# genid
+snowgenera:
+  machine_id: {{ get_env(name="SNOW_MACHINE_ID", default="1001") }}
+  node_id: {{ get_env(name="SNOW_NODE_ID", default="1") }}
+
+system:
+  super_role:
+    - 1

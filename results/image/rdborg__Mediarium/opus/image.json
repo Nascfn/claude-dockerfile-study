@@ -1,0 +1,37 @@
+{
+ "tag": "study/rdborg__mediarium:opus",
+ "size_bytes": 124246012,
+ "user": "root",
+ "runs_as_root": true,
+ "exposed_ports": [
+  "58264/tcp",
+  "58264/udp",
+  "8264/tcp"
+ ],
+ "has_healthcheck": true,
+ "trivy_ok": true,
+ "vulns": {
+  "CRITICAL": 0,
+  "HIGH": 0,
+  "MEDIUM": 1,
+  "LOW": 0,
+  "UNKNOWN": 0
+ },
+ "vulns_fixable": {
+  "CRITICAL": 0,
+  "HIGH": 0,
+  "MEDIUM": 1,
+  "LOW": 0,
+  "UNKNOWN": 0
+ },
+ "vulns_by_class": {
+  "os-pkgs": 1
+ },
+ "secrets": 0,
+ "os": {
+  "Family": "alpine",
+  "Name": "3.21.10",
+  "EOSL": true
+ },
+ "vulns_total": 1
+}

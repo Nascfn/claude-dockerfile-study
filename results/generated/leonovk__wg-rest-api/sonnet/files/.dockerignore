@@ -1,0 +1,17 @@
+.git
+.gitignore
+.env
+.byebug_history
+.rspec_status
+.rubocop.yml
+.rspec
+.zed
+.vscode
+coverage
+tmp
+etc
+spec
+Dockerfile
+.dockerignore
+*.md
+swagger

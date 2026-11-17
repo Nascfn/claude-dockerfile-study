@@ -1,0 +1,23 @@
+# Cargo build output (any level, including migration/target)
+target
+**/target
+
+# VCS metadata
+.git
+.gitignore
+
+# Local secrets / environment. The app does not read .env; keep it out of image layers.
+.env
+
+# Runtime data written by the app. The image creates its own directories.
+data/log
+data/web/*
+!data/web/.gitkeep
+data/static/*
+!data/static/.gitkeep
+data/upload/*
+!data/upload/.gitkeep
+
+# Docker files are not needed inside the build context
+Dockerfile
+.dockerignore

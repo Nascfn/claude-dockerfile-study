@@ -1,0 +1,27 @@
+# Version control and editor/IDE metadata
+.git
+.gitignore
+.github
+.zed
+.vscode
+.DS_Store
+**/.DS_Store
+
+# Local secrets and generated state: never bake these into the image.
+# "etc" is where development runs keep WireGuard keys (see config/settings/development.yaml).
+.env
+.env.*
+etc
+tmp
+coverage
+.byebug_history
+.rspec_status
+
+# Test and lint tooling, not needed at runtime
+spec
+.rspec
+.rubocop.yml
+
+# Docker build files themselves
+Dockerfile
+.dockerignore

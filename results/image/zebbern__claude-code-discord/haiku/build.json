@@ -1,0 +1,10 @@
+{
+ "tag": "study/zebbern__claude-code-discord:haiku",
+ "ok": true,
+ "seconds": 55.2,
+ "bases": [
+  "node:22-bookworm-slim"
+ ],
+ "error": null,
+ "log_tail": []
+}

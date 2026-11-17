@@ -1,0 +1,141 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.76.2"
+  },
+  "ReportID": "01a1eb49-3886-7282-8dca-75e697a98a52",
+  "CreatedAt": "2026-11-17T20:53:26.790167072Z",
+  "ArtifactName": "/tmp/tmph416lmja",
+  "ArtifactType": "filesystem",
+  "Results": [
+    {
+      "Target": "Dockerfile",
+      "Class": "config",
+      "Type": "dockerfile",
+      "MisconfSummary": {
+        "Successes": 25,
+        "Failures": 2
+      },
+      "Misconfigurations": [
+        {
+          "Type": "Dockerfile Security Check",
+          "ID": "DS-0002",
+          "Title": "Image user should not be 'root'",
+          "Description": "Running containers with 'root' user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a 'USER' statement to the Dockerfile.",
+          "Message": "Specify at least 1 USER command in Dockerfile with non-root user as argument",
+          "Namespace": "builtin.dockerfile.DS002",
+          "Query": "data.builtin.dockerfile.DS002.deny",
+          "Resolution": "Add 'USER \u003cnon root user name\u003e' line to the Dockerfile",
+          "Severity": "HIGH",
+          "PrimaryURL": "https://avd.aquasec.com/misconfig/ds-0002",
+          "References": [
+            "https://docs.docker.com/develop/develop-images/dockerfile_best-practices/",
+            "https://avd.aquasec.com/misconfig/ds-0002"
+          ],
+          "Status": "FAIL",
+          "CauseMetadata": {
+            "Provider": "Dockerfile",
+            "Service": "general"
+          }
+        },
+        {
+          "Type": "Dockerfile Security Check",
+          "ID": "DS-0013",
+          "Title": "'RUN cd ...' to change directory",
+          "Description": "Use WORKDIR instead of proliferating instructions like 'RUN cd … \u0026\u0026 do-something', which are hard to read, troubleshoot, and maintain.",
+          "Message": "RUN should not be used to change directory: 'uv export --frozen --no-dev --no-hashes --no-emit-project -o /tmp/requirements.txt  \u0026\u0026 uv venv /opt/venv  \u0026\u0026 cd /tmp  \u0026\u0026 uv pip install --no-config --no-cache         --python /opt/venv/bin/python         --default-index \"${PYPI_INDEX_URL}\"         -r /tmp/requirements.txt'. Use 'WORKDIR' statement instead.",
+          "Namespace": "builtin.dockerfile.DS013",
+          "Query": "data.builtin.dockerfile.DS013.deny",
+          "Resolution": "Use WORKDIR to change directory",
+          "Severity": "MEDIUM",
+          "PrimaryURL": "https://avd.aquasec.com/misconfig/ds-0013",
+          "References": [
+            "https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#workdir",
+            "https://avd.aquasec.com/misconfig/ds-0013"
+          ],
+          "Status": "FAIL",
+          "CauseMetadata": {
+            "Provider": "Dockerfile",
+            "Service": "general",
+            "StartLine": 46,
+            "EndLine": 52,
+            "Code": {
+              "Lines": [
+                {
+                  "Number": 46,
+                  "Content": "RUN uv export --frozen --no-dev --no-hashes --no-emit-project -o /tmp/requirements.txt \\",
+                  "IsCause": true,
+                  "Annotation": "",
+                  "Truncated": false,
+                  "Highlighted": "\u001b[38;5;64mRUN\u001b[0m uv \u001b[38;5;33mexport\u001b[0m --frozen --no-dev --no-hashes --no-emit-project -o /tmp/requirements.txt \u001b[38;5;124m\\",
+                  "FirstCause": true,
+                  "LastCause": false
+                },
+                {
+                  "Number": 47,
+                  "Content": " \u0026\u0026 uv venv /opt/venv \\",
+                  "IsCause": true,
+                  "Annotation": "",
+                  "Truncated": false,
+                  "Highlighted": "\u001b[0m \u001b[38;5;245m\u0026\u0026\u001b[0m uv venv /opt/venv \u001b[38;5;124m\\",
+                  "FirstCause": false,
+                  "LastCause": false
+                },
+                {
+                  "Number": 48,
+                  "Content": " \u0026\u0026 cd /tmp \\",
+                  "IsCause": true,
+                  "Annotation": "",
+                  "Truncated": false,
+                  "Highlighted": "\u001b[0m \u001b[38;5;245m\u0026\u0026\u001b[0m \u001b[38;5;33mcd\u001b[0m /tmp \u001b[38;5;124m\\",
+                  "FirstCause": false,
+                  "LastCause": false
+                },
+                {
+                  "Number": 49,
+                  "Content": " \u0026\u0026 uv pip install --no-config --no-cache \\",
+                  "IsCause": true,
+                  "Annotation": "",
+                  "Truncated": false,
+                  "Highlighted": "\u001b[0m \u001b[38;5;245m\u0026\u0026\u001b[0m uv pip install --no-config --no-cache \u001b[38;5;124m\\",
+                  "FirstCause": false,
+                  "LastCause": false
+                },
+                {
+                  "Number": 50,
+                  "Content": "        --python /opt/venv/bin/python \\",
+                  "IsCause": true,
+                  "Annotation": "",
+                  "Truncated": false,
+                  "Highlighted": "\u001b[0m        --python /opt/venv/bin/python \u001b[38;5;124m\\",
+                  "FirstCause": false,
+                  "LastCause": false
+                },
+                {
+                  "Number": 51,
+                  "Content": "        --default-index \"${PYPI_INDEX_URL}\" \\",
+                  "IsCause": true,
+                  "Annotation": "",
+                  "Truncated": false,
+                  "Highlighted": "\u001b[0m        --default-index \u001b[38;5;37m\"\u001b[0m\u001b[38;5;37m${\u001b[0m\u001b[38;5;33mPYPI_INDEX_URL\u001b[0m\u001b[38;5;37m}\u001b[0m\u001b[38;5;37m\"\u001b[0m \u001b[38;5;124m\\",
+                  "FirstCause": false,
+                  "LastCause": false
+                },
+                {
+                  "Number": 52,
+                  "Content": "        -r /tmp/requirements.txt",
+                  "IsCause": true,
+                  "Annotation": "",
+                  "Truncated": false,
+                  "Highlighted": "\u001b[0m        -r /tmp/requirements.txt",
+                  "FirstCause": false,
+                  "LastCause": true
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+ "tag": "study/rdborg__mediarium:haiku",
+ "ok": true,
+ "seconds": 105.0,
+ "bases": [
+  "node:24-slim",
+  "golang:1.26",
+  "debian:bookworm-slim"
+ ],
+ "error": null,
+ "log_tail": []
+}
