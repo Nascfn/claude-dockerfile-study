@@ -1,0 +1,116 @@
+{
+  "SchemaVersion": 2,
+  "Trivy": {
+    "Version": "0.76.2"
+  },
+  "ReportID": "01a1eb19-37c9-7d3e-8fb2-3b30df402948",
+  "CreatedAt": "2026-11-17T20:01:00.873870481Z",
+  "ArtifactName": "/tmp/tmpnoj0f9p9",
+  "ArtifactType": "filesystem",
+  "Results": [
+    {
+      "Target": "Dockerfile",
+      "Class": "config",
+      "Type": "dockerfile",
+      "MisconfSummary": {
+        "Successes": 25,
+        "Failures": 2
+      },
+      "Misconfigurations": [
+        {
+          "Type": "Dockerfile Security Check",
+          "ID": "DS-0001",
+          "Title": "':latest' tag used",
+          "Description": "When using a 'FROM' statement you should use a specific tag to avoid uncontrolled behavior when the image is updated.",
+          "Message": "Specify a tag in the 'FROM' statement for image 'denoland/deno'",
+          "Namespace": "builtin.dockerfile.DS001",
+          "Query": "data.builtin.dockerfile.DS001.deny",
+          "Resolution": "Add a tag to the image in the 'FROM' statement",
+          "Severity": "MEDIUM",
+          "PrimaryURL": "https://avd.aquasec.com/misconfig/ds-0001",
+          "References": [
+            "https://avd.aquasec.com/misconfig/ds-0001"
+          ],
+          "Status": "FAIL",
+          "CauseMetadata": {
+            "Provider": "Dockerfile",
+            "Service": "general",
+            "StartLine": 4,
+            "EndLine": 4,
+            "Code": {
+              "Lines": [
+                {
+                  "Number": 4,
+                  "Content": "FROM denoland/deno:latest",
+                  "IsCause": true,
+                  "Annotation": "",
+                  "Truncated": false,
+                  "Highlighted": "\u001b[38;5;64mFROM\u001b[0m\u001b[38;5;37m denoland/deno:latest\u001b[0m",
+                  "FirstCause": true,
+                  "LastCause": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "Type": "Dockerfile Security Check",
+          "ID": "DS-0013",
+          "Title": "'RUN cd ...' to change directory",
+          "Description": "Use WORKDIR instead of proliferating instructions like 'RUN cd … \u0026\u0026 do-something', which are hard to read, troubleshoot, and maintain.",
+          "Message": "RUN should not be used to change directory: 'mkdir -p .bot-data /app/workspace /home/claude/.claude \u0026\u0026     cd /app/workspace \u0026\u0026 git init \u0026\u0026 git config user.email \"bot@claude.local\" \u0026\u0026 git config user.name \"Claude Bot\" \u0026\u0026     chown -R claude:claude /app /home/claude'. Use 'WORKDIR' statement instead.",
+          "Namespace": "builtin.dockerfile.DS013",
+          "Query": "data.builtin.dockerfile.DS013.deny",
+          "Resolution": "Use WORKDIR to change directory",
+          "Severity": "MEDIUM",
+          "PrimaryURL": "https://avd.aquasec.com/misconfig/ds-0013",
+          "References": [
+            "https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#workdir",
+            "https://avd.aquasec.com/misconfig/ds-0013"
+          ],
+          "Status": "FAIL",
+          "CauseMetadata": {
+            "Provider": "Dockerfile",
+            "Service": "general",
+            "StartLine": 40,
+            "EndLine": 42,
+            "Code": {
+              "Lines": [
+                {
+                  "Number": 40,
+                  "Content": "RUN mkdir -p .bot-data /app/workspace /home/claude/.claude \u0026\u0026 \\",
+                  "IsCause": true,
+                  "Annotation": "",
+                  "Truncated": false,
+                  "Highlighted": "\u001b[38;5;64mRUN\u001b[0m mkdir -p .bot-data /app/workspace /home/claude/.claude \u001b[38;5;245m\u0026\u0026\u001b[0m \u001b[38;5;124m\\",
+                  "FirstCause": true,
+                  "LastCause": false
+                },
+                {
+                  "Number": 41,
+                  "Content": "    cd /app/workspace \u0026\u0026 git init \u0026\u0026 git config user.email \"bot@claude.local\" \u0026\u0026 git config user.name \"Claude Bot\" \u0026\u0026 \\",
+                  "IsCause": true,
+                  "Annotation": "",
+                  "Truncated": false,
+                  "Highlighted": "\u001b[0m    \u001b[38;5;33mcd\u001b[0m /app/workspace \u001b[38;5;245m\u0026\u0026\u001b[0m git init \u001b[38;5;245m\u0026\u0026\u001b[0m git config user.email \u001b[38;5;37m\"bot@claude.local\"\u001b[0m \u001b[38;5;245m\u0026\u0026\u001b[0m git config user.name \u001b[38;5;37m\"Claude Bot\"\u001b[0m \u001b[38;5;245m\u0026\u0026\u001b[0m \u001b[38;5;124m\\",
+                  "FirstCause": false,
+                  "LastCause": false
+                },
+                {
+                  "Number": 42,
+                  "Content": "    chown -R claude:claude /app /home/claude",
+                  "IsCause": true,
+                  "Annotation": "",
+                  "Truncated": false,
+                  "Highlighted": "\u001b[0m    chown -R claude:claude /app /home/claude",
+                  "FirstCause": false,
+                  "LastCause": true
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

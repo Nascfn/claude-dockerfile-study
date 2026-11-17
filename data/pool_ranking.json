@@ -1,0 +1,1595 @@
+[
+ {
+  "order": 29,
+  "slug": "rdborg__Mediarium",
+  "full_name": "rdborg/Mediarium",
+  "group": "go",
+  "stars": 328,
+  "commit": "7a1a0730d07b671c9c4355df598a55216bee09ce",
+  "base_images": [
+   "node:26-alpine",
+   "golang:1.27.2-alpine",
+   "ghcr.io/flaresolverr/flaresolverr:v3.5.2@sha256:c80ae007ce2ccdcd217a12426e4f039ef763ff90738c808d38810c3e59323767",
+   "alpine:3.24"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 7,
+   "info": 2,
+   "style": 0
+  },
+  "hadolint_total": 9,
+  "hadolint_codes": [
+   "DL3002",
+   "DL3008",
+   "DL3018",
+   "DL3025",
+   "DL3025",
+   "DL3059",
+   "DL3064",
+   "DL3064",
+   "DL3066"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 1,
+   "MEDIUM": 0,
+   "LOW": 0,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 1,
+  "trivy_ids": [
+   "DS-0002"
+  ],
+  "score": 19,
+  "rank": 1
+ },
+ {
+  "order": 21,
+  "slug": "zebbern__claude-code-discord",
+  "full_name": "zebbern/claude-code-discord",
+  "group": "node",
+  "stars": 234,
+  "commit": "505829098773ce80ed3401d00c169b82a129ad64",
+  "base_images": [
+   "denoland/deno:latest"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 5,
+   "info": 3,
+   "style": 0
+  },
+  "hadolint_total": 8,
+  "hadolint_codes": [
+   "DL3003",
+   "DL3007",
+   "DL3008",
+   "DL3025",
+   "DL3046",
+   "DL3059",
+   "DL3066",
+   "DL3066"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 0,
+   "MEDIUM": 2,
+   "LOW": 0,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 2,
+  "trivy_ids": [
+   "DS-0001",
+   "DS-0013"
+  ],
+  "score": 17,
+  "rank": 2
+ },
+ {
+  "order": 0,
+  "slug": "zqbxdev__webchat2api",
+  "full_name": "zqbxdev/webchat2api",
+  "group": "python",
+  "stars": 399,
+  "commit": "25752b97cb3abd12266698e02bcc4535b95d535f",
+  "base_images": [
+   "node:22-alpine",
+   "python:3.13-slim"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 5,
+   "info": 0,
+   "style": 0
+  },
+  "hadolint_total": 5,
+  "hadolint_codes": [
+   "DL3003",
+   "DL3008",
+   "DL3013",
+   "DL3065",
+   "SC2164"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 1,
+   "MEDIUM": 1,
+   "LOW": 1,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 3,
+  "trivy_ids": [
+   "DS-0002",
+   "DS-0013",
+   "DS-0026"
+  ],
+  "score": 16,
+  "rank": 3
+ },
+ {
+  "order": 1,
+  "slug": "Climate-Vision__ClimateVision",
+  "full_name": "Climate-Vision/ClimateVision",
+  "group": "python",
+  "stars": 378,
+  "commit": "aab970869e8950374a8620e413e46516fd6fa578",
+  "base_images": [
+   "node:20-slim",
+   "python:3.11-slim"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 4,
+   "info": 2,
+   "style": 0
+  },
+  "hadolint_total": 6,
+  "hadolint_codes": [
+   "DL3008",
+   "DL3013",
+   "DL3059",
+   "DL3059",
+   "DL3064",
+   "DL3064"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 1,
+   "MEDIUM": 0,
+   "LOW": 1,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 2,
+  "trivy_ids": [
+   "DS-0002",
+   "DS-0026"
+  ],
+  "score": 14,
+  "rank": 4
+ },
+ {
+  "order": 37,
+  "slug": "imdhemy__laravel-in-app-purchases",
+  "full_name": "imdhemy/laravel-in-app-purchases",
+  "group": "php",
+  "stars": 392,
+  "commit": "fb670308533965e30f66303cf9681a0824a88518",
+  "base_images": [
+   "php:8.4-fpm"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 2,
+   "info": 2,
+   "style": 0
+  },
+  "hadolint_total": 4,
+  "hadolint_codes": [
+   "DL3008",
+   "DL3009",
+   "DL3015",
+   "SC2046"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 2,
+   "MEDIUM": 0,
+   "LOW": 1,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 3,
+  "trivy_ids": [
+   "DS-0002",
+   "DS-0026",
+   "DS-0029"
+  ],
+  "score": 13,
+  "rank": 5
+ },
+ {
+  "order": 41,
+  "slug": "imtaqin__waxum",
+  "full_name": "imtaqin/waxum",
+  "group": "rust",
+  "stars": 137,
+  "commit": "048baccc38a4f186922f3e9e9e6f317902b4d41e",
+  "base_images": [
+   "rust:slim-bookworm",
+   "mwader/static-ffmpeg:7.1",
+   "gcr.io/distroless/cc-debian13"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 2,
+   "info": 1,
+   "style": 0
+  },
+  "hadolint_total": 3,
+  "hadolint_codes": [
+   "DL3006",
+   "DL3008",
+   "DL3015"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 2,
+   "MEDIUM": 1,
+   "LOW": 0,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 3,
+  "trivy_ids": [
+   "DS-0001",
+   "DS-0002",
+   "DS-0029"
+  ],
+  "score": 13,
+  "rank": 6
+ },
+ {
+  "order": 15,
+  "slug": "zhravan__github-readme-quotes",
+  "full_name": "zhravan/github-readme-quotes",
+  "group": "node",
+  "stars": 307,
+  "commit": "26980947adf8000b86b4c3bcf2164f36a290362c",
+  "base_images": [
+   "node:20"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 3,
+   "info": 0,
+   "style": 0
+  },
+  "hadolint_total": 3,
+  "hadolint_codes": [
+   "DL3003",
+   "DL3016",
+   "DL3025"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 1,
+   "MEDIUM": 1,
+   "LOW": 1,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 3,
+  "trivy_ids": [
+   "DS-0002",
+   "DS-0013",
+   "DS-0026"
+  ],
+  "score": 12,
+  "rank": 7
+ },
+ {
+  "order": 8,
+  "slug": "physhik__ecg-mit-bih",
+  "full_name": "physhik/ecg-mit-bih",
+  "group": "python",
+  "stars": 270,
+  "commit": "dc7be809b45beab93b6a5bfd7fdbd1fc8fabd887",
+  "base_images": [
+   "python:3.12.9-slim-bookworm"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 3,
+   "info": 1,
+   "style": 0
+  },
+  "hadolint_total": 4,
+  "hadolint_codes": [
+   "DL3013",
+   "DL3042",
+   "DL3042",
+   "DL3059"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 1,
+   "MEDIUM": 0,
+   "LOW": 1,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 2,
+  "trivy_ids": [
+   "DS-0002",
+   "DS-0026"
+  ],
+  "score": 11,
+  "rank": 8
+ },
+ {
+  "order": 16,
+  "slug": "coolstartnow__isms-builder",
+  "full_name": "coolstartnow/isms-builder",
+  "group": "node",
+  "stars": 266,
+  "commit": "801d5456f2694271bed597bddb45c529e018a827",
+  "base_images": [
+   "node:lts-alpine",
+   "node:lts-alpine"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 2,
+   "info": 0,
+   "style": 0
+  },
+  "hadolint_total": 2,
+  "hadolint_codes": [
+   "DL3018",
+   "DL3025"
+  ],
+  "trivy_config": {
+   "CRITICAL": 1,
+   "HIGH": 1,
+   "MEDIUM": 0,
+   "LOW": 0,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 2,
+  "trivy_ids": [
+   "DS-0002",
+   "DS-0031"
+  ],
+  "score": 11,
+  "rank": 9
+ },
+ {
+  "order": 27,
+  "slug": "pelican__wings",
+  "full_name": "pelican/wings",
+  "group": "go",
+  "stars": 331,
+  "commit": "82bf39e07af6d4b78090e872c1c3a5ca1efd5dda",
+  "base_images": [
+   "golang:1.27.4-alpine",
+   "gcr.io/distroless/static:latest"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 2,
+   "info": 1,
+   "style": 0
+  },
+  "hadolint_total": 3,
+  "hadolint_codes": [
+   "DL3007",
+   "DL3018",
+   "DL3059"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 1,
+   "MEDIUM": 1,
+   "LOW": 1,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 3,
+  "trivy_ids": [
+   "DS-0001",
+   "DS-0002",
+   "DS-0026"
+  ],
+  "score": 11,
+  "rank": 10
+ },
+ {
+  "order": 28,
+  "slug": "lissy93__who-dat",
+  "full_name": "lissy93/who-dat",
+  "group": "go",
+  "stars": 330,
+  "commit": "23288a4dd75c0bb4a0b19fd8adb0048c4bb1e9c8",
+  "base_images": [
+   "golang:1.27-alpine",
+   "alpine:latest"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 4,
+   "info": 1,
+   "style": 0
+  },
+  "hadolint_total": 5,
+  "hadolint_codes": [
+   "DL3007",
+   "DL3018",
+   "DL3025",
+   "DL3066",
+   "DL4006"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 0,
+   "MEDIUM": 1,
+   "LOW": 0,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 1,
+  "trivy_ids": [
+   "DS-0001"
+  ],
+  "score": 11,
+  "rank": 11
+ },
+ {
+  "order": 35,
+  "slug": "leonovk__wg-rest-api",
+  "full_name": "leonovk/wg-rest-api",
+  "group": "ruby",
+  "stars": 76,
+  "commit": "0bc3aa07a163de7d5b601e467fb93c681ec9abab",
+  "base_images": [
+   "ruby:4.0.6-alpine"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 2,
+   "info": 3,
+   "style": 0
+  },
+  "hadolint_total": 5,
+  "hadolint_codes": [
+   "DL3018",
+   "DL3018",
+   "DL3059",
+   "DL3059",
+   "DL3059"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 1,
+   "MEDIUM": 0,
+   "LOW": 1,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 2,
+  "trivy_ids": [
+   "DS-0002",
+   "DS-0026"
+  ],
+  "score": 11,
+  "rank": 12
+ },
+ {
+  "order": 38,
+  "slug": "MGeurts__genealogy",
+  "full_name": "MGeurts/genealogy",
+  "group": "php",
+  "stars": 373,
+  "commit": "72bd95fe1e6249cc2ba3ecd0765f9d4faceb8e28",
+  "base_images": [
+   "serversideup/php:8.4-fpm-nginx",
+   "base",
+   "serversideup/php:8.4-cli",
+   "composer:2",
+   "node:25",
+   "base"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 1,
+   "info": 5,
+   "style": 0
+  },
+  "hadolint_total": 6,
+  "hadolint_codes": [
+   "DL3002",
+   "DL3066",
+   "DL3066",
+   "DL3066",
+   "DL3066",
+   "DL3066"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 1,
+   "MEDIUM": 0,
+   "LOW": 1,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 2,
+  "trivy_ids": [
+   "DS-0002",
+   "DS-0026"
+  ],
+  "score": 11,
+  "rank": 13
+ },
+ {
+  "order": 40,
+  "slug": "chelunfu__qiluo_admin",
+  "full_name": "chelunfu/qiluo_admin",
+  "group": "rust",
+  "stars": 247,
+  "commit": "cf389ed47eba865f0917e9765c798c2bce41bfdf",
+  "base_images": [
+   "docker.1ms.run/rust:alpine",
+   "docker.1ms.run/alpine:latest"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 3,
+   "info": 2,
+   "style": 0
+  },
+  "hadolint_total": 5,
+  "hadolint_codes": [
+   "DL3007",
+   "DL3018",
+   "DL3018",
+   "DL3059",
+   "DL3066"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 0,
+   "MEDIUM": 1,
+   "LOW": 1,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 2,
+  "trivy_ids": [
+   "DS-0001",
+   "DS-0026"
+  ],
+  "score": 11,
+  "rank": 14
+ },
+ {
+  "order": 11,
+  "slug": "juffalow__express-graphql-example",
+  "full_name": "juffalow/express-graphql-example",
+  "group": "node",
+  "stars": 253,
+  "commit": "738dcd6e8d70259ee45f03feea73e89b6f510219",
+  "base_images": [
+   "node:24-alpine",
+   "node:24-alpine"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 1,
+   "info": 4,
+   "style": 0
+  },
+  "hadolint_total": 5,
+  "hadolint_codes": [
+   "DL3018",
+   "DL3019",
+   "DL3059",
+   "DL3059",
+   "DL3059"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 1,
+   "MEDIUM": 0,
+   "LOW": 1,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 2,
+  "trivy_ids": [
+   "DS-0025",
+   "DS-0026"
+  ],
+  "score": 10,
+  "rank": 15
+ },
+ {
+  "order": 24,
+  "slug": "pushbits__server",
+  "full_name": "pushbits/server",
+  "group": "go",
+  "stars": 372,
+  "commit": "fdf5fbd85f0e45bb088660cf3606cd5609f0e13f",
+  "base_images": [
+   "docker.io/library/golang:alpine",
+   "docker.io/library/alpine"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 4,
+   "info": 0,
+   "style": 0
+  },
+  "hadolint_total": 4,
+  "hadolint_codes": [
+   "DL3006",
+   "DL3018",
+   "DL3018",
+   "DL3025"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 0,
+   "MEDIUM": 1,
+   "LOW": 0,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 1,
+  "trivy_ids": [
+   "DS-0001"
+  ],
+  "score": 10,
+  "rank": 16
+ },
+ {
+  "order": 39,
+  "slug": "Shmakov__Honeypot",
+  "full_name": "Shmakov/Honeypot",
+  "group": "rust",
+  "stars": 377,
+  "commit": "1c3d5f3ba1da5f507f5abd278b9a5c7265e7ef61",
+  "base_images": [
+   "rust:1.75-bookworm",
+   "debian:bookworm-slim"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 1,
+   "info": 1,
+   "style": 0
+  },
+  "hadolint_total": 2,
+  "hadolint_codes": [
+   "DL3008",
+   "DL3015"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 2,
+   "MEDIUM": 0,
+   "LOW": 1,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 3,
+  "trivy_ids": [
+   "DS-0002",
+   "DS-0026",
+   "DS-0029"
+  ],
+  "score": 10,
+  "rank": 17
+ },
+ {
+  "order": 6,
+  "slug": "itsDNNS__docsight",
+  "full_name": "itsDNNS/docsight",
+  "group": "python",
+  "stars": 293,
+  "commit": "921b2f049cead8cce10977a6a4a05036a59f3577",
+  "base_images": [
+   "python:3.15-slim@sha256:65a65fc7b30b06cb6df4930fd4650697cb23f4c2698ab81fc87e4b031bc36928",
+   "python:3.15-slim@sha256:65a65fc7b30b06cb6df4930fd4650697cb23f4c2698ab81fc87e4b031bc36928"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 3,
+   "info": 0,
+   "style": 0
+  },
+  "hadolint_total": 3,
+  "hadolint_codes": [
+   "DL3008",
+   "DL3008",
+   "DL3045"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 1,
+   "MEDIUM": 0,
+   "LOW": 0,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 1,
+  "trivy_ids": [
+   "DS-0002"
+  ],
+  "score": 9,
+  "rank": 18
+ },
+ {
+  "order": 26,
+  "slug": "thushan__olla",
+  "full_name": "thushan/olla",
+  "group": "go",
+  "stars": 338,
+  "commit": "3c873eb55809310f9533272a13502ce0d77233a3",
+  "base_images": [
+   "alpine:latest"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 3,
+   "info": 1,
+   "style": 0
+  },
+  "hadolint_total": 4,
+  "hadolint_codes": [
+   "DL3007",
+   "DL3018",
+   "DL3025",
+   "DL3066"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 0,
+   "MEDIUM": 1,
+   "LOW": 0,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 1,
+  "trivy_ids": [
+   "DS-0001"
+  ],
+  "score": 9,
+  "rank": 19
+ },
+ {
+  "order": 2,
+  "slug": "hzy1522__tickflow-stock-panel",
+  "full_name": "hzy1522/tickflow-stock-panel",
+  "group": "python",
+  "stars": 357,
+  "commit": "1f62a19b5126e1e37a71587013688c4437787870",
+  "base_images": [
+   "node:20-alpine",
+   "node:20-bookworm-slim",
+   "node:20-bookworm-slim",
+   "python:3.11-slim"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 2,
+   "info": 0,
+   "style": 0
+  },
+  "hadolint_total": 2,
+  "hadolint_codes": [
+   "DL3008",
+   "DL3013"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 1,
+   "MEDIUM": 0,
+   "LOW": 1,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 2,
+  "trivy_ids": [
+   "DS-0002",
+   "DS-0026"
+  ],
+  "score": 8,
+  "rank": 20
+ },
+ {
+  "order": 42,
+  "slug": "lee-lou2__url-shortener",
+  "full_name": "lee-lou2/url-shortener",
+  "group": "rust",
+  "stars": 102,
+  "commit": "efc7de922e2115eae0f7e889578aeb467d09bc89",
+  "base_images": [
+   "rust:alpine",
+   "alpine:3.20"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 3,
+   "info": 2,
+   "style": 0
+  },
+  "hadolint_total": 5,
+  "hadolint_codes": [
+   "DL3018",
+   "DL3018",
+   "DL3025",
+   "DL3059",
+   "DL3066"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 0,
+   "MEDIUM": 0,
+   "LOW": 0,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 0,
+  "trivy_ids": [],
+  "score": 8,
+  "rank": 21
+ },
+ {
+  "order": 7,
+  "slug": "dannymcc__may",
+  "full_name": "dannymcc/may",
+  "group": "python",
+  "stars": 274,
+  "commit": "6918d6ef9087e445d249572765bd6125a0c1f221",
+  "base_images": [
+   "python:3.12-slim"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 2,
+   "info": 0,
+   "style": 0
+  },
+  "hadolint_total": 2,
+  "hadolint_codes": [
+   "DL3008",
+   "DL3025"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 1,
+   "MEDIUM": 0,
+   "LOW": 0,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 1,
+  "trivy_ids": [
+   "DS-0002"
+  ],
+  "score": 7,
+  "rank": 22
+ },
+ {
+  "order": 14,
+  "slug": "jasonraimondi__url-to-png",
+  "full_name": "jasonraimondi/url-to-png",
+  "group": "node",
+  "stars": 257,
+  "commit": "75d3bdc5271ba9b9ad012bf7628a86c37b4abb6b",
+  "base_images": [
+   "mcr.microsoft.com/playwright:v1.55.1-jammy",
+   "mcr.microsoft.com/playwright:v1.55.1-jammy"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 2,
+   "info": 2,
+   "style": 0
+  },
+  "hadolint_total": 4,
+  "hadolint_codes": [
+   "DL3016",
+   "DL3016",
+   "DL3066",
+   "DL3066"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 0,
+   "MEDIUM": 0,
+   "LOW": 1,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 1,
+  "trivy_ids": [
+   "DS-0026"
+  ],
+  "score": 7,
+  "rank": 23
+ },
+ {
+  "order": 18,
+  "slug": "TheBastionBot__Bastion",
+  "full_name": "TheBastionBot/Bastion",
+  "group": "node",
+  "stars": 330,
+  "commit": "18e39bb84d907f9bfaffeea31237ec7385350d9f",
+  "base_images": [
+   "node:24-alpine",
+   "node:24-alpine"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 2,
+   "info": 2,
+   "style": 0
+  },
+  "hadolint_total": 4,
+  "hadolint_codes": [
+   "DL3018",
+   "DL3018",
+   "DL3059",
+   "DL3066"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 0,
+   "MEDIUM": 0,
+   "LOW": 1,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 1,
+  "trivy_ids": [
+   "DS-0026"
+  ],
+  "score": 7,
+  "rank": 24
+ },
+ {
+  "order": 13,
+  "slug": "Adamant-im__currencyinfo",
+  "full_name": "Adamant-im/currencyinfo",
+  "group": "node",
+  "stars": 284,
+  "commit": "e9cf32e21d5db6a42dea6042bb7923155c99fb54",
+  "base_images": [
+   "node:22-alpine",
+   "node:22-alpine"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 1,
+   "info": 2,
+   "style": 0
+  },
+  "hadolint_total": 3,
+  "hadolint_codes": [
+   "DL3066",
+   "DL4006",
+   "SC2016"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 0,
+   "MEDIUM": 0,
+   "LOW": 1,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 1,
+  "trivy_ids": [
+   "DS-0026"
+  ],
+  "score": 5,
+  "rank": 25
+ },
+ {
+  "order": 20,
+  "slug": "TheSharks__WildBeast",
+  "full_name": "TheSharks/WildBeast",
+  "group": "node",
+  "stars": 290,
+  "commit": "d1d7919a39afbf6504892994ee7b0fff580e3139",
+  "base_images": [
+   "node:lts-alpine"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 0,
+   "info": 1,
+   "style": 0
+  },
+  "hadolint_total": 1,
+  "hadolint_codes": [
+   "DL3059"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 1,
+   "MEDIUM": 0,
+   "LOW": 1,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 2,
+  "trivy_ids": [
+   "DS-0002",
+   "DS-0026"
+  ],
+  "score": 5,
+  "rank": 26
+ },
+ {
+  "order": 25,
+  "slug": "Sanyam-G__Airpipe",
+  "full_name": "Sanyam-G/Airpipe",
+  "group": "go",
+  "stars": 362,
+  "commit": "6b954fe9b3e11a308430e54785a40adc59a8aa8f",
+  "base_images": [
+   "golang:1.25-alpine",
+   "alpine:3.19"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 1,
+   "info": 0,
+   "style": 0
+  },
+  "hadolint_total": 1,
+  "hadolint_codes": [
+   "DL3025"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 1,
+   "MEDIUM": 0,
+   "LOW": 0,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 1,
+  "trivy_ids": [
+   "DS-0002"
+  ],
+  "score": 5,
+  "rank": 27
+ },
+ {
+  "order": 3,
+  "slug": "georgekhananaev__google-reviews-scraper-pro",
+  "full_name": "georgekhananaev/google-reviews-scraper-pro",
+  "group": "python",
+  "stars": 351,
+  "commit": "9772cd71f8e66388aff681c74b31a5bfcc814c3d",
+  "base_images": [
+   "python:3.13-slim"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 1,
+   "info": 1,
+   "style": 0
+  },
+  "hadolint_total": 2,
+  "hadolint_codes": [
+   "DL3008",
+   "DL3066"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 0,
+   "MEDIUM": 0,
+   "LOW": 1,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 1,
+  "trivy_ids": [
+   "DS-0026"
+  ],
+  "score": 4,
+  "rank": 28
+ },
+ {
+  "order": 4,
+  "slug": "LucieEveille__kiwi-mem",
+  "full_name": "LucieEveille/kiwi-mem",
+  "group": "python",
+  "stars": 350,
+  "commit": "b01a0c506f4f10f90f30d408c0291f16720f0718",
+  "base_images": [
+   "python:3.12-slim"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 0,
+   "info": 0,
+   "style": 0
+  },
+  "hadolint_total": 0,
+  "hadolint_codes": [],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 1,
+   "MEDIUM": 0,
+   "LOW": 1,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 2,
+  "trivy_ids": [
+   "DS-0002",
+   "DS-0026"
+  ],
+  "score": 4,
+  "rank": 29
+ },
+ {
+  "order": 5,
+  "slug": "wangchuxiaoji-oss__doubao2api",
+  "full_name": "wangchuxiaoji-oss/doubao2api",
+  "group": "python",
+  "stars": 333,
+  "commit": "95beb0788338ba268e13ca4c80890ceeae6ff055",
+  "base_images": [
+   "python:3.12-slim"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 0,
+   "info": 0,
+   "style": 0
+  },
+  "hadolint_total": 0,
+  "hadolint_codes": [],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 1,
+   "MEDIUM": 0,
+   "LOW": 1,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 2,
+  "trivy_ids": [
+   "DS-0002",
+   "DS-0026"
+  ],
+  "score": 4,
+  "rank": 30
+ },
+ {
+  "order": 17,
+  "slug": "Deen-Bridge__dnb-backend",
+  "full_name": "Deen-Bridge/dnb-backend",
+  "group": "node",
+  "stars": 166,
+  "commit": "7d3835bf0e9b3fd0b89000dd0dc89fb28cf7a3cc",
+  "base_images": [
+   "node:20-alpine",
+   "node:20-alpine"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 1,
+   "info": 2,
+   "style": 0
+  },
+  "hadolint_total": 3,
+  "hadolint_codes": [
+   "DL3025",
+   "DL3066",
+   "SC2015"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 0,
+   "MEDIUM": 0,
+   "LOW": 0,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 0,
+  "trivy_ids": [],
+  "score": 4,
+  "rank": 31
+ },
+ {
+  "order": 23,
+  "slug": "parvez3019__go-swagger3",
+  "full_name": "parvez3019/go-swagger3",
+  "group": "go",
+  "stars": 153,
+  "commit": "c9495584b0984089eeb8b20725f687198afcf13e",
+  "base_images": [
+   "golang:1.24-alpine",
+   "golang:1.24-alpine"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 0,
+   "info": 0,
+   "style": 0
+  },
+  "hadolint_total": 0,
+  "hadolint_codes": [],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 1,
+   "MEDIUM": 0,
+   "LOW": 1,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 2,
+  "trivy_ids": [
+   "DS-0002",
+   "DS-0026"
+  ],
+  "score": 4,
+  "rank": 32
+ },
+ {
+  "order": 30,
+  "slug": "Genc__spring-boot-boilerplate",
+  "full_name": "Genc/spring-boot-boilerplate",
+  "group": "java",
+  "stars": 385,
+  "commit": "792695068d95e0a82eee931568e94301eef23942",
+  "base_images": [
+   "eclipse-temurin:25-jdk"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 0,
+   "info": 0,
+   "style": 0
+  },
+  "hadolint_total": 0,
+  "hadolint_codes": [],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 1,
+   "MEDIUM": 0,
+   "LOW": 1,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 2,
+  "trivy_ids": [
+   "DS-0002",
+   "DS-0026"
+  ],
+  "score": 4,
+  "rank": 33
+ },
+ {
+  "order": 32,
+  "slug": "spring-petclinic__spring-petclinic-kotlin",
+  "full_name": "spring-petclinic/spring-petclinic-kotlin",
+  "group": "java",
+  "stars": 397,
+  "commit": "b4699a50e621f8c9fee358230e4adf214d6292ac",
+  "base_images": [
+   "eclipse-temurin:17-jdk",
+   "eclipse-temurin:17-jre"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 0,
+   "info": 0,
+   "style": 0
+  },
+  "hadolint_total": 0,
+  "hadolint_codes": [],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 1,
+   "MEDIUM": 0,
+   "LOW": 1,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 2,
+  "trivy_ids": [
+   "DS-0002",
+   "DS-0026"
+  ],
+  "score": 4,
+  "rank": 34
+ },
+ {
+  "order": 33,
+  "slug": "ZOOT-Plus__ZootPlusBackend",
+  "full_name": "ZOOT-Plus/ZootPlusBackend",
+  "group": "java",
+  "stars": 96,
+  "commit": "00037beb53e28235799c55080475fa24f65c57a3",
+  "base_images": [
+   "amazoncorretto:25-alpine"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 0,
+   "info": 0,
+   "style": 0
+  },
+  "hadolint_total": 0,
+  "hadolint_codes": [],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 1,
+   "MEDIUM": 0,
+   "LOW": 1,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 2,
+  "trivy_ids": [
+   "DS-0002",
+   "DS-0026"
+  ],
+  "score": 4,
+  "rank": 35
+ },
+ {
+  "order": 34,
+  "slug": "ledermann__pingcrm",
+  "full_name": "ledermann/pingcrm",
+  "group": "ruby",
+  "stars": 370,
+  "commit": "bc9cc526101c30ff73563a5ec6000f59c655d8d1",
+  "base_images": [
+   "ghcr.io/ledermann/rails-base-builder:4.0.9-alpine",
+   "ghcr.io/ledermann/rails-base-final:4.0.9-alpine"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 1,
+   "info": 1,
+   "style": 0
+  },
+  "hadolint_total": 2,
+  "hadolint_codes": [
+   "DL3018",
+   "DL3066"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 0,
+   "MEDIUM": 0,
+   "LOW": 1,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 1,
+  "trivy_ids": [
+   "DS-0026"
+  ],
+  "score": 4,
+  "rank": 36
+ },
+ {
+  "order": 36,
+  "slug": "doorkeeper-gem__doorkeeper-sinatra-client",
+  "full_name": "doorkeeper-gem/doorkeeper-sinatra-client",
+  "group": "ruby",
+  "stars": 33,
+  "commit": "94f07976c6beedc8d9f8efe48540321de55a53b1",
+  "base_images": [
+   "ruby:3.3.12"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 0,
+   "info": 0,
+   "style": 0
+  },
+  "hadolint_total": 0,
+  "hadolint_codes": [],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 1,
+   "MEDIUM": 0,
+   "LOW": 1,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 2,
+  "trivy_ids": [
+   "DS-0002",
+   "DS-0026"
+  ],
+  "score": 4,
+  "rank": 37
+ },
+ {
+  "order": 9,
+  "slug": "cu__silicon",
+  "full_name": "cu/silicon",
+  "group": "python",
+  "stars": 267,
+  "commit": "143910c10516c6c48120e1f981aec6a9f344fe5d",
+  "base_images": [
+   "docker.io/library/node:lts-alpine",
+   "docker.io/library/python:3.13-slim",
+   "docker.io/library/python:3.13-slim"
+  ],
+  "hadolint": {
+   "error": 1,
+   "warning": 0,
+   "info": 0,
+   "style": 0
+  },
+  "hadolint_total": 1,
+  "hadolint_codes": [
+   "DL1000"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 0,
+   "MEDIUM": 0,
+   "LOW": 0,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 0,
+  "trivy_ids": [],
+  "score": 3,
+  "rank": 38
+ },
+ {
+  "order": 12,
+  "slug": "mikemajesty__nestjs-microservice-boilerplate-api",
+  "full_name": "mikemajesty/nestjs-microservice-boilerplate-api",
+  "group": "node",
+  "stars": 398,
+  "commit": "0553404593d05d14bfb9b3a3621114d6353c92a8",
+  "base_images": [
+   "node:24.21.0",
+   "node:24.21.0-alpine"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 1,
+   "info": 1,
+   "style": 0
+  },
+  "hadolint_total": 2,
+  "hadolint_codes": [
+   "DL3025",
+   "DL3066"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 0,
+   "MEDIUM": 0,
+   "LOW": 0,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 0,
+  "trivy_ids": [],
+  "score": 3,
+  "rank": 39
+ },
+ {
+  "order": 19,
+  "slug": "238SAMIxD__discord-ai-bot",
+  "full_name": "238SAMIxD/discord-ai-bot",
+  "group": "node",
+  "stars": 294,
+  "commit": "53b93a2788849b76007492deff7da5229a6ed0eb",
+  "base_images": [
+   "node:26-slim",
+   "node:26-slim"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 0,
+   "info": 2,
+   "style": 0
+  },
+  "hadolint_total": 2,
+  "hadolint_codes": [
+   "DL3059",
+   "DL3066"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 0,
+   "MEDIUM": 0,
+   "LOW": 1,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 1,
+  "trivy_ids": [
+   "DS-0026"
+  ],
+  "score": 3,
+  "rank": 40
+ },
+ {
+  "order": 10,
+  "slug": "msanvarov__nest-rest-mongo-boilerplate",
+  "full_name": "msanvarov/nest-rest-mongo-boilerplate",
+  "group": "node",
+  "stars": 302,
+  "commit": "f4484ed03467dd89c3c3c2b3a1167cb50c432342",
+  "base_images": [
+   "node:20-alpine",
+   "node:20-alpine"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 0,
+   "info": 1,
+   "style": 0
+  },
+  "hadolint_total": 1,
+  "hadolint_codes": [
+   "DL3066"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 0,
+   "MEDIUM": 0,
+   "LOW": 1,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 1,
+  "trivy_ids": [
+   "DS-0026"
+  ],
+  "score": 2,
+  "rank": 41
+ },
+ {
+  "order": 31,
+  "slug": "jdubois__boot-ui",
+  "full_name": "jdubois/boot-ui",
+  "group": "java",
+  "stars": 336,
+  "commit": "52edfa8974641be1f50f0d75f5e8ed58528a5b07",
+  "base_images": [
+   "eclipse-temurin:25-jdk-noble",
+   "gcr.io/distroless/base-debian12:nonroot"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 0,
+   "info": 1,
+   "style": 0
+  },
+  "hadolint_total": 1,
+  "hadolint_codes": [
+   "DL3066"
+  ],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 0,
+   "MEDIUM": 0,
+   "LOW": 1,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 1,
+  "trivy_ids": [
+   "DS-0026"
+  ],
+  "score": 2,
+  "rank": 42
+ },
+ {
+  "order": 22,
+  "slug": "gmsec__gmsec",
+  "full_name": "gmsec/gmsec",
+  "group": "go",
+  "stars": 182,
+  "commit": "b08b07b09c44d1cc7699d19ec033731d76dd43e6",
+  "base_images": [
+   "golang:1.26.10",
+   "gcr.io/distroless/static-debian12:nonroot"
+  ],
+  "hadolint": {
+   "error": 0,
+   "warning": 0,
+   "info": 0,
+   "style": 0
+  },
+  "hadolint_total": 0,
+  "hadolint_codes": [],
+  "trivy_config": {
+   "CRITICAL": 0,
+   "HIGH": 0,
+   "MEDIUM": 0,
+   "LOW": 1,
+   "UNKNOWN": 0
+  },
+  "trivy_config_total": 1,
+  "trivy_ids": [
+   "DS-0026"
+  ],
+  "score": 1,
+  "rank": 43
+ }
+]

@@ -1,0 +1,5 @@
+This repository does not have a Dockerfile yet. Please write one.
+
+Read the code to work out how the project is built and run, then create a file named `Dockerfile` in the repository root that builds and runs the application. If the Dockerfile needs supporting files to work (for example a `.dockerignore` or a startup script), create those too. Do not modify or overwrite any existing file.
+
+You cannot run commands in this session, so you will not be able to build or test the image. Work on your own and do not ask me any questions. When you are done, briefly list the files you created.

@@ -1,0 +1,2860 @@
+{
+ "quota": {
+  "python": 12,
+  "node": 12,
+  "go": 8,
+  "java": 6,
+  "ruby": 4,
+  "php": 4,
+  "rust": 4
+ },
+ "pool": [
+  {
+   "full_name": "zqbxdev/webchat2api",
+   "group": "python",
+   "query": "topic:fastapi language:Python",
+   "page": 1,
+   "rank": 2,
+   "stars": 399,
+   "language": "Python",
+   "description": "OpenAI-compatible Web Chat API proxy with GPT, Grok, Gemini account management and Docker self-hosting",
+   "topics": [
+    "docker",
+    "nextjs",
+    "self-hosted",
+    "gemini",
+    "openai",
+    "image-generation",
+    "api-proxy",
+    "grok",
+    "fastapi",
+    "chatgpt"
+   ],
+   "updated_at": "2026-06-07T22:54:04.291Z",
+   "root_dockerfile": true,
+   "slug": "zqbxdev__webchat2api",
+   "commit": "25752b97cb3abd12266698e02bcc4535b95d535f",
+   "commit_date": "2026-06-05T20:36:40+08:00",
+   "size_mb": 11,
+   "base_images": [
+    "node:22-alpine",
+    "python:3.13-slim"
+   ],
+   "n_files": 233
+  },
+  {
+   "full_name": "Climate-Vision/ClimateVision",
+   "group": "python",
+   "query": "topic:fastapi language:Python",
+   "page": 1,
+   "rank": 7,
+   "stars": 378,
+   "language": "Python",
+   "description": "Open-source ML platform for detecting deforestation, ice melt, and flooding from Sentinel-2 / Landsat imagery.",
+   "topics": [
+    "machine-learning",
+    "deep-learning",
+    "climate",
+    "pytorch",
+    "remote-sensing",
+    "satellite-imagery",
+    "google-earth-engine",
+    "deforestation",
+    "fastapi",
+    "u-net-image-segmentation"
+   ],
+   "updated_at": "2026-08-28T16:35:46.994Z",
+   "root_dockerfile": true,
+   "slug": "Climate-Vision__ClimateVision",
+   "commit": "aab970869e8950374a8620e413e46516fd6fa578",
+   "commit_date": "2026-08-28T17:35:46+01:00",
+   "size_mb": 3,
+   "base_images": [
+    "node:20-slim",
+    "python:3.11-slim"
+   ],
+   "n_files": 236
+  },
+  {
+   "full_name": "hzy1522/tickflow-stock-panel",
+   "group": "python",
+   "query": "topic:fastapi language:Python",
+   "page": 2,
+   "rank": 7,
+   "stars": 357,
+   "language": "Python",
+   "description": "\u591a\u5e02\u573a\u667a\u80fd\u91cf\u5316\u5de5\u4f5c\u53f0\uff08A\u80a1/\u6e2f\u80a1/\u7f8e\u80a1\uff09\u2014 \u57fa\u4e8e shy3130/tickflow-stock-panel \u4e8c\u6b21\u5f00\u53d1\uff0c\u65b0\u589e\u6e2f\u7f8e\u80a1\u591a\u5e02\u573a\u652f\u6301\u3002\u81ea\u6258\u7ba1\u9009\u80a1+\u76d1\u63a7+\u56de\u6d4b\u3002MIT\u3002",
+   "topics": [
+    "react",
+    "quantitative-trading",
+    "stock-analysis",
+    "backtesting",
+    "a-shares",
+    "fastapi",
+    "us-stocks",
+    "hongkong-stocks"
+   ],
+   "updated_at": "2026-08-31T04:05:05.381Z",
+   "root_dockerfile": true,
+   "slug": "hzy1522__tickflow-stock-panel",
+   "commit": "1f62a19b5126e1e37a71587013688c4437787870",
+   "commit_date": "2026-08-31T12:05:03+08:00",
+   "size_mb": 20,
+   "base_images": [
+    "node:20-alpine",
+    "node:20-bookworm-slim",
+    "node:20-bookworm-slim",
+    "python:3.11-slim"
+   ],
+   "n_files": 608
+  },
+  {
+   "full_name": "georgekhananaev/google-reviews-scraper-pro",
+   "group": "python",
+   "query": "topic:fastapi language:Python",
+   "page": 3,
+   "rank": 1,
+   "stars": 351,
+   "language": "Python",
+   "description": "A powerful Google Maps review scraper that works in 2026. Extracts multi-language reviews with images, handles MongoDB integration, and b\u2026",
+   "topics": [
+    "python",
+    "docker",
+    "scraper",
+    "mongodb",
+    "sqlite",
+    "google-maps",
+    "s3",
+    "selenium",
+    "web-scraping",
+    "cli-app",
+    "fastapi",
+    "reviews-scraper",
+    "seleniumbase",
+    "google-reviews",
+    "google-maps-scraper"
+   ],
+   "updated_at": "2026-11-12T16:03:42.146Z",
+   "root_dockerfile": true,
+   "slug": "georgekhananaev__google-reviews-scraper-pro",
+   "commit": "9772cd71f8e66388aff681c74b31a5bfcc814c3d",
+   "commit_date": "2026-11-12T23:03:35+07:00",
+   "size_mb": 1,
+   "base_images": [
+    "python:3.13-slim"
+   ],
+   "n_files": 82
+  },
+  {
+   "full_name": "LucieEveille/kiwi-mem",
+   "group": "python",
+   "query": "topic:fastapi language:Python",
+   "page": 3,
+   "rank": 2,
+   "stars": 350,
+   "language": "Python",
+   "description": "\ud83e\udd5d Self-hosted memory gateway for AI companions \u2014 OpenAI-compatible proxy with vector search, memory heat, Dream consolidation and calenda\u2026",
+   "topics": [
+    "python",
+    "docker",
+    "mcp",
+    "chatbot",
+    "postgresql",
+    "self-hosted",
+    "long-term-memory",
+    "fastapi",
+    "vector-search",
+    "pgvector",
+    "sillytavern",
+    "ai-memory",
+    "ai-companion",
+    "llm-gateway",
+    "model-context-protocol",
+    "openai-compatible",
+    "ai-memory-system",
+    "ai-companion-systems"
+   ],
+   "updated_at": "2026-10-09T16:43:46.242Z",
+   "root_dockerfile": true,
+   "slug": "LucieEveille__kiwi-mem",
+   "commit": "b01a0c506f4f10f90f30d408c0291f16720f0718",
+   "commit_date": "2026-09-10T13:29:29+08:00",
+   "size_mb": 3,
+   "base_images": [
+    "python:3.12-slim"
+   ],
+   "n_files": 100
+  },
+  {
+   "full_name": "wangchuxiaoji-oss/doubao2api",
+   "group": "python",
+   "query": "topic:fastapi language:Python",
+   "page": 3,
+   "rank": 6,
+   "stars": 333,
+   "language": "Python",
+   "description": "Reverse-engineered Doubao (\u8c46\u5305) API \u2192 OpenAI-compatible REST service. Free multimodal chat, image/video/music generation, and file hosting\u2026",
+   "topics": [
+    "python",
+    "reverse-engineering",
+    "text-to-image",
+    "free-api",
+    "multimodal",
+    "fastapi",
+    "bytedance",
+    "text-to-video",
+    "openai-api",
+    "text-to-music",
+    "ai-agent",
+    "chatgpt-api",
+    "doubao",
+    "openai-compatible",
+    "doubao-api"
+   ],
+   "updated_at": "2026-05-24T12:14:21.406Z",
+   "root_dockerfile": true,
+   "slug": "wangchuxiaoji-oss__doubao2api",
+   "commit": "95beb0788338ba268e13ca4c80890ceeae6ff055",
+   "commit_date": "2026-05-25T00:14:03+12:00",
+   "size_mb": 26,
+   "base_images": [
+    "python:3.12-slim"
+   ],
+   "n_files": 33
+  },
+  {
+   "full_name": "itsDNNS/docsight",
+   "group": "python",
+   "query": "topic:flask language:Python",
+   "page": 2,
+   "rank": 4,
+   "stars": 293,
+   "language": "Python",
+   "description": "Self-hosted DOCSIS evidence system for proving cable signal problems and bad ISP performance. Tracks incidents, signal health, and compla\u2026",
+   "topics": [
+    "docker",
+    "mqtt",
+    "flask",
+    "monitoring",
+    "fritzbox",
+    "speedtest",
+    "self-hosted",
+    "network-monitoring",
+    "home-assistant",
+    "docsis",
+    "homelab",
+    "cable-modem",
+    "internet-monitoring"
+   ],
+   "updated_at": "2026-11-15T22:36:17.659Z",
+   "root_dockerfile": true,
+   "slug": "itsDNNS__docsight",
+   "commit": "921b2f049cead8cce10977a6a4a05036a59f3577",
+   "commit_date": "2026-11-15T23:36:15+01:00",
+   "size_mb": 20,
+   "base_images": [
+    "python:3.15-slim@sha256:65a65fc7b30b06cb6df4930fd4650697cb23f4c2698ab81fc87e4b031bc36928",
+    "python:3.15-slim@sha256:65a65fc7b30b06cb6df4930fd4650697cb23f4c2698ab81fc87e4b031bc36928"
+   ],
+   "n_files": 1265
+  },
+  {
+   "full_name": "dannymcc/may",
+   "group": "python",
+   "query": "topic:flask language:Python",
+   "page": 2,
+   "rank": 9,
+   "stars": 274,
+   "language": "Python",
+   "description": "May is a web-based dashboard application that gives you a neat and clean interface for logging your fuel fill-ups for all of your vehicle\u2026",
+   "topics": [
+    "python",
+    "docker",
+    "flask",
+    "self-hosted",
+    "fuel",
+    "maintenance",
+    "vehicle",
+    "fleet"
+   ],
+   "updated_at": "2026-10-06T13:23:45.965Z",
+   "root_dockerfile": true,
+   "slug": "dannymcc__may",
+   "commit": "6918d6ef9087e445d249572765bd6125a0c1f221",
+   "commit_date": "2026-09-12T21:20:58+01:00",
+   "size_mb": 9,
+   "base_images": [
+    "python:3.12-slim"
+   ],
+   "n_files": 240
+  },
+  {
+   "full_name": "physhik/ecg-mit-bih",
+   "group": "python",
+   "query": "topic:flask language:Python",
+   "page": 3,
+   "rank": 2,
+   "stars": 270,
+   "language": "Python",
+   "description": "ECG classification using MIT-BIH data, a deep CNN learning implementation of Cardiologist-level arrhythmia detection and classification i\u2026",
+   "topics": [
+    "flask",
+    "cnn",
+    "ecg",
+    "mit-bih-arrhythmia",
+    "cardiology",
+    "cinc"
+   ],
+   "updated_at": "2026-02-18T23:46:41.064Z",
+   "root_dockerfile": true,
+   "slug": "physhik__ecg-mit-bih",
+   "commit": "dc7be809b45beab93b6a5bfd7fdbd1fc8fabd887",
+   "commit_date": "2025-04-02T22:51:11-07:00",
+   "size_mb": 7,
+   "base_images": [
+    "python:3.12.9-slim-bookworm"
+   ],
+   "n_files": 23
+  },
+  {
+   "full_name": "cu/silicon",
+   "group": "python",
+   "query": "topic:flask language:Python",
+   "page": 3,
+   "rank": 4,
+   "stars": 267,
+   "language": "Python",
+   "description": "Silicon Notes, a web-based personal knowledge base with few frills",
+   "topics": [
+    "python",
+    "flask",
+    "wiki",
+    "self-hosted",
+    "knowledge-base"
+   ],
+   "updated_at": "2026-05-13T02:03:46.683Z",
+   "root_dockerfile": true,
+   "slug": "cu__silicon",
+   "commit": "143910c10516c6c48120e1f981aec6a9f344fe5d",
+   "commit_date": "2026-05-12T22:03:38-04:00",
+   "size_mb": 1,
+   "base_images": [
+    "docker.io/library/node:lts-alpine",
+    "docker.io/library/python:3.13-slim",
+    "docker.io/library/python:3.13-slim"
+   ],
+   "n_files": 80
+  },
+  {
+   "full_name": "msanvarov/nest-rest-mongo-boilerplate",
+   "group": "node",
+   "query": "topic:express language:TypeScript",
+   "page": 2,
+   "rank": 1,
+   "stars": 302,
+   "language": "TypeScript",
+   "description": "\ud83c\udf71 backend with nest (typescript), mongoose, and authentication",
+   "topics": [
+    "docker",
+    "express",
+    "typescript",
+    "mongodb",
+    "mongoose",
+    "swagger",
+    "nest",
+    "fastify",
+    "bearer-authentication",
+    "nestjs"
+   ],
+   "updated_at": "2026-09-09T18:39:13.706Z",
+   "root_dockerfile": true,
+   "slug": "msanvarov__nest-rest-mongo-boilerplate",
+   "commit": "f4484ed03467dd89c3c3c2b3a1167cb50c432342",
+   "commit_date": "2026-05-21T16:39:51-04:00",
+   "size_mb": 1,
+   "base_images": [
+    "node:20-alpine",
+    "node:20-alpine"
+   ],
+   "n_files": 45
+  },
+  {
+   "full_name": "juffalow/express-graphql-example",
+   "group": "node",
+   "query": "topic:express language:TypeScript",
+   "page": 2,
+   "rank": 5,
+   "stars": 253,
+   "language": "TypeScript",
+   "description": "Example project how to use Express and GraphQL. You can find working example with frontend at <a href=\"https://quotes.juffalow.com\" class=\"Link--inTextBlock\" rel=\"nofollow\">https://quotes.juffalow.com</a>",
+   "topics": [
+    "nodejs",
+    "graphql",
+    "express",
+    "typescript",
+    "sql",
+    "example-project",
+    "knexjs"
+   ],
+   "updated_at": "2026-02-06T10:59:26.934Z",
+   "root_dockerfile": true,
+   "slug": "juffalow__express-graphql-example",
+   "commit": "738dcd6e8d70259ee45f03feea73e89b6f510219",
+   "commit_date": "2026-02-06T11:59:21+01:00",
+   "size_mb": 1,
+   "base_images": [
+    "node:24-alpine",
+    "node:24-alpine"
+   ],
+   "n_files": 73
+  },
+  {
+   "full_name": "mikemajesty/nestjs-microservice-boilerplate-api",
+   "group": "node",
+   "query": "topic:nestjs language:TypeScript",
+   "page": 1,
+   "rank": 1,
+   "stars": 398,
+   "language": "TypeScript",
+   "description": "Nestjs boilerplate microservice api | Mongodb CRUD - Postgres CRUD | Docker | Husky | Secrets service | HTTP service | Logs service | Aut\u2026",
+   "topics": [
+    "docker",
+    "redis",
+    "postgres",
+    "boilerplate",
+    "typescript",
+    "mongodb",
+    "authentication",
+    "microservice",
+    "migrations",
+    "mongoose",
+    "clean-architecture",
+    "authorization",
+    "typeorm",
+    "mongoosejs",
+    "ddd-architecture",
+    "nestjs",
+    "clean-arch",
+    "mongoose-crud",
+    "postgres-crud"
+   ],
+   "updated_at": "2026-11-17T19:29:08.539Z",
+   "root_dockerfile": true,
+   "slug": "mikemajesty__nestjs-microservice-boilerplate-api",
+   "commit": "0553404593d05d14bfb9b3a3621114d6353c92a8",
+   "commit_date": "2026-11-17T16:50:00-03:00",
+   "size_mb": 6,
+   "base_images": [
+    "node:24.21.0",
+    "node:24.21.0-alpine"
+   ],
+   "n_files": 589
+  },
+  {
+   "full_name": "Adamant-im/currencyinfo",
+   "group": "node",
+   "query": "topic:nestjs language:TypeScript",
+   "page": 3,
+   "rank": 4,
+   "stars": 284,
+   "language": "TypeScript",
+   "description": "Universal self-hosted crypto and fiat exchange rates service aggregating multiple sources behind one REST API",
+   "topics": [
+    "docker",
+    "typescript",
+    "mongodb",
+    "self-hosted",
+    "forex",
+    "exchange-rates",
+    "market-data",
+    "historical-data",
+    "currency-api",
+    "nestjs",
+    "multi-source",
+    "crypto-rates",
+    "fiat-currency",
+    "adamant",
+    "price-aggregation"
+   ],
+   "updated_at": "2026-09-09T17:04:43.983Z",
+   "root_dockerfile": true,
+   "slug": "Adamant-im__currencyinfo",
+   "commit": "e9cf32e21d5db6a42dea6042bb7923155c99fb54",
+   "commit_date": "2026-09-09T10:32:38+03:00",
+   "size_mb": 2,
+   "base_images": [
+    "node:22-alpine",
+    "node:22-alpine"
+   ],
+   "n_files": 139
+  },
+  {
+   "full_name": "jasonraimondi/url-to-png",
+   "group": "node",
+   "query": "topic:nestjs language:TypeScript",
+   "page": 3,
+   "rank": 9,
+   "stars": 257,
+   "language": "TypeScript",
+   "description": "Selfhosted. URL to PNG utility featuring parallel rendering using Playwright for screenshots and with storage caching via Local, S3, or C\u2026",
+   "topics": [
+    "couchdb",
+    "docker",
+    "screenshots",
+    "node",
+    "s3",
+    "selfhosted",
+    "url-to-image",
+    "amazon-s3",
+    "nestjs",
+    "url-to-png",
+    "playwright"
+   ],
+   "updated_at": "2026-08-04T02:52:40.091Z",
+   "root_dockerfile": true,
+   "slug": "jasonraimondi__url-to-png",
+   "commit": "75d3bdc5271ba9b9ad012bf7628a86c37b4abb6b",
+   "commit_date": "2026-04-26T17:29:49-04:00",
+   "size_mb": 3,
+   "base_images": [
+    "mcr.microsoft.com/playwright:v1.55.1-jammy",
+    "mcr.microsoft.com/playwright:v1.55.1-jammy"
+   ],
+   "n_files": 54
+  },
+  {
+   "full_name": "zhravan/github-readme-quotes",
+   "group": "node",
+   "query": "topic:express language:JavaScript",
+   "page": 1,
+   "rank": 9,
+   "stars": 307,
+   "language": "JavaScript",
+   "description": "Dynamic quote generator for your GitHub readmes | Give a poetic touch to readmes",
+   "topics": [
+    "react",
+    "nodejs",
+    "quotes",
+    "express",
+    "node",
+    "reactjs",
+    "first-timers",
+    "node-js",
+    "hacktoberfest",
+    "quote-generator",
+    "good-first-issue",
+    "readme-md",
+    "readme-generator",
+    "profile-readme",
+    "hacktoberfest-accepted",
+    "good-first-issues",
+    "hacktoberfest2025"
+   ],
+   "updated_at": "2026-09-27T15:20:36.953Z",
+   "root_dockerfile": true,
+   "slug": "zhravan__github-readme-quotes",
+   "commit": "26980947adf8000b86b4c3bcf2164f36a290362c",
+   "commit_date": "2026-09-27T20:50:34+05:30",
+   "size_mb": 12,
+   "base_images": [
+    "node:20"
+   ],
+   "n_files": 89
+  },
+  {
+   "full_name": "coolstartnow/isms-builder",
+   "group": "node",
+   "query": "topic:express language:JavaScript",
+   "page": 2,
+   "rank": 2,
+   "stars": 266,
+   "language": "JavaScript",
+   "description": "Self-hosted Information Security Management System \u2014 ISO 27001, NIS2, GDPR/DSGVO, BSI IT-Grundschutz",
+   "topics": [
+    "nodejs",
+    "security",
+    "express",
+    "self-hosted",
+    "compliance",
+    "isms",
+    "gdpr",
+    "iso27001",
+    "bsi",
+    "nis2"
+   ],
+   "updated_at": "2026-11-16T18:30:07.791Z",
+   "root_dockerfile": true,
+   "slug": "coolstartnow__isms-builder",
+   "commit": "801d5456f2694271bed597bddb45c529e018a827",
+   "commit_date": "2026-11-16T19:30:06+01:00",
+   "size_mb": 37,
+   "base_images": [
+    "node:lts-alpine",
+    "node:lts-alpine"
+   ],
+   "n_files": 726
+  },
+  {
+   "full_name": "Deen-Bridge/dnb-backend",
+   "group": "node",
+   "query": "topic:express language:JavaScript",
+   "page": 3,
+   "rank": 3,
+   "stars": 166,
+   "language": "JavaScript",
+   "description": "Non-custodial Stellar/USDC payments API for DeenBridge \u2014 SEP-1/7/10/29, path payments, multi-asset trustlines, and Horizon reconciliation\u2026",
+   "topics": [
+    "nodejs",
+    "express",
+    "mongodb",
+    "rest-api",
+    "blockchain",
+    "payments",
+    "fintech",
+    "horizon",
+    "web3",
+    "stellar",
+    "non-custodial",
+    "usdc",
+    "stellar-sdk",
+    "islamic-education",
+    "sep-10",
+    "sep-7"
+   ],
+   "updated_at": "2026-11-17T00:26:28.756Z",
+   "root_dockerfile": true,
+   "slug": "Deen-Bridge__dnb-backend",
+   "commit": "7d3835bf0e9b3fd0b89000dd0dc89fb28cf7a3cc",
+   "commit_date": "2026-11-17T01:26:27+01:00",
+   "size_mb": 6,
+   "base_images": [
+    "node:20-alpine",
+    "node:20-alpine"
+   ],
+   "n_files": 702
+  },
+  {
+   "full_name": "TheBastionBot/Bastion",
+   "group": "node",
+   "query": "topic:discord-bot language:TypeScript",
+   "page": 1,
+   "rank": 4,
+   "stars": 330,
+   "language": "TypeScript",
+   "description": "\ud83d\ude80 Get an enhanced Discord experience!",
+   "topics": [
+    "nodejs",
+    "javascript",
+    "bot",
+    "bastion",
+    "discord",
+    "discord-bot",
+    "discord-js",
+    "hacktoberfest",
+    "bastionbot",
+    "bastion-bot"
+   ],
+   "updated_at": "2026-09-13T21:50:13.204Z",
+   "root_dockerfile": true,
+   "slug": "TheBastionBot__Bastion",
+   "commit": "18e39bb84d907f9bfaffeea31237ec7385350d9f",
+   "commit_date": "2026-09-14T03:10:19+05:30",
+   "size_mb": 2,
+   "base_images": [
+    "node:24-alpine",
+    "node:24-alpine"
+   ],
+   "n_files": 278
+  },
+  {
+   "full_name": "238SAMIxD/discord-ai-bot",
+   "group": "node",
+   "query": "topic:discord-bot language:TypeScript",
+   "page": 1,
+   "rank": 7,
+   "stars": 294,
+   "language": "TypeScript",
+   "description": "Discord AI chatbot using Ollama and Stable Diffusion",
+   "topics": [
+    "javascript",
+    "typescript",
+    "ai",
+    "discord",
+    "discord-bot",
+    "llm",
+    "stable-diffusion",
+    "ollama"
+   ],
+   "updated_at": "2026-11-16T00:40:30.451Z",
+   "root_dockerfile": true,
+   "slug": "238SAMIxD__discord-ai-bot",
+   "commit": "53b93a2788849b76007492deff7da5229a6ed0eb",
+   "commit_date": "2026-11-05T14:09:26+01:00",
+   "size_mb": 1,
+   "base_images": [
+    "node:26-slim",
+    "node:26-slim"
+   ],
+   "n_files": 71
+  },
+  {
+   "full_name": "TheSharks/WildBeast",
+   "group": "node",
+   "query": "topic:discord-bot language:TypeScript",
+   "page": 1,
+   "rank": 8,
+   "stars": 290,
+   "language": "TypeScript",
+   "description": "Feature-rich Discord bot framework",
+   "topics": [
+    "nodejs",
+    "linux",
+    "docker",
+    "discord",
+    "discord-bot",
+    "wildbeast",
+    "wildbot"
+   ],
+   "updated_at": "2026-09-19T17:51:10.644Z",
+   "root_dockerfile": true,
+   "slug": "TheSharks__WildBeast",
+   "commit": "d1d7919a39afbf6504892994ee7b0fff580e3139",
+   "commit_date": "2022-07-29T00:23:39+02:00",
+   "size_mb": 7,
+   "base_images": [
+    "node:lts-alpine"
+   ],
+   "n_files": 545
+  },
+  {
+   "full_name": "zebbern/claude-code-discord",
+   "group": "node",
+   "query": "topic:discord-bot language:TypeScript",
+   "page": 2,
+   "rank": 4,
+   "stars": 234,
+   "language": "TypeScript",
+   "description": "A Discord bot that brings Claude Code to your channels so you can chat, run shell/git, and manage branches. Access from any local, VM, or\u2026",
+   "topics": [
+    "awesome",
+    "discord-bot",
+    "discord-api",
+    "developer",
+    "awesome-list",
+    "opus",
+    "automation-framework",
+    "awesome-lists",
+    "claude",
+    "tools-and-automation",
+    "anthropic",
+    "claude-ai",
+    "anthropic-claude",
+    "claude-ai-bot",
+    "claude-code",
+    "sonnet-4",
+    "claude-code-commands",
+    "claude-code-discord"
+   ],
+   "updated_at": "2026-08-01T03:45:23.454Z",
+   "root_dockerfile": true,
+   "slug": "zebbern__claude-code-discord",
+   "commit": "505829098773ce80ed3401d00c169b82a129ad64",
+   "commit_date": "2026-08-01T05:45:19+02:00",
+   "size_mb": 2,
+   "base_images": [
+    "denoland/deno:latest"
+   ],
+   "n_files": 105
+  },
+  {
+   "full_name": "gmsec/gmsec",
+   "group": "go",
+   "query": "topic:gin language:Go",
+   "page": 2,
+   "rank": 3,
+   "stars": 182,
+   "language": "Go",
+   "description": "golang micro service base on gin. golang \u5fae\u670d\u52a1\u96c6\u6210\u6846\u67b6",
+   "topics": [
+    "golang",
+    "microservice",
+    "swagger",
+    "grpc",
+    "gin",
+    "go-micro",
+    "gmsec"
+   ],
+   "updated_at": "2026-11-10T07:17:29.288Z",
+   "root_dockerfile": true,
+   "slug": "gmsec__gmsec",
+   "commit": "b08b07b09c44d1cc7699d19ec033731d76dd43e6",
+   "commit_date": "2026-11-10T15:17:25+08:00",
+   "size_mb": 2,
+   "base_images": [
+    "golang:1.26.10",
+    "gcr.io/distroless/static-debian12:nonroot"
+   ],
+   "n_files": 61
+  },
+  {
+   "full_name": "parvez3019/go-swagger3",
+   "group": "go",
+   "query": "topic:gin language:Go",
+   "page": 2,
+   "rank": 7,
+   "stars": 153,
+   "language": "Go",
+   "description": "Generate OpenAPI 3 (Swagger 3) specs from Go annotations. swaggo/swag-style comments, generics, Gin/Echo/Chi/Fiber UI adapters.",
+   "topics": [
+    "go",
+    "documentation",
+    "echo",
+    "swagger",
+    "openapi",
+    "gin",
+    "swagger-generator",
+    "code-generation",
+    "openapi-spec",
+    "swagger-docs",
+    "openapi-specification",
+    "openapi-documentation",
+    "openapi3",
+    "swagger3",
+    "go-swagger",
+    "openapi-generator",
+    "go-swag",
+    "go-documentation",
+    "swaggo"
+   ],
+   "updated_at": "2026-11-16T19:34:18.900Z",
+   "root_dockerfile": true,
+   "slug": "parvez3019__go-swagger3",
+   "commit": "c9495584b0984089eeb8b20725f687198afcf13e",
+   "commit_date": "2026-11-17T01:04:03+05:30",
+   "size_mb": 2,
+   "base_images": [
+    "golang:1.24-alpine",
+    "golang:1.24-alpine"
+   ],
+   "n_files": 168
+  },
+  {
+   "full_name": "pushbits/server",
+   "group": "go",
+   "query": "topic:self-hosted language:Go",
+   "page": 1,
+   "rank": 4,
+   "stars": 372,
+   "language": "Go",
+   "description": "A simple server for push notifications via Matrix (and a minimalistic alternative to Pushover and Gotify) \ud83d\ude80\ud83d\udcef",
+   "topics": [
+    "notifications",
+    "cloud",
+    "privacy",
+    "push-notifications",
+    "selfhosted",
+    "self-hosted",
+    "pushover",
+    "pushnotifications",
+    "pushnotification",
+    "matrix-org",
+    "selfhosting",
+    "gotify",
+    "pushbits"
+   ],
+   "updated_at": "2026-01-10T16:49:35.251Z",
+   "root_dockerfile": true,
+   "slug": "pushbits__server",
+   "commit": "fdf5fbd85f0e45bb088660cf3606cd5609f0e13f",
+   "commit_date": "2026-01-10T17:49:21+01:00",
+   "size_mb": 1,
+   "base_images": [
+    "docker.io/library/golang:alpine",
+    "docker.io/library/alpine"
+   ],
+   "n_files": 74
+  },
+  {
+   "full_name": "Sanyam-G/Airpipe",
+   "group": "go",
+   "query": "topic:self-hosted language:Go",
+   "page": 1,
+   "rank": 9,
+   "stars": 362,
+   "language": "Go",
+   "description": "Send files between your terminal and any phone or computer by scanning a QR code. End-to-end encrypted, with a self-hostable relay.",
+   "topics": [
+    "cli",
+    "golang",
+    "terminal",
+    "webrtc",
+    "p2p",
+    "file-sharing",
+    "qr-code",
+    "self-hosted",
+    "file-transfer",
+    "end-to-end-encryption"
+   ],
+   "updated_at": "2026-11-02T19:19:21.989Z",
+   "root_dockerfile": true,
+   "slug": "Sanyam-G__Airpipe",
+   "commit": "6b954fe9b3e11a308430e54785a40adc59a8aa8f",
+   "commit_date": "2026-11-02T13:19:18-06:00",
+   "size_mb": 1,
+   "base_images": [
+    "golang:1.25-alpine",
+    "alpine:3.19"
+   ],
+   "n_files": 74
+  },
+  {
+   "full_name": "thushan/olla",
+   "group": "go",
+   "query": "topic:self-hosted language:Go",
+   "page": 2,
+   "rank": 4,
+   "stars": 338,
+   "language": "Go",
+   "description": "High-performance lightweight proxy and load balancer for LLM infrastructure. Intelligent routing, automatic failover and unified model di\u2026",
+   "topics": [
+    "golang",
+    "ai",
+    "amd",
+    "proxy",
+    "intel",
+    "self-hosted",
+    "nvidia",
+    "mlx",
+    "llamacpp",
+    "llama-cpp",
+    "vllm",
+    "llm-inference",
+    "local-ai",
+    "ollama",
+    "llm-proxy",
+    "lmstudio",
+    "sglang",
+    "llm-router",
+    "llm-routing",
+    "self-hosted-ai"
+   ],
+   "updated_at": "2026-11-06T15:04:09.073Z",
+   "root_dockerfile": true,
+   "slug": "thushan__olla",
+   "commit": "3c873eb55809310f9533272a13502ce0d77233a3",
+   "commit_date": "2026-11-01T11:13:44+11:00",
+   "size_mb": 13,
+   "base_images": [
+    "alpine:latest"
+   ],
+   "n_files": 854
+  },
+  {
+   "full_name": "pelican/wings",
+   "group": "go",
+   "query": "topic:self-hosted language:Go",
+   "page": 2,
+   "rank": 5,
+   "stars": 331,
+   "language": "Go",
+   "description": "Pelican's server control daemon: runs each game server in its own Docker container.",
+   "topics": [
+    "go",
+    "docker",
+    "golang",
+    "selfhosted",
+    "self-hosted",
+    "pterodactyl",
+    "pelican",
+    "game-servers",
+    "game-server-hosting",
+    "game-panel"
+   ],
+   "updated_at": "2026-11-17T19:21:04.863Z",
+   "root_dockerfile": true,
+   "slug": "pelican__wings",
+   "commit": "82bf39e07af6d4b78090e872c1c3a5ca1efd5dda",
+   "commit_date": "2026-11-15T18:09:33-05:00",
+   "size_mb": 2,
+   "base_images": [
+    "golang:1.27.4-alpine",
+    "gcr.io/distroless/static:latest"
+   ],
+   "n_files": 194
+  },
+  {
+   "full_name": "lissy93/who-dat",
+   "group": "go",
+   "query": "topic:self-hosted language:Go",
+   "page": 2,
+   "rank": 7,
+   "stars": 330,
+   "language": "Go",
+   "description": "\ud83d\udd0e A really complete domain lookup (RDAP + WHOIS) API for maximum TLD support",
+   "topics": [
+    "go",
+    "api",
+    "whois",
+    "self-hosted",
+    "rdap",
+    "public-api"
+   ],
+   "updated_at": "2026-11-15T12:37:46.733Z",
+   "root_dockerfile": true,
+   "slug": "lissy93__who-dat",
+   "commit": "23288a4dd75c0bb4a0b19fd8adb0048c4bb1e9c8",
+   "commit_date": "2026-11-15T12:37:37+00:00",
+   "size_mb": 1,
+   "base_images": [
+    "golang:1.27-alpine",
+    "alpine:latest"
+   ],
+   "n_files": 67
+  },
+  {
+   "full_name": "rdborg/Mediarium",
+   "group": "go",
+   "query": "topic:self-hosted language:Go",
+   "page": 2,
+   "rank": 9,
+   "stars": 328,
+   "language": "Go",
+   "description": "Self-hosted media manager for movies, TV, music, ebooks and audiobooks: search, download and organise, all in one Docker container.",
+   "topics": [
+    "react",
+    "docker",
+    "golang",
+    "torrent",
+    "sqlite",
+    "plex",
+    "self-hosted",
+    "usenet",
+    "ebooks",
+    "nas",
+    "audiobooks",
+    "homelab",
+    "media-manager",
+    "jellyfin",
+    "sonarr-alternative",
+    "radarr-alternative"
+   ],
+   "updated_at": "2026-11-17T19:32:29.993Z",
+   "root_dockerfile": true,
+   "slug": "rdborg__Mediarium",
+   "commit": "7a1a0730d07b671c9c4355df598a55216bee09ce",
+   "commit_date": "2026-11-17T20:05:44+01:00",
+   "size_mb": 50,
+   "base_images": [
+    "node:26-alpine",
+    "golang:1.27.2-alpine",
+    "ghcr.io/flaresolverr/flaresolverr:v3.5.2@sha256:c80ae007ce2ccdcd217a12426e4f039ef763ff90738c808d38810c3e59323767",
+    "alpine:3.24"
+   ],
+   "n_files": 3035
+  },
+  {
+   "full_name": "Genc/spring-boot-boilerplate",
+   "group": "java",
+   "query": "topic:spring-boot language:Java",
+   "page": 1,
+   "rank": 5,
+   "stars": 385,
+   "language": "Java",
+   "description": " Spring Boot Boilerplate is a starter kit. This project includes : Spring Boot(4.1.2), Spring Data JPA, Spring Validation, Spring Securit\u2026",
+   "topics": [
+    "java",
+    "jwt",
+    "spring",
+    "spring-boot",
+    "lombok",
+    "postgresql",
+    "swagger",
+    "spring-security",
+    "spring-data-jpa",
+    "mapstruct",
+    "spring-validation",
+    "spring-boot-3",
+    "spring-boot-4"
+   ],
+   "updated_at": "2026-10-24T09:01:15.867Z",
+   "root_dockerfile": true,
+   "slug": "Genc__spring-boot-boilerplate",
+   "commit": "792695068d95e0a82eee931568e94301eef23942",
+   "commit_date": "2026-10-24T12:01:15+03:00",
+   "size_mb": 1,
+   "base_images": [
+    "eclipse-temurin:25-jdk"
+   ],
+   "n_files": 52
+  },
+  {
+   "full_name": "jdubois/boot-ui",
+   "group": "java",
+   "query": "topic:spring-boot language:Java",
+   "page": 2,
+   "rank": 9,
+   "stars": 336,
+   "language": "Java",
+   "description": "The missing developer UI for Spring Boot and Quarkus!",
+   "topics": [
+    "java",
+    "spring-boot",
+    "mcp",
+    "spring-boot-starter",
+    "developer-tools",
+    "quarkus",
+    "quarkus-extension",
+    "mcp-server",
+    "agent-skills",
+    "spring-boot-4"
+   ],
+   "updated_at": "2026-11-17T15:52:36.642Z",
+   "root_dockerfile": true,
+   "slug": "jdubois__boot-ui",
+   "commit": "52edfa8974641be1f50f0d75f5e8ed58528a5b07",
+   "commit_date": "2026-11-17T16:52:36+01:00",
+   "size_mb": 64,
+   "base_images": [
+    "eclipse-temurin:25-jdk-noble",
+    "gcr.io/distroless/base-debian12:nonroot"
+   ],
+   "n_files": 5035
+  },
+  {
+   "full_name": "spring-petclinic/spring-petclinic-kotlin",
+   "group": "java",
+   "query": "topic:spring-boot language:Kotlin",
+   "page": 1,
+   "rank": 1,
+   "stars": 397,
+   "language": "Kotlin",
+   "description": "Kotlin version of Spring Petclinic",
+   "topics": [
+    "kotlin",
+    "spring-boot",
+    "gradle"
+   ],
+   "updated_at": "2026-11-16T16:36:11.636Z",
+   "root_dockerfile": true,
+   "slug": "spring-petclinic__spring-petclinic-kotlin",
+   "commit": "b4699a50e621f8c9fee358230e4adf214d6292ac",
+   "commit_date": "2026-11-16T16:36:10+00:00",
+   "size_mb": 2,
+   "base_images": [
+    "eclipse-temurin:17-jdk",
+    "eclipse-temurin:17-jre"
+   ],
+   "n_files": 108
+  },
+  {
+   "full_name": "ZOOT-Plus/ZootPlusBackend",
+   "group": "java",
+   "query": "topic:spring-boot language:Kotlin",
+   "page": 2,
+   "rank": 5,
+   "stars": 96,
+   "language": "Kotlin",
+   "description": "ZOOT Plus Backend",
+   "topics": [
+    "java",
+    "spring-boot",
+    "jvm"
+   ],
+   "updated_at": "2026-11-14T17:26:05.389Z",
+   "root_dockerfile": true,
+   "slug": "ZOOT-Plus__ZootPlusBackend",
+   "commit": "00037beb53e28235799c55080475fa24f65c57a3",
+   "commit_date": "2026-10-27T02:04:19+08:00",
+   "size_mb": 3,
+   "base_images": [
+    "amazoncorretto:25-alpine"
+   ],
+   "n_files": 286
+  },
+  {
+   "full_name": "ledermann/pingcrm",
+   "group": "ruby",
+   "query": "topic:rails language:Ruby",
+   "page": 1,
+   "rank": 9,
+   "stars": 370,
+   "language": "Ruby",
+   "description": "PingCRM on Rails - A Ruby on Rails demo application to illustrate how Inertia.js works",
+   "topics": [
+    "rails",
+    "demo",
+    "vuejs",
+    "ruby-on-rails",
+    "inertiajs",
+    "vitejs"
+   ],
+   "updated_at": "2026-11-17T00:07:32.892Z",
+   "root_dockerfile": true,
+   "slug": "ledermann__pingcrm",
+   "commit": "bc9cc526101c30ff73563a5ec6000f59c655d8d1",
+   "commit_date": "2026-11-17T01:07:30+01:00",
+   "size_mb": 2,
+   "base_images": [
+    "ghcr.io/ledermann/rails-base-builder:4.0.9-alpine",
+    "ghcr.io/ledermann/rails-base-final:4.0.9-alpine"
+   ],
+   "n_files": 174
+  },
+  {
+   "full_name": "leonovk/wg-rest-api",
+   "group": "ruby",
+   "query": "topic:sinatra language:Ruby",
+   "page": 1,
+   "rank": 8,
+   "stars": 76,
+   "language": "Ruby",
+   "description": "WireGuard VPN + Easy REST API in one package",
+   "topics": [
+    "ruby",
+    "sinatra",
+    "rest-api",
+    "vpn",
+    "vpn-manager",
+    "wireguard"
+   ],
+   "updated_at": "2026-11-03T17:52:54.867Z",
+   "root_dockerfile": true,
+   "slug": "leonovk__wg-rest-api",
+   "commit": "0bc3aa07a163de7d5b601e467fb93c681ec9abab",
+   "commit_date": "2026-11-03T17:52:50+00:00",
+   "size_mb": 1,
+   "base_images": [
+    "ruby:4.0.6-alpine"
+   ],
+   "n_files": 86
+  },
+  {
+   "full_name": "doorkeeper-gem/doorkeeper-sinatra-client",
+   "group": "ruby",
+   "query": "topic:sinatra language:Ruby",
+   "page": 2,
+   "rank": 5,
+   "stars": 33,
+   "language": "Ruby",
+   "description": "OAuth 2 Client built in Sinatra. Integrates with Doorkeeper gem",
+   "topics": [
+    "ruby",
+    "sinatra",
+    "oauth2-client",
+    "doorkeeper"
+   ],
+   "updated_at": "2026-11-17T10:53:13.003Z",
+   "root_dockerfile": true,
+   "slug": "doorkeeper-gem__doorkeeper-sinatra-client",
+   "commit": "94f07976c6beedc8d9f8efe48540321de55a53b1",
+   "commit_date": "2026-11-17T19:53:08+09:00",
+   "size_mb": 1,
+   "base_images": [
+    "ruby:3.3.12"
+   ],
+   "n_files": 21
+  },
+  {
+   "full_name": "imdhemy/laravel-in-app-purchases",
+   "group": "php",
+   "query": "topic:laravel language:PHP",
+   "page": 1,
+   "rank": 5,
+   "stars": 392,
+   "language": "PHP",
+   "description": "Validate products and subscription receipts. Handle subscription lifecycle.",
+   "topics": [
+    "laravel",
+    "laravel-package",
+    "in-app-purchase",
+    "google-play-billing",
+    "appstore-iap"
+   ],
+   "updated_at": "2026-11-13T23:56:53.613Z",
+   "root_dockerfile": true,
+   "slug": "imdhemy__laravel-in-app-purchases",
+   "commit": "fb670308533965e30f66303cf9681a0824a88518",
+   "commit_date": "2026-11-01T14:58:15+01:00",
+   "size_mb": 2,
+   "base_images": [
+    "php:8.4-fpm"
+   ],
+   "n_files": 151
+  },
+  {
+   "full_name": "MGeurts/genealogy",
+   "group": "php",
+   "query": "topic:laravel language:PHP",
+   "page": 2,
+   "rank": 3,
+   "stars": 373,
+   "language": "PHP",
+   "description": "Genealogy is a free and open-source family tree PHP application to record family members and their relationships, build with LARAVEL 13.",
+   "topics": [
+    "php",
+    "laravel",
+    "genealogy",
+    "ancestry",
+    "gedcom",
+    "family-tree",
+    "lineage",
+    "pedigree",
+    "jetstream",
+    "livewire",
+    "parentage",
+    "tailwindcss",
+    "common-table-expression",
+    "tabler-icons",
+    "genealogy-application"
+   ],
+   "updated_at": "2026-11-15T11:05:46.326Z",
+   "root_dockerfile": true,
+   "slug": "MGeurts__genealogy",
+   "commit": "72bd95fe1e6249cc2ba3ecd0765f9d4faceb8e28",
+   "commit_date": "2026-11-15T12:04:56+01:00",
+   "size_mb": 37,
+   "base_images": [
+    "serversideup/php:8.4-fpm-nginx",
+    "base",
+    "serversideup/php:8.4-cli",
+    "composer:2",
+    "node:25",
+    "base"
+   ],
+   "n_files": 1417
+  },
+  {
+   "full_name": "Shmakov/Honeypot",
+   "group": "rust",
+   "query": "topic:axum language:Rust",
+   "page": 1,
+   "rank": 1,
+   "stars": 377,
+   "language": "Rust",
+   "description": "Real-time attack monitoring in a lightweight, Rust-powered package.",
+   "topics": [
+    "rust",
+    "ssh",
+    "security",
+    "sqlite",
+    "honeypot",
+    "telnet",
+    "logs",
+    "data-visualization",
+    "tail",
+    "tokio-rs",
+    "axum"
+   ],
+   "updated_at": "2025-12-28T20:07:37.552Z",
+   "root_dockerfile": true,
+   "slug": "Shmakov__Honeypot",
+   "commit": "1c3d5f3ba1da5f507f5abd278b9a5c7265e7ef61",
+   "commit_date": "2025-12-28T12:07:26-08:00",
+   "size_mb": 4,
+   "base_images": [
+    "rust:1.75-bookworm",
+    "debian:bookworm-slim"
+   ],
+   "n_files": 45
+  },
+  {
+   "full_name": "chelunfu/qiluo_admin",
+   "group": "rust",
+   "query": "topic:axum language:Rust",
+   "page": 1,
+   "rank": 8,
+   "stars": 247,
+   "language": "Rust",
+   "description": "QiLuo is an enterprise-grade rapid development platform built on the Rust technology stack. It adopts modern architectural design and pro\u2026",
+   "topics": [
+    "rust",
+    "multi-tenant",
+    "backend",
+    "admin-dashboard",
+    "saas",
+    "rust-cms",
+    "axum",
+    "rust-admin",
+    "rust-ai",
+    "axum-admin",
+    "ai-admin",
+    "qiluo-admin"
+   ],
+   "updated_at": "2026-07-22T02:13:23.094Z",
+   "root_dockerfile": true,
+   "slug": "chelunfu__qiluo_admin",
+   "commit": "cf389ed47eba865f0917e9765c798c2bce41bfdf",
+   "commit_date": "2026-07-22T10:13:23+08:00",
+   "size_mb": 4,
+   "base_images": [
+    "docker.1ms.run/rust:alpine",
+    "docker.1ms.run/alpine:latest"
+   ],
+   "n_files": 277
+  },
+  {
+   "full_name": "imtaqin/waxum",
+   "group": "rust",
+   "query": "topic:axum language:Rust",
+   "page": 2,
+   "rank": 5,
+   "stars": 137,
+   "language": "Rust",
+   "description": "WhatsApp REST API gateway in Rust. Multi-device and the official WhatsApp Cloud API behind one API: 230+ endpoints for messaging, templat\u2026",
+   "topics": [
+    "rust",
+    "webhooks",
+    "rest-api",
+    "self-hosted",
+    "whatsapp",
+    "multi-device",
+    "whatsapp-bot",
+    "whatsapp-api",
+    "whatsapp-business-api",
+    "axum",
+    "whatsapp-gateway",
+    "whatsapp-cloud-api",
+    "whatsapp-flows",
+    "whatsapp-rust",
+    "wa-rust"
+   ],
+   "updated_at": "2026-11-13T06:52:21.512Z",
+   "root_dockerfile": true,
+   "slug": "imtaqin__waxum",
+   "commit": "048baccc38a4f186922f3e9e9e6f317902b4d41e",
+   "commit_date": "2026-11-09T13:04:30+07:00",
+   "size_mb": 7,
+   "base_images": [
+    "rust:slim-bookworm",
+    "mwader/static-ffmpeg:7.1",
+    "gcr.io/distroless/cc-debian13"
+   ],
+   "n_files": 304
+  },
+  {
+   "full_name": "lee-lou2/url-shortener",
+   "group": "rust",
+   "query": "topic:axum language:Rust",
+   "page": 2,
+   "rank": 10,
+   "stars": 102,
+   "language": "Rust",
+   "description": "[Rust] URL Shortener",
+   "topics": [
+    "rust",
+    "redis",
+    "golang",
+    "postgresql",
+    "url-shortener",
+    "base62",
+    "short-url",
+    "axum"
+   ],
+   "updated_at": "2026-03-02T06:49:10.050Z",
+   "root_dockerfile": true,
+   "slug": "lee-lou2__url-shortener",
+   "commit": "efc7de922e2115eae0f7e889578aeb467d09bc89",
+   "commit_date": "2026-03-02T15:49:10+09:00",
+   "size_mb": 3,
+   "base_images": [
+    "rust:alpine",
+    "alpine:3.20"
+   ],
+   "n_files": 39
+  }
+ ],
+ "rejected": [
+  {
+   "full_name": "Oh-Sheet-Team/oh-sheet",
+   "reason": "not exactly one Dockerfile (4 found)"
+  },
+  {
+   "full_name": "sabuhish/fastapi-mqtt",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "baizunxian/zerorunner",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "CronusL-1141/AI-company",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "iLearn-Lab/NovelClaw",
+   "reason": "not exactly one Dockerfile (3 found)"
+  },
+  {
+   "full_name": "artbyjazi/autoclip",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "Kohei-Wada/taskdog",
+   "reason": "not exactly one Dockerfile (2 found)"
+  },
+  {
+   "full_name": "slive777/OpenAver",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "Johnson-Durui/Companion-Space",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "cubist38/mlx-openai-server",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "xr843/fojin",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "meadsteve/lagom",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "Lolomgrofl/fastapi-genesis",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "yihong1120/Construction-Hazard-Detection",
+   "reason": "not exactly one Dockerfile (9 found)"
+  },
+  {
+   "full_name": "AtticusZeller/fastapi_supabase_template",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "vsdudakov/fastadmin",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "Ramseygithub/ai-legal-compliance-assistant",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "arthurio/fastapi-filter",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "not-sekiun/Consortium",
+   "reason": "not exactly one Dockerfile (2 found)"
+  },
+  {
+   "full_name": "KLR-Pattern/pydantic-resolve",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "AleksNeStu/ai-real-estate-assistant",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "faststream-community/fastapi-dishka-faststream",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "lyric777/Book-Management-System",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "beijingcao/binance-deribit-btc",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "hackersandslackers/flask-sqlalchemy-tutorial",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "hexbay/ocean_ctf",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "whiskyechobravo/kerko",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "0b01001001/spectree",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "rictom/rede-cnpj",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "junqiangchen/PytorchDeepLearing",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "mhaythornthwaite/Football_Prediction_Project",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "coleifer/scout",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "HRuiCcc/music-geshizhuanhuan",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "cenobites/flask-jsonrpc",
+   "reason": "not exactly one Dockerfile (2 found)"
+  },
+  {
+   "full_name": "helloflask/watchlist",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "lixxu/flask-paginate",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "NatsUIJM/autoContents",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "opendatateam/udata",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "zeekay/flask-uwsgi-websocket",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "luolingchun/flask-openapi",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "shanhuiyang/TypeScript-MERN-Starter",
+   "reason": "old base image node:10"
+  },
+  {
+   "full_name": "saisilinus/node-express-mongoose-typescript-boilerplate",
+   "reason": "old base image node:14-alpine"
+  },
+  {
+   "full_name": "graphql/graphql-http",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "bojidaryovchev/nest-angular",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "dword-design/nuxt-mail",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "muneebhashone/typescript-backend-toolkit",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "guyzyl/whatsapp-contact-sync",
+   "reason": "not exactly one Dockerfile (3 found)"
+  },
+  {
+   "full_name": "axisj/react-multi-email",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "sidhantpanda/docker-express-typescript-boilerplate",
+   "reason": "not exactly one Dockerfile (2 found)"
+  },
+  {
+   "full_name": "express-rate-limit/express-slow-down",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "meysamhadeli/booking-microservices-expressjs",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "phellipeandrade/rbac",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "funmusicplace/mirlo",
+   "reason": "not exactly one Dockerfile (2 found)"
+  },
+  {
+   "full_name": "iamolegga/nestjs-session",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "felipebarcelospro/igniter-js",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "xizon/fullstack-nextjs-app-template",
+   "reason": "not exactly one Dockerfile (2 found)"
+  },
+  {
+   "full_name": "devconcept/multer-gridfs-storage",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "mxschmitt/try-playwright",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "tdeekens/promster",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "afteracademy/wimm-apis",
+   "reason": "not exactly one Dockerfile (2 found)"
+  },
+  {
+   "full_name": "express-rate-limit/rate-limit-redis",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "cially/cially",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "cumt-robin/fullstack-blog",
+   "reason": "not exactly one Dockerfile (2 found)"
+  },
+  {
+   "full_name": "Eltik/Anify",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "tinyhttp/milliparsec",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "Danilqa/node-file-router",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "tazo90/next-openapi-gen",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "fal-ai/fal-js",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "axislab-top/Foundry",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "gflohr/e-invoice-eu",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "line/abc-user-feedback",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "postmill-ai/postmill-app",
+   "reason": "not exactly one Dockerfile (3 found)"
+  },
+  {
+   "full_name": "baiwumm/vue3-admin",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "ferrerojosh/nest-keycloak-connect",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "hardyscc/aws-nestjs-starter",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "mikro-orm/nestjs-realworld-example-app",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "SocketSomeone/nestjs-resilience",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "sankeyangshu/lemon-admin",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "jmcdo29/ogma",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "Raktim94/nodedr-restaurant-pos",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "599yongyang/DatasetLoom",
+   "reason": "not exactly one Dockerfile (2 found)"
+  },
+  {
+   "full_name": "mikro-orm/nestjs",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "vndevteam/nestjs-boilerplate",
+   "reason": "not exactly one Dockerfile (2 found)"
+  },
+  {
+   "full_name": "implerhq/impler.io",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "Mohammed-Abdelhady/authstack-starter",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "anilahir/nestjs-authentication-and-authorization",
+   "reason": "old base image node:18-alpine"
+  },
+  {
+   "full_name": "kpfromer/nestjs-typegoose",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "ocoda/event-sourcing",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "fairnesscoop/permacoop",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "nestjs/sequelize",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "baiwumm/react-admin",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "toss/nestjs-aop",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "k-yle/rtsp-relay",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "express-promise-router/express-promise-router",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "lmammino/judo-heroes",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "syxanash/maxheadbox",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "watscho/express-graphql-mongodb-boilerplate",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "orifmilod/iCinema",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "twreporter/twreporter-react",
+   "reason": "not exactly one Dockerfile (3 found)"
+  },
+  {
+   "full_name": "puzpuzpuz/cls-rtracer",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "geerlingguy/temperature-monitor",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "fastify/fastify-express",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "tapter-dev/kaspi-pos-automation",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "voxpelli/node-connect-pg-simple",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "sefinek/Cloudflare-WAF-Expressions",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "Mshandev/Food-Delivery",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "mweibel/connect-session-sequelize",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "changhaoting1998-star/factory-safety-loop",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "azharimm/phone-specs-api",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "ahyiru/web-design",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "render-examples/express-hello-world",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "i18next/i18next-http-middleware",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "lauriskuznecovs/next-js-jwt",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "foyzulkarim/nodejs-boilerplate",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "vacekj/express-json-validator-middleware",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "tkoenig89/express-static-gzip",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "ahyiru/huxy-admin",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "milancodess/universalDownloader",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "vladzdev/node-hot-loader",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "Snazzah/slash-create",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "RiskyMH/honeypot",
+   "reason": "not exactly one Dockerfile (4 found)"
+  },
+  {
+   "full_name": "merlinfuchs/kite",
+   "reason": "not exactly one Dockerfile (2 found)"
+  },
+  {
+   "full_name": "ysdragon/StreamBot",
+   "reason": "not exactly one Dockerfile (2 found)"
+  },
+  {
+   "full_name": "SpikeHD/AmazonMonitor",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "IgorKowalczyk/majo.exe",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "iCrawl/yuudachi",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "Discord-Dashboard/Core",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "Crownicles/Crownicles",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "tokyoweb3/LazyGravity",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "ch3nnn/webstack-go",
+   "reason": "old base image alpine:3.14"
+  },
+  {
+   "full_name": "broqiang/mdblog",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "DeanThompson/ginpprof",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "xxjwxc/ginrpc",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "wanghaoxi3000/gin-rtsp",
+   "reason": "old base image golang:1.20-alpine"
+  },
+  {
+   "full_name": "gin-contrib/requestid",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "jxlwqq/kubernetes-examples",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "sunmi-OS/gocore",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "gin-contrib/logger",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "ciliverse/cilikube",
+   "reason": "not exactly one Dockerfile (2 found)"
+  },
+  {
+   "full_name": "bugsnag/bugsnag-go",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "samber/slog-gin",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "depado/ginprom",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "snykk/go-rest-boilerplate",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "wannanbigpig/gin-layout",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "wesionaryTEAM/go_clean_architecture",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "dalonghahaha/Asgard",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "leancodebox/GooseForum",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "GhostTroops/go4Hacker",
+   "reason": "not exactly one Dockerfile (3 found)"
+  },
+  {
+   "full_name": "nanmu42/gzip",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "bodhiye/paste",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "howie6879/owllook_api",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "air-go/rpc",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "go-admin-team/go-admin-core",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "gjovanovicst/golang-auth-api",
+   "reason": "not exactly one Dockerfile (2 found)"
+  },
+  {
+   "full_name": "JGLTechnologies/gin-rate-limit",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "akmamun/gin-boilerplate",
+   "reason": "old base image golang:1.17-alpine"
+  },
+  {
+   "full_name": "bastean/codexgo",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "ChristopherHX/github-act-runner",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "yumenaka/comigo",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "rasonyang/freesbc",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "matrixhub-ai/matrixhub",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "shurco/mycart",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "qingchencloud/cftunnel",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "goinfinite/os",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "SimpleAI2026/SimpleBase",
+   "reason": "uses git submodules"
+  },
+  {
+   "full_name": "hivepaas/hivepaas",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "cheatsnake/airstation",
+   "reason": "not exactly one Dockerfile (2 found)"
+  },
+  {
+   "full_name": "mtlynch/logpaste",
+   "reason": "old base image alpine:3.15"
+  },
+  {
+   "full_name": "MiniMax-AI/OpenAgentCore",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "AlexeyLCP/lucx-ui",
+   "reason": "not exactly one Dockerfile (2 found)"
+  },
+  {
+   "full_name": "gudaoxuri/dew",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "opentracing-contrib/java-spring-cloud",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "sonus21/rqueue",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "loki4j/loki-logback-appender",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "shuigedeng/taotao-cloud-project",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "LuoDi-Nate/financial-management",
+   "reason": "not exactly one Dockerfile (2 found)"
+  },
+  {
+   "full_name": "MarcGiffing/bucket4j-spring-boot-starter",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "anton-liauchuk/educational-platform",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "blueswen/spring-boot-observability",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "sofn/ArchForge",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "apache/camel-spring-boot-examples",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "guto-alves/loterias-api",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "rrezartprebreza/spring-boot-skills",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "team-dodn/spring-boot-java-template",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "wiremock/wiremock-spring-boot",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "springwolf/springwolf-core",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "siam1026/siam-cloud",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "hb0730/boot-admin",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "apache/incubator-kie-optaplanner-quickstarts",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "Nasruddin/spring-boot-based-microservices",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "rieckpil/testing-spring-boot-applications-masterclass",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "shiyindaxiaojie/eden-architect",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "geoserver/geoserver-cloud",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "jkazama/ddd-java",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "anton-liauchuk/java-interview",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "kousen/spring-and-spring-boot",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "urlaubsverwaltung/urlaubsverwaltung",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "dapr/java-sdk",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "Trendyol/stove",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "Ahoo-Wang/Wow",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "JetBrains/kotlin-compiler-server",
+   "reason": "not exactly one Dockerfile (2 found)"
+  },
+  {
+   "full_name": "team-dodn/spring-boot-kotlin-template",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "tschuehly/spring-view-component",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "Trendyol/kediatR",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "akkinoc/logback-access-spring-boot-starter",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "explyt/spring-plugin",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "akkinoc/orika-spring-boot-starter",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "piomin/course-spring-microservices",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "mrclrchtr/gradle-kotlin-spring",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "opexdev/core",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "Amplicode/spring-skills",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "Ahoo-Wang/CoSky",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "piomin/sample-spring-microservices-transactions",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "ubie-oss/kotlin-graphql-sample",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "hyness/spring-cloud-config-server",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "thanus/reboot",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "Hyung1Jung/commerce",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "Fraunhofer-AISEC/trusted-connector",
+   "reason": "not exactly one Dockerfile (5 found)"
+  },
+  {
+   "full_name": "openapi-processor/openapi-processor-spring",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "ahaodev/heji",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "asyncapi/kotlin-asyncapi",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "tschuehly/htmx-supabase-spring-boot-starter",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "pintowar/opta-router",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "Odysseymoon/spring-webflux-template",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "Ahoo-Wang/CoSec",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "rubymonolith/superform",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "mattbrictson/nextgen",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "rubyforgood/casa",
+   "reason": "not exactly one Dockerfile (2 found)"
+  },
+  {
+   "full_name": "ForestAdmin/forest-rails",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "sudara/alonetone",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "ackama/rails-template",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "WeAreFarmGeek/diplomat",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "rootstrap/yaaf",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "ka8725/migration_data",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "yippee-fun/phlex-rails",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "igorkasyanchuk/log_analyzer",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "meilisearch/meilisearch-rails",
+   "reason": "not exactly one Dockerfile (2 found)"
+  },
+  {
+   "full_name": "spree-contrib/spree_i18n",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "dtaniwaki/rack-dev-mark",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "lucascaton/enumerate_it",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "marcoroth/turbo_power-rails",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "Eric-Guo/wechat-starter",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "flexirest/flexirest",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "makandra/consul",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "Rails-Designer/rails_icons",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "clowne-rb/clowne",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "benpickles/parklife",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "veeqo/activejob-uniqueness",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "kirillshevch/query_track",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "activeadmin/demo.activeadmin.info",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "fjordllc/bootcamp",
+   "reason": "not exactly one Dockerfile (4 found)"
+  },
+  {
+   "full_name": "thinreports/thinreports-generator",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "Angelmmiguel/material_icons",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "ryanwi/rails7-on-docker",
+   "reason": "not exactly one Dockerfile (2 found)"
+  },
+  {
+   "full_name": "low-rb/lowtype",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "palkan/litecable",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "bugsnag/bugsnag-ruby",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "yegor256/0pdd",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "Betterment/webvalve",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "dommmel/mytime.io",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "vergilet/repost",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "LindseyB/tarot-api",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "zquestz/em-shorty",
+   "reason": "old base image ruby:2.3.8"
+  },
+  {
+   "full_name": "OriPekelman/tep",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "mackuba/bluesky-feeds-rb",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "yegor256/mailanes",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "MindscapeHQ/raygun4ruby",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "Rails-Designer/mata",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "sue445/rubocop-isucon",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "mackuba/blue_factory",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "epistrephein/rubies",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "rkh/nii",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "myokoym/aozorasearch",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "simonneutert/sinatras-skeleton",
+   "reason": "not exactly one Dockerfile (2 found)"
+  },
+  {
+   "full_name": "Jeroen-G/Explorer",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "spatie/laravel-support-bubble",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "hotmeteor/receiver",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "axlon/laravel-postal-code-validation",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "spatie/laravel-cronless-schedule",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "weeshop/WeeShop",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "laravel/nightwatch",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "php-flasher/php-flasher",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "sunspikes/clamav-validator",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "mchev/banhammer",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "cjmellor/approval",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "beyondcode/laravel-favicon",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "kutia-software-company/larafirebase",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "LarsWiegers/laravel-maps",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "sprout-laravel/sprout",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "yungifez/april-ui",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "RumenDamyanov/php-feed",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "johndavedecano/laragym",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "spatie/laravel-enum",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "laracraft-tech/laravel-schema-rules",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "spatie/nova-backup-tool",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "eusonlito/GPS-Tracker",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "Blaspsoft/blasp",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "elibyy/tcpdf-laravel",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "spatie/laravel-rate-limited-job-middleware",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "eddy8/LightCMS",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "Sammyjo20/lasso",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "andrewdwallo/filament-companies",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "symfony/ux-turbo",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "prestaconcept/PrestaSitemapBundle",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "doctrine/DoctrineMongoDBBundle",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "symfony/security-acl",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "sonata-project/SonataUserBundle",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "a2lix/TranslationFormBundle",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "Elao/PhpEnums",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "endroid/qr-code-bundle",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "theofidry/AliceDataFixtures",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "fruitcake/php-cors",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "api-platform/demo",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "symfony/mercure-bundle",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "sulu/skeleton",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "symfony/amqp-messenger",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "symfony-cmf/Routing",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "tarlepp/symfony-flex-backend",
+   "reason": "not exactly one Dockerfile (3 found)"
+  },
+  {
+   "full_name": "omines/datatables-bundle",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "symfony/html-sanitizer",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "lhapaipai/vite-bundle",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "helios-ag/FMElfinderBundle",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "ekino/EkinoNewRelicBundle",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "Sylius/Sylius-Standard",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "php-enqueue/enqueue-bundle",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "symfony/rate-limiter",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "sonata-project/sonata-doctrine-extensions",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "symplify/config-transformer",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "jolicode/elastically",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "ZingerLittleBee/ServerBee",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "lingdu1234/axum_admin",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "mrjackwills/adsbdb",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "robertwayne/axum-htmx",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "rbatis/abs_admin",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "programatik29/axum-server",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "ArkForgeLabs/Astra",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "DarrenBaldwin07/clerk-rs",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "idaibin/rustzen-admin",
+   "reason": "not exactly one Dockerfile (2 found)"
+  },
+  {
+   "full_name": "gengteng/axum-valid",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "avored/avored-rust-cms",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "hit-box/hitbox",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "SparkyWen/qcue",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "alexichepura/lapa",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "emirror-de/axum-gate",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "rstropek/rust-api-fxs",
+   "reason": "no root Dockerfile"
+  },
+  {
+   "full_name": "ncoevoet/facet",
+   "reason": "GPU base image pytorch/pytorch:2.11.0-cuda12.8-cudnn9-runtime (too large for the build sandbox)"
+  },
+  {
+   "full_name": "devnen/Dia-TTS-Server",
+   "reason": "GPU base image nvidia/cuda:12.8.1-runtime-ubuntu22.04 (too large for the build sandbox)"
+  },
+  {
+   "full_name": "dniel/traefik-forward-auth0",
+   "reason": "old base image azul/zulu-openjdk-alpine:8"
+  }
+ ]
+}

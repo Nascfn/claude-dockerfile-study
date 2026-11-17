@@ -1,0 +1,30 @@
+FROM node:20-alpine AS build
+
+WORKDIR /usr/local/app
+
+COPY package*.json ./
+RUN npm i --legacy-peer-deps
+
+COPY . .
+RUN npm run build
+
+FROM node:20-alpine AS runtime
+
+WORKDIR /usr/local/app
+
+ENV NODE_ENV=production
+ENV PORT=9000
+
+RUN addgroup -S app && adduser -S -G app app
+
+COPY --from=build --chown=app:app /usr/local/app/dist ./dist
+COPY --chown=app:app package*.json ./
+RUN npm i --omit=dev --legacy-peer-deps \
+  && npm cache clean --force \
+  && chown -R app:app /usr/local/app
+
+USER app
+
+EXPOSE 9000
+
+CMD ["node", "dist/main.js"]
