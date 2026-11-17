@@ -1,0 +1,17 @@
+{
+ "deleted_paths": [
+  ".github/",
+  ".git/",
+  "Dockerfile"
+ ],
+ "doc_lines_removed": {},
+ "residual_mentions": {
+  "Makefile": 9,
+  "cmd/server/main.go": 1,
+  "internal/config/config.go": 1,
+  "internal/web/static/index.html": 2
+ },
+ "n_deleted": 3,
+ "n_doc_lines_removed": 0,
+ "n_residual_mentions": 13
+}

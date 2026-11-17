@@ -1,0 +1,37 @@
+# Keep the build context small, and keep secrets and local data out of the image.
+# docs/ is NOT excluded: the web build reads it to make the in-app guide.
+
+# Version control, editor and OS files
+.git
+.gitignore
+.gitattributes
+.github
+.vscode
+.idea
+**/.DS_Store
+**/Thumbs.db
+
+# Secrets. .env can hold app-wide service keys (see tools/push-update.sh).
+.env
+**/.env
+**/.env.*
+
+# Local data of a running install: settings, databases and the encryption key
+config
+downloads
+movies
+tv
+music
+**/*.db
+**/*.db-journal
+**/*.db-wal
+**/*.db-shm
+**/secret.key
+
+# Build output and dependencies, which the image builds itself
+bin
+dist
+**/node_modules
+web/dist
+**/*.exe
+**/*.test

@@ -1,0 +1,36 @@
+# VCS and runtime data
+.git
+.bot-data
+.claude/*
+!.claude/mcp.json
+
+# Secrets — pass at runtime with --env-file / -e, never bake into the image
+.env
+.env.*
+!.env.example
+*token.json*
+*credentials.json*
+*.pem
+
+# Dependencies / build output
+node_modules
+dist
+build
+coverage
+.cache
+
+# Editors, OS, misc
+.idea
+.vscode
+.DS_Store
+npm-debug.log*
+plan
+
+# Not needed in the image
+Dockerfile
+.dockerignore
+docs
+*.md
+setup.ps1
+setup.sh
+tests

@@ -1,0 +1,54 @@
+# VCS / editor
+.git
+.gitattributes
+.vscode
+.idea
+**/.DS_Store
+**/*.swp
+
+# Secrets & local env: pass these in at runtime, never bake them into the image
+.env
+.env.local
+secrets/
+frontend/.env
+frontend/.env.local
+
+# Python artefacts
+**/__pycache__
+**/*.py[cod]
+**/*.egg-info
+.venv
+venv/
+env/
+build/
+dist/
+.pytest_cache
+.mypy_cache
+.coverage
+htmlcov/
+.tox/
+
+# Node / frontend build output (rebuilt inside the image)
+frontend/node_modules
+frontend/dist
+node_modules
+
+# Runtime data, logs & experiment tracking
+outputs/
+data/
+datasets/
+logs/
+mlruns/
+wandb/
+checkpoints/
+.cache/
+tmp/
+temp/
+
+# Notebooks are not needed to serve the app
+notebooks/
+.ipynb_checkpoints
+
+# Docker
+Dockerfile
+.dockerignore

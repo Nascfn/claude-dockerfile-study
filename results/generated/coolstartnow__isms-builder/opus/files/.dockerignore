@@ -1,0 +1,78 @@
+# VCS / tooling
+.git
+.gitattributes
+.githooks
+.gitguardian.yaml
+.gitleaks.toml
+.semgrepignore
+.idea
+.opencode
+.claude
+.lcm
+.local-chromium
+**/.DS_Store
+**/Thumbs.db
+
+# Dependencies are installed inside the image
+node_modules
+
+# Secrets / local environment – never bake into the image
+.env
+.env.local
+.env.production
+ssl
+gh-token.md
+
+# Tests and dev-only files
+tests
+coverage
+jest.config.js
+_wip
+tmp
+CLAUDE.md
+AGENTS.md
+claude.md
+plan.md
+session*.md
+current_conversation.md
+last_order_claude.md
+docs/private
+docs/community
+docs/screenshots/_archiv-*
+landing
+demo-management
+
+# Runtime state, logs and backups
+.server.pid
+.server.log
+*.log
+logs
+data.bak.*
+*.bak
+*.bak.*
+data/isms.db
+data/isms.db-shm
+data/isms.db-wal
+data/audit-log.json
+data/nis2-governance.json
+data/embeddings.json
+data/.demo_reset_done
+data/.demo_lang_set
+data/.production
+data/.jwt_secret
+data/template-files
+data/guidance/files
+data/bcm-files
+data/governance-files
+data/legal
+data/soa.full.json
+
+# Copyrighted ISO material must never be shipped
+iso22301*.csv
+iso22301*.json
+*-demo-requirements.csv
+iso-controls*.json
+
+# Docker build files themselves
+Dockerfile
+.dockerignore

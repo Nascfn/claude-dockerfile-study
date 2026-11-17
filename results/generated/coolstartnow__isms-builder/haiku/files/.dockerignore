@@ -1,0 +1,43 @@
+# Versionskontrolle und Editor-/Betriebssystem-Dateien
+.git*
+.claude
+.idea
+.vscode
+.DS_Store
+Thumbs.db
+npm-debug.log*
+
+# Abhängigkeiten werden im Image per `npm ci` installiert (host-seitige Binaries wären falsch)
+node_modules
+
+# Die Build-Dateien selbst gehören nicht ins Image
+Dockerfile
+.dockerignore
+
+# Geheimnisse und lokale Konfiguration: niemals ins Image. Konfiguration zur Laufzeit per --env-file.
+.env
+.env.*
+ssl
+**/*.pem
+
+# Laufzeitdaten: nur die Demo-Bundles bleiben im Image (Nutzerdaten kommen über das Volume /data)
+data/*
+!data/demo-bundles
+data.bak.*
+**/*.bak
+**/*.bak.*
+*.log
+logs
+.server.pid
+.server.log
+.json-editor.pid
+
+# Nur für Entwicklung, Tests und Pflege, zur Laufzeit nicht nötig
+tests
+tools
+coverage
+_wip
+demo-management
+landing
+docs/private
+docs/community

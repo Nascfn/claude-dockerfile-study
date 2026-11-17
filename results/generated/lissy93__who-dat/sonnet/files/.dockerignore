@@ -1,0 +1,17 @@
+.git
+.gitignore
+.dockerignore
+Dockerfile
+bin/
+*.test
+*.out
+coverage.html
+.env
+.env.*
+.vercel
+.vscode
+.idea
+.DS_Store
+node_modules
+*.log
+alicia-notes

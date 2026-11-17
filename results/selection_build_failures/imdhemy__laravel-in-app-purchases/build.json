@@ -1,0 +1,36 @@
+{
+ "tag": "study/imdhemy__laravel-in-app-purchases:original",
+ "ok": false,
+ "seconds": 52.4,
+ "bases": [
+  "php:8.4-fpm"
+ ],
+ "error": null,
+ "log_tail": [
+  "#8 31.37 rm -f libphp.la      modules/* libs/*",
+  "#8 31.37 rm -f ext/opcache/jit/ir/gen_ir_fold_hash",
+  "#8 31.37 rm -f ext/opcache/jit/ir/minilua",
+  "#8 31.37 rm -f ext/opcache/jit/ir/ir_fold_hash.h",
+  "#8 31.37 rm -f ext/opcache/jit/ir/ir_emit_x86.h",
+  "#8 31.38 rm -f ext/opcache/jit/ir/ir_emit_aarch64.h",
+  "#8 DONE 32.1s",
+  "",
+  "#9 [stage-0 3/6] RUN pecl install xdebug     && docker-php-ext-enable xdebug",
+  "#9 0.103 No releases available for package \"pecl.php.net/xdebug\"",
+  "#9 0.103 install failed",
+  "#9 ERROR: process \"/bin/sh -c pecl install xdebug     && docker-php-ext-enable xdebug\" did not complete successfully: exit code: 1",
+  "------",
+  " > [stage-0 3/6] RUN pecl install xdebug     && docker-php-ext-enable xdebug:",
+  "0.103 No releases available for package \"pecl.php.net/xdebug\"",
+  "0.103 install failed",
+  "------",
+  "tmpwds1ng7n.Dockerfile:18",
+  "--------------------",
+  "  17 |     # Install Xdebug",
+  "  18 | >>> RUN pecl install xdebug \\",
+  "  19 | >>>     && docker-php-ext-enable xdebug",
+  "  20 |     ",
+  "--------------------",
+  "ERROR: failed to build: failed to solve: process \"/bin/sh -c pecl install xdebug     && docker-php-ext-enable xdebug\" did not complete successfully: exit code: 1"
+ ]
+}

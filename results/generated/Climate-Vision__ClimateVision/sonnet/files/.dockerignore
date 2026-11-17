@@ -1,0 +1,49 @@
+.git
+.gitignore
+.gitattributes
+.dockerignore
+Dockerfile
+
+# Python / virtualenvs / caches
+.venv
+venv
+env
+ENV
+__pycache__
+*.py[cod]
+*.egg-info
+.pytest_cache
+.mypy_cache
+.coverage
+htmlcov
+.tox
+.ipynb_checkpoints
+
+# Frontend (rebuilt inside the image)
+frontend/node_modules
+frontend/dist
+frontend/.env
+frontend/.env.local
+
+# Secrets and local environment — pass at runtime instead
+.env
+.env.local
+secrets
+
+# Runtime output, data, and logs
+outputs
+data
+datasets
+logs
+mlruns
+wandb
+checkpoints
+temp
+tmp
+
+# Not needed in the image
+notebooks
+docs
+team_docs
+*.md
+!README.md

@@ -1,0 +1,36 @@
+{
+ "tag": "study/physhik__ecg-mit-bih:original",
+ "ok": false,
+ "seconds": 8.6,
+ "bases": [
+  "python:3.12.9-slim-bookworm"
+ ],
+ "error": null,
+ "log_tail": [
+  "#9 CACHED",
+  "",
+  "#10 [ 6/11] COPY src/uploads /usr/src/app/src/uploads/",
+  "#10 CACHED",
+  "",
+  "#11 [ 7/11] COPY models/MLII-latest.keras /usr/src/app/src/models/",
+  "#11 ERROR: failed to calculate checksum of ref sbp04rjv2saklbrdtbcyv1h9h::000mdrwejab79hc226084w0wd: \"/models/MLII-latest.keras\": not found",
+  "",
+  "#12 [ 8/11] COPY training2017/ /usr/src/app/src/training2017/",
+  "#12 ERROR: failed to calculate checksum of ref sbp04rjv2saklbrdtbcyv1h9h::000mdrwejab79hc226084w0wd: \"/training2017\": not found",
+  "------",
+  " > [ 7/11] COPY models/MLII-latest.keras /usr/src/app/src/models/:",
+  "------",
+  "------",
+  " > [ 8/11] COPY training2017/ /usr/src/app/src/training2017/:",
+  "------",
+  "tmp4nwgw4un.Dockerfile:9",
+  "--------------------",
+  "   7 |     COPY src/uploads /usr/src/app/src/uploads/",
+  "   8 |     COPY models/MLII-latest.keras /usr/src/app/src/models/",
+  "   9 | >>> COPY training2017/ /usr/src/app/src/training2017/",
+  "  10 |     ",
+  "  11 |     WORKDIR /usr/src/app/src/",
+  "--------------------",
+  "ERROR: failed to build: failed to solve: failed to compute cache key: failed to calculate checksum of ref sbp04rjv2saklbrdtbcyv1h9h::000mdrwejab79hc226084w0wd: \"/training2017\": not found"
+ ]
+}

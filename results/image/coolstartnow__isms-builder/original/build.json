@@ -1,0 +1,11 @@
+{
+ "tag": "study/coolstartnow__isms-builder:original",
+ "ok": true,
+ "seconds": 18.5,
+ "bases": [
+  "node:lts-alpine",
+  "node:lts-alpine"
+ ],
+ "error": null,
+ "log_tail": []
+}

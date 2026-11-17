@@ -1,0 +1,39 @@
+{
+ "tag": "study/mgeurts__genealogy:original",
+ "ok": false,
+ "seconds": 82.6,
+ "bases": [
+  "serversideup/php:8.4-fpm-nginx",
+  "serversideup/php:8.4-cli",
+  "composer:2",
+  "node:25"
+ ],
+ "error": null,
+ "log_tail": [
+  " > [composer-stage 4/4] RUN composer config --global disable-tls true &&     composer config --global secure-http false &&     composer install --no-dev --no-scripts --no-autoloader --prefer-dist     --ignore-platform-req=ext-intl     --ignore-platform-req=ext-exif     --ignore-platform-req=ext-gd     --ignore-platform-req=ext-xsl:",
+  "6.446     Failed to download scrivo/highlight.php from dist: Could not authenticate against github.com",
+  "6.449     Failed to download phpdocumentor/reflection-common from dist: Could not authenticate against github.com",
+  "",
+  "8.257 In AuthHelper.php line 156:",
+  "8.257                                              ",
+  "8.257   Could not authenticate against github.com  ",
+  "8.257                                              ",
+  "8.257 ",
+  "8.260 install [--prefer-source] [--prefer-dist] [--prefer-install PREFER-INSTALL] [--dry-run] [--download-only] [--dev] [--no-suggest] [--no-dev] [--no-security-blocking] [--no-blocking] [--no-autoloader] [--no-progress] [--no-install] [--audit] [--audit-format AUDIT-FORMAT] [-v|vv|vvv|--verbose] [-o|--optimize-autoloader] [-a|--classmap-authoritative] [--strict-psr-autoloader] [--apcu-autoloader] [--apcu-autoloader-prefix APCU-AUTOLOADER-PREFIX] [--ignore-platform-req IGNORE-PLATFORM-REQ] [--ignore-platform-reqs] [--] [<packages>...]",
+  "8.260 ",
+  "------",
+  "tmpi5i2ztbz.Dockerfile:64",
+  "--------------------",
+  "  63 |     # Disable SSL verification due to Docker build environment constraints",
+  "  64 | >>> RUN composer config --global disable-tls true && \\",
+  "  65 | >>>     composer config --global secure-http false && \\",
+  "  66 | >>>     composer install --no-dev --no-scripts --no-autoloader --prefer-dist \\",
+  "  67 | >>>     --ignore-platform-req=ext-intl \\",
+  "  68 | >>>     --ignore-platform-req=ext-exif \\",
+  "  69 | >>>     --ignore-platform-req=ext-gd \\",
+  "  70 | >>>     --ignore-platform-req=ext-xsl",
+  "  71 |     ",
+  "--------------------",
+  "ERROR: failed to build: failed to solve: process \"/bin/sh -c composer config --global disable-tls true &&     composer config --global secure-http false &&     composer install --no-dev --no-scripts --no-autoloader --prefer-dist     --ignore-platform-req=ext-intl     --ignore-platform-req=ext-exif     --ignore-platform-req=ext-gd     --ignore-platform-req=ext-xsl\" did not complete successfully: exit code: 100"
+ ]
+}

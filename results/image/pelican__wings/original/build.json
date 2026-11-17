@@ -1,0 +1,11 @@
+{
+ "tag": "study/pelican__wings:original",
+ "ok": true,
+ "seconds": 69.4,
+ "bases": [
+  "golang:1.27.4-alpine",
+  "gcr.io/distroless/static:latest"
+ ],
+ "error": null,
+ "log_tail": []
+}

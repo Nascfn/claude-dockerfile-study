@@ -1,0 +1,11 @@
+{
+ "tag": "study/chelunfu__qiluo_admin:original",
+ "ok": true,
+ "seconds": 703.3,
+ "bases": [
+  "docker.1ms.run/rust:alpine",
+  "docker.1ms.run/alpine:latest"
+ ],
+ "error": null,
+ "log_tail": []
+}

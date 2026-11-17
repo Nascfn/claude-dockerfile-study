@@ -1,0 +1,23 @@
+# Version control and local state
+.git
+.bot-data
+.claude/*
+!.claude/mcp.json
+plan
+coverage
+
+# Secrets: pass at runtime (--env-file), never bake into the image
+.env
+.env.*
+
+# Not needed at runtime
+tests
+docs
+setup.sh
+setup.ps1
+node_modules
+*.log
+.vscode
+.idea
+Dockerfile
+.dockerignore

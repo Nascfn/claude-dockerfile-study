@@ -1,0 +1,12 @@
+**/node_modules
+**/npm-debug.log*
+frontend/build
+.git
+.gitignore
+.env
+.env.*
+assets
+*.md
+Dockerfile
+.dockerignore
+vercel.json

@@ -1,0 +1,33 @@
+{
+ "tag": "study/leonovk__wg-rest-api:original",
+ "size_bytes": 636415173,
+ "user": "root",
+ "runs_as_root": true,
+ "exposed_ports": [],
+ "has_healthcheck": false,
+ "trivy_ok": true,
+ "vulns": {
+  "CRITICAL": 2,
+  "HIGH": 11,
+  "MEDIUM": 22,
+  "LOW": 16,
+  "UNKNOWN": 7
+ },
+ "vulns_fixable": {
+  "CRITICAL": 2,
+  "HIGH": 11,
+  "MEDIUM": 22,
+  "LOW": 16,
+  "UNKNOWN": 7
+ },
+ "vulns_by_class": {
+  "os-pkgs": 23,
+  "lang-pkgs": 35
+ },
+ "secrets": 0,
+ "os": {
+  "Family": "alpine",
+  "Name": "3.24.1"
+ },
+ "vulns_total": 58
+}

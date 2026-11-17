@@ -1,0 +1,11 @@
+{
+ "tag": "study/lissy93__who-dat:original",
+ "ok": true,
+ "seconds": 18.9,
+ "bases": [
+  "golang:1.27-alpine",
+  "alpine:latest"
+ ],
+ "error": null,
+ "log_tail": []
+}

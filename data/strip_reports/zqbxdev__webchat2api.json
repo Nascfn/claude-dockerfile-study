@@ -1,0 +1,24 @@
+{
+ "deleted_paths": [
+  ".github/",
+  ".git/",
+  ".dockerignore",
+  "docker-compose.yml",
+  "Dockerfile",
+  "docker-compose.local.yml",
+  "docker-compose.host.yml",
+  "scripts/entrypoint.sh"
+ ],
+ "doc_lines_removed": {
+  "README.md": 82,
+  "docs/technical-guide.md": 131,
+  "docs/feature-status.md": 3
+ },
+ "residual_mentions": {
+  ".gitignore": 2,
+  ".env.example": 2
+ },
+ "n_deleted": 8,
+ "n_doc_lines_removed": 216,
+ "n_residual_mentions": 4
+}

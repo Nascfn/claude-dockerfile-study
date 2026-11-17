@@ -1,0 +1,69 @@
+# Keep the Docker build context small and free of local state and secrets.
+
+# Version control, CI and editor files
+.git
+.gitattributes
+.github
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Python caches, virtualenvs and build artifacts (rebuilt inside the image)
+**/__pycache__
+**/*.py[cod]
+.venv
+venv
+env
+ENV
+*.egg-info
+build
+dist
+.pytest_cache
+.mypy_cache
+.coverage
+htmlcov
+.tox
+.ipynb_checkpoints
+
+# Frontend dependencies and build output (rebuilt inside the image)
+frontend/node_modules
+frontend/dist
+
+# Secrets and local configuration: never bake these into an image
+.env
+.env.*
+!.env.example
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+.env.local
+secrets/
+**/*service*account*.json
+**/*gee*key*.json
+
+# Runtime state, outputs and large data (use volumes instead)
+outputs/
+logs/
+data/
+mlruns/
+wandb/
+checkpoints/
+*.sqlite3
+*.db
+*.log
+*.tif
+*.tiff
+*.nc
+*.h5
+*.hdf5
+*.zarr
+
+# Not needed to run the API
+notebooks/
+docs/
+tests/
+team_docs/
+scripts/

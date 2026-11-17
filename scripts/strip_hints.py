@@ -4,16 +4,19 @@
 usage: strip_hints.py <pristine_clone> <dest_dir> <report.json>
 Rules (applied mechanically, identical for every repository):
   1. .git is not copied (history contains the original Dockerfile).
-  2. Container-related files and directories are deleted by name.
+  2. Container-related files and directories are deleted by name (a directory
+     called docker/ only at the repository root).
   3. In documentation files, every line that mentions Docker/containers is
-     deleted, together with the fenced code block it sits in.
+     deleted, together with the fenced code block it sits in; documentation
+     files with "docker" in their name are deleted outright.
 Source code, build files and Makefiles are left untouched so the project still
 builds; the number of residual mentions is recorded in the report.
 """
 import fnmatch, json, os, re, shutil, sys
 
 DROP_DIRS = {'.git', '.devcontainer', '.github', '.gitlab', '.circleci', 'docker', '.docker',
-             'k8s', 'kubernetes', 'helm', 'charts', '.kube'}
+             'k8s', 'kubernetes', 'helm', '.kube'}
+TOP_LEVEL_ONLY = {'docker', '.docker'}
 DROP_FILES = ['Dockerfile', 'Dockerfile.*', '*.dockerfile', '*.Dockerfile', '.dockerignore', '*.dockerignore',
               'docker-compose*.yml', 'docker-compose*.yaml', 'compose*.yml', 'compose*.yaml',
               'docker-entrypoint*', 'entrypoint*.sh', 'docker-bake.hcl', '.hadolint.yaml', '.hadolint.yml',
@@ -22,7 +25,7 @@ DROP_FILES = ['Dockerfile', 'Dockerfile.*', '*.dockerfile', '*.Dockerfile', '.do
               'Tiltfile', 'Earthfile', 'captain-definition', 'cloudbuild.yaml', 'cloudbuild.yml',
               '.trivyignore', 'devcontainer.json']
 DOC_EXT = ('.md', '.mdx', '.rst', '.adoc', '.txt')
-HINT = re.compile(r'docker|container|podman|compose|kubernetes|\bk8s\b|\bhelm\b', re.I)
+HINT = re.compile(r'docker|\bcontainer(s|ized|ised|ization)?\b|podman|\bcompose\.ya?ml\b|kubernetes|\bk8s\b|\bhelm\b', re.I)
 KEEP_TXT = re.compile(r'(^|/)(requirements[^/]*\.txt|constraints[^/]*\.txt|robots\.txt|CMakeLists\.txt|LICENSE[^/]*|NOTICE[^/]*)$', re.I)
 
 def strip_doc(text):
@@ -50,13 +53,18 @@ def main(src, dest, report_path):
     for root, dirs, files in os.walk(src):
         rel = os.path.relpath(root, src)
         for d in list(dirs):
-            if d in DROP_DIRS or d.lower() in DROP_DIRS:
+            is_helm_chart = os.path.exists(os.path.join(root, d, 'Chart.yaml'))
+            named = d in DROP_DIRS or d.lower() in DROP_DIRS
+            if d.lower() in TOP_LEVEL_ONLY and rel != '.':
+                named = False                      # e.g. a Go package called "docker" is application code
+            if named or is_helm_chart:
                 rep['deleted_paths'].append(os.path.normpath(os.path.join(rel, d)) + '/'); dirs.remove(d)
         os.makedirs(os.path.join(dest, rel), exist_ok=True)
         for f in files:
             rp = os.path.normpath(os.path.join(rel, f))
             sp, dp = os.path.join(root, f), os.path.join(dest, rel, f)
-            if any(fnmatch.fnmatch(f, pat) or fnmatch.fnmatch(f.lower(), pat.lower()) for pat in DROP_FILES):
+            docker_doc = f.lower().endswith(DOC_EXT) and 'docker' in f.lower()
+            if docker_doc or any(fnmatch.fnmatch(f, pat) or fnmatch.fnmatch(f.lower(), pat.lower()) for pat in DROP_FILES):
                 rep['deleted_paths'].append(rp); continue
             if os.path.islink(sp):
                 os.symlink(os.readlink(sp), dp); continue

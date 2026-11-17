@@ -1,0 +1,12 @@
+.git
+.gitignore
+.envrc
+.editorconfig
+build/
+wings
+config.yml
+Dockerfile
+.dockerignore
+flake.nix
+flake.lock
+*.md

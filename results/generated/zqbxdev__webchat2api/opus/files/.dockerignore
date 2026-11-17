@@ -1,0 +1,55 @@
+# VCS / editors
+.git
+.gitignore
+.idea
+.vscode
+.claude
+.sisyphus
+*.swp
+*.swo
+.DS_Store
+
+# Python artifacts
+**/__pycache__
+**/*.py[cod]
+*.egg-info
+.venv
+venv
+env
+.pytest_cache
+.mypy_cache
+.ruff_cache
+.coverage
+htmlcov
+build
+dist
+
+# Node / web build output (rebuilt inside the image)
+**/node_modules
+web/.next
+web/out
+web/tsconfig.tsbuildinfo
+web/next-env.d.ts
+web_dist
+
+# Runtime data and local secrets (mount these at runtime instead)
+.env
+.env.*
+!.env.example
+config.json
+data
+*.db
+*.sqlite
+*.sqlite3
+git_cache
+backup_state.json
+logs.jsonl
+
+# Not needed in the image
+assets
+docs
+test
+Dockerfile
+.dockerignore
+docker-compose*.yml
+compose*.yml

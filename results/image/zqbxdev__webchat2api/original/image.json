@@ -1,0 +1,35 @@
+{
+ "tag": "study/zqbxdev__webchat2api:original",
+ "size_bytes": 2350938016,
+ "user": "root",
+ "runs_as_root": true,
+ "exposed_ports": [
+  "83/tcp"
+ ],
+ "has_healthcheck": false,
+ "trivy_ok": true,
+ "vulns": {
+  "CRITICAL": 23,
+  "HIGH": 762,
+  "MEDIUM": 708,
+  "LOW": 1016,
+  "UNKNOWN": 41
+ },
+ "vulns_fixable": {
+  "CRITICAL": 16,
+  "HIGH": 141,
+  "MEDIUM": 62,
+  "LOW": 9,
+  "UNKNOWN": 0
+ },
+ "vulns_by_class": {
+  "os-pkgs": 2322,
+  "lang-pkgs": 228
+ },
+ "secrets": 0,
+ "os": {
+  "Family": "debian",
+  "Name": "13.7"
+ },
+ "vulns_total": 2550
+}

@@ -1,0 +1,57 @@
+# Version control, editors and local tooling
+.git
+.gitignore
+.gitattributes
+.idea
+.vscode
+.claude
+.DS_Store
+*.swp
+*.swo
+
+# Secrets and runtime data: never bake these into the image
+.env
+.env.*
+config.json
+data/
+*.db
+*.sqlite
+*.sqlite3
+git_cache/
+backup_state.json
+logs.jsonl
+
+# Python caches and local virtualenvs
+**/__pycache__/
+**/*.py[cod]
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Node build artefacts and dependencies (rebuilt inside the image)
+**/node_modules/
+web/.next/
+web/out/
+web/next-env.d.ts
+web/tsconfig.tsbuildinfo
+web_dist/
+
+# Not needed at runtime
+docs/
+test/
+assets/
+.sisyphus/
+.github/
+
+# Docker files themselves
+Dockerfile
+.dockerignore
+docker-compose*.yml
+compose*.yml

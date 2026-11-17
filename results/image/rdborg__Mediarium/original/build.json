@@ -1,0 +1,13 @@
+{
+ "tag": "study/rdborg__mediarium:original",
+ "ok": true,
+ "seconds": 126.5,
+ "bases": [
+  "node:26-alpine",
+  "golang:1.27.2-alpine",
+  "ghcr.io/flaresolverr/flaresolverr:v3.5.2@sha256:c80ae007ce2ccdcd217a12426e4f039ef763ff90738c808d38810c3e59323767",
+  "alpine:3.24"
+ ],
+ "error": null,
+ "log_tail": []
+}

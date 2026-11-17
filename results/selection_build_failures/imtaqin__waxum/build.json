@@ -1,0 +1,38 @@
+{
+ "tag": "study/imtaqin__waxum:original",
+ "ok": false,
+ "seconds": 248.6,
+ "bases": [
+  "rust:slim-bookworm",
+  "mwader/static-ffmpeg:7.1",
+  "gcr.io/distroless/cc-debian13"
+ ],
+ "error": null,
+ "log_tail": [
+  "#20 0.486   note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+  "#20 0.486 warning: build failed, waiting for other jobs to finish...",
+  "#20 ERROR: process \"/bin/sh -c cargo build --release\" did not complete successfully: exit code: 101",
+  "------",
+  " > [rust-builder 11/12] RUN cargo build --release:",
+  "0.486   SWAGGER_UI_DOWNLOAD_URL: https://github.com/swagger-api/swagger-ui/archive/refs/tags/v5.17.14.zip",
+  "0.486   cargo:rerun-if-env-changed=SWAGGER_UI_DOWNLOAD_URL",
+  "0.486   using cached zip path from : \"/app/target/release/build/utoipa-swagger-ui/60b02eee00a9ce1b/out/v5.17.14.zip\"",
+  "0.486 ",
+  "0.486   --- stderr",
+  "0.486 ",
+  "0.486   thread 'main' (18) panicked at /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/utoipa-swagger-ui-9.0.2/build.rs:219:51:",
+  "0.486   failed to open downloaded Swagger UI: InvalidArchive(\"Could not find EOCD\")",
+  "0.486   note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace",
+  "0.486 warning: build failed, waiting for other jobs to finish...",
+  "------",
+  "tmpg162p80c.Dockerfile:31",
+  "--------------------",
+  "  29 |     COPY src/ ./src/",
+  "  30 |     ",
+  "  31 | >>> RUN cargo build --release",
+  "  32 |     ",
+  "  33 |     RUN mkdir -p /out/app/whatsapp_sessions \\",
+  "--------------------",
+  "ERROR: failed to build: failed to solve: process \"/bin/sh -c cargo build --release\" did not complete successfully: exit code: 101"
+ ]
+}

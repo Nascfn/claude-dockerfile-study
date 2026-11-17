@@ -1,0 +1,11 @@
+{
+ "tag": "study/climate-vision__climatevision:original",
+ "ok": true,
+ "seconds": 406.8,
+ "bases": [
+  "node:20-slim",
+  "python:3.11-slim"
+ ],
+ "error": null,
+ "log_tail": []
+}

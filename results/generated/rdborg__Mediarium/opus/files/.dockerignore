@@ -1,0 +1,41 @@
+# VCS and editors
+.git
+.gitattributes
+.vscode
+.idea
+**/.DS_Store
+**/Thumbs.db
+
+# Secrets and local data (never send these to the build)
+.env
+.env.*
+/config
+/downloads
+/movies
+/tv
+/music
+*.db
+*.db-journal
+/tmp_*
+
+# Build output and dependencies (rebuilt inside the image)
+/bin
+/dist
+*.exe
+*.test
+*.out
+/vendor
+web/node_modules
+web/dist
+web/dist-ssr
+web/test-results
+web/playwright-report
+web/e2e/.auth
+web/src/guide/guide.generated.json
+web/public/tmp-*
+
+# Not needed to build the program
+branding
+packaging
+Dockerfile
+.dockerignore

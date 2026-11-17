@@ -1,0 +1,52 @@
+# VCS / tooling
+.git
+.gitignore
+.sisyphus
+.claude
+.idea
+.vscode
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Node / generated web assets (rebuilt inside the image)
+web/node_modules/
+web/.next/
+web/out/
+web/tsconfig.tsbuildinfo
+web/next-env.d.ts
+web_dist/
+services/browser_bridge/node_modules/
+
+# Local secrets and runtime data
+.env
+.env.*
+!.env.example
+config.json
+data/
+*.db
+*.sqlite
+*.sqlite3
+git_cache/
+backup_state.json
+logs.jsonl
+
+# Docs / assets / tests not needed at runtime
+assets/
+docs/
+test/
+
+# Docker files
+Dockerfile
+.dockerignore
+compose*.yml
+docker-compose*.yml

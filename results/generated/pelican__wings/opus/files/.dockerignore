@@ -1,0 +1,38 @@
+# VCS / editor / tooling
+.git
+.github
+.idea
+.vscode
+.vagrant
+.envrc
+.direnv
+.DS_Store
+flake.nix
+flake.lock
+
+# Docker files themselves
+Dockerfile
+.dockerignore
+
+# Build output and local binaries
+build/
+wings
+wings.exe
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+*.pprof
+pprof.*
+debug
+
+# Local runtime state and secrets
+config.yml
+config*.yml
+config.yaml
+config*.yaml
+logs/
+vendor*
+test_*/

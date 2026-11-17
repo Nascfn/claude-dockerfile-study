@@ -1,0 +1,15 @@
+{
+ "deleted_paths": [
+  ".github/",
+  ".git/",
+  ".dockerignore",
+  "Dockerfile"
+ ],
+ "doc_lines_removed": {
+  "README.md": 38
+ },
+ "residual_mentions": {},
+ "n_deleted": 4,
+ "n_doc_lines_removed": 38,
+ "n_residual_mentions": 0
+}

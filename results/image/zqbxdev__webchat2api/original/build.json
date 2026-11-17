@@ -1,0 +1,11 @@
+{
+ "tag": "study/zqbxdev__webchat2api:original",
+ "ok": true,
+ "seconds": 142.3,
+ "bases": [
+  "node:22-alpine",
+  "python:3.13-slim"
+ ],
+ "error": null,
+ "log_tail": []
+}

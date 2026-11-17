@@ -1,0 +1,19 @@
+{
+ "deleted_paths": [
+  ".github/",
+  ".git/",
+  ".dockerignore",
+  "docker-compose.yml",
+  "Dockerfile",
+  "docker-compose.prod.yml"
+ ],
+ "doc_lines_removed": {
+  "README.md": 10
+ },
+ "residual_mentions": {
+  "frontend/package-lock.json": 6
+ },
+ "n_deleted": 6,
+ "n_doc_lines_removed": 10,
+ "n_residual_mentions": 6
+}

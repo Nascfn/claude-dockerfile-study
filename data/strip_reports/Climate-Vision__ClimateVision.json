@@ -1,0 +1,24 @@
+{
+ "deleted_paths": [
+  ".github/",
+  ".git/",
+  ".dockerignore",
+  "render.yaml",
+  "docker-compose.yml",
+  "Dockerfile",
+  "fly.toml"
+ ],
+ "doc_lines_removed": {
+  "GETTING_STARTED.md": 1,
+  "QUICKSTART.md": 3,
+  "CONTRIBUTING.md": 2,
+  "notebooks/TRAINING_HANDOFF.md": 1,
+  "notebooks/TRAINING_PIPELINE.md": 1,
+  "docs/DEPLOYMENT.md": 5,
+  "docs/GEE_SETUP.md": 1
+ },
+ "residual_mentions": {},
+ "n_deleted": 7,
+ "n_doc_lines_removed": 14,
+ "n_residual_mentions": 0
+}

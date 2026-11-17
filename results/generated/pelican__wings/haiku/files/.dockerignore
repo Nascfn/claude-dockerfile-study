@@ -1,0 +1,40 @@
+# Version control and editor/IDE files
+.git
+.gitignore
+.vscode
+.idea
+.DS_Store
+.envrc
+.editorconfig
+
+# Local build outputs and binaries (the image builds its own)
+/build
+/wings
+/wings.exe
+/debug
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+*.pprof
+pprof.*
+/coverage.out
+
+# Local runtime state and configuration.
+# Config files can contain secrets (node token, database credentials), so keep
+# them out of the build context. They are supplied at runtime with a bind mount.
+/logs
+/config.yml
+/config*.yml
+/config.yaml
+/config*.yaml
+
+# Vendored dependencies are gitignored; the build downloads modules instead.
+/vendor*
+
+# Nix and documentation files that are not needed to build the binary
+flake.nix
+flake.lock
+Makefile

@@ -1,0 +1,34 @@
+{
+ "tag": "study/pelican__wings:original",
+ "size_bytes": 63282414,
+ "user": "0",
+ "runs_as_root": true,
+ "exposed_ports": [
+  "8080/tcp"
+ ],
+ "has_healthcheck": false,
+ "trivy_ok": true,
+ "vulns": {
+  "CRITICAL": 0,
+  "HIGH": 2,
+  "MEDIUM": 6,
+  "LOW": 0,
+  "UNKNOWN": 1
+ },
+ "vulns_fixable": {
+  "CRITICAL": 0,
+  "HIGH": 2,
+  "MEDIUM": 6,
+  "LOW": 0,
+  "UNKNOWN": 1
+ },
+ "vulns_by_class": {
+  "lang-pkgs": 9
+ },
+ "secrets": 0,
+ "os": {
+  "Family": "debian",
+  "Name": "13.7"
+ },
+ "vulns_total": 9
+}

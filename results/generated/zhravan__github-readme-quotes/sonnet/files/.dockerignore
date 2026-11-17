@@ -1,0 +1,18 @@
+node_modules
+frontend/node_modules
+frontend/build
+npm-debug.log*
+.git
+.gitignore
+
+# Secrets / local config: pass at runtime with --env-file or -e instead
+.env
+.env.*
+!.env.example
+
+Dockerfile
+.dockerignore
+assets
+*.md
+vercel.json
+server_bootup.sh

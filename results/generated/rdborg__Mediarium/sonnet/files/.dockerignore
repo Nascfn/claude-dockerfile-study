@@ -1,0 +1,35 @@
+# Version control and editor files
+.git
+.gitignore
+.gitattributes
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+
+# Build output and dependencies are produced inside the image
+bin
+dist
+web/dist
+web/node_modules
+web/test-results
+web/playwright-report
+*.exe
+*.test
+*.out
+
+# Local data and secrets must never end up in an image
+config
+downloads
+movies
+tv
+music
+.env
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Not needed to build
+Dockerfile
+.dockerignore

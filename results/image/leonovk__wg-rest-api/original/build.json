@@ -1,0 +1,10 @@
+{
+ "tag": "study/leonovk__wg-rest-api:original",
+ "ok": true,
+ "seconds": 53.6,
+ "bases": [
+  "ruby:4.0.6-alpine"
+ ],
+ "error": null,
+ "log_tail": []
+}

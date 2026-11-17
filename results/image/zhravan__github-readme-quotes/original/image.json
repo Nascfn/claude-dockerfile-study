@@ -1,0 +1,36 @@
+{
+ "tag": "study/zhravan__github-readme-quotes:original",
+ "size_bytes": 2486964453,
+ "user": "root",
+ "runs_as_root": true,
+ "exposed_ports": [
+  "3000/tcp",
+  "3004/tcp"
+ ],
+ "has_healthcheck": false,
+ "trivy_ok": true,
+ "vulns": {
+  "CRITICAL": 78,
+  "HIGH": 1930,
+  "MEDIUM": 5743,
+  "LOW": 2566,
+  "UNKNOWN": 133
+ },
+ "vulns_fixable": {
+  "CRITICAL": 59,
+  "HIGH": 1434,
+  "MEDIUM": 4668,
+  "LOW": 1211,
+  "UNKNOWN": 42
+ },
+ "vulns_by_class": {
+  "os-pkgs": 10202,
+  "lang-pkgs": 248
+ },
+ "secrets": 0,
+ "os": {
+  "Family": "debian",
+  "Name": "12.13"
+ },
+ "vulns_total": 10450
+}

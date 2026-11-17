@@ -1,0 +1,30 @@
+{
+ "deleted_paths": [
+  ".github/",
+  ".git/",
+  "docker-compose.yml",
+  "Dockerfile",
+  "docs/docker.md"
+ ],
+ "doc_lines_removed": {
+  "README.md": 12,
+  "CHANGELOG.md": 11,
+  "docs/updating.md": 9,
+  "docs/installation.md": 13,
+  "docs/architecture.md": 48
+ },
+ "residual_mentions": {
+  "index.ts": 3,
+  ".env.example": 4,
+  "util/version-check.ts": 14,
+  "discord/formatting.ts": 3,
+  "screenshot/handlers.ts": 2,
+  "screenshot/command.ts": 1,
+  "screenshot/handler.ts": 15,
+  "screenshot/types.ts": 1,
+  "help/commands.ts": 3
+ },
+ "n_deleted": 5,
+ "n_doc_lines_removed": 93,
+ "n_residual_mentions": 46
+}

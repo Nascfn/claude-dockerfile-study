@@ -1,0 +1,124 @@
+{
+ "selected": [
+  {
+   "slug": "rdborg__Mediarium",
+   "full_name": "rdborg/Mediarium",
+   "group": "go",
+   "rank": 1,
+   "score": 19,
+   "commit": "7a1a0730d07b671c9c4355df598a55216bee09ce",
+   "stars": 328
+  },
+  {
+   "slug": "zebbern__claude-code-discord",
+   "full_name": "zebbern/claude-code-discord",
+   "group": "node",
+   "rank": 2,
+   "score": 17,
+   "commit": "505829098773ce80ed3401d00c169b82a129ad64",
+   "stars": 234
+  },
+  {
+   "slug": "zqbxdev__webchat2api",
+   "full_name": "zqbxdev/webchat2api",
+   "group": "python",
+   "rank": 3,
+   "score": 16,
+   "commit": "25752b97cb3abd12266698e02bcc4535b95d535f",
+   "stars": 399
+  },
+  {
+   "slug": "Climate-Vision__ClimateVision",
+   "full_name": "Climate-Vision/ClimateVision",
+   "group": "python",
+   "rank": 4,
+   "score": 14,
+   "commit": "aab970869e8950374a8620e413e46516fd6fa578",
+   "stars": 378
+  },
+  {
+   "slug": "zhravan__github-readme-quotes",
+   "full_name": "zhravan/github-readme-quotes",
+   "group": "node",
+   "rank": 7,
+   "score": 12,
+   "commit": "26980947adf8000b86b4c3bcf2164f36a290362c",
+   "stars": 307
+  },
+  {
+   "slug": "coolstartnow__isms-builder",
+   "full_name": "coolstartnow/isms-builder",
+   "group": "node",
+   "rank": 9,
+   "score": 11,
+   "commit": "801d5456f2694271bed597bddb45c529e018a827",
+   "stars": 266
+  },
+  {
+   "slug": "pelican__wings",
+   "full_name": "pelican/wings",
+   "group": "go",
+   "rank": 10,
+   "score": 11,
+   "commit": "82bf39e07af6d4b78090e872c1c3a5ca1efd5dda",
+   "stars": 331
+  },
+  {
+   "slug": "lissy93__who-dat",
+   "full_name": "lissy93/who-dat",
+   "group": "go",
+   "rank": 11,
+   "score": 11,
+   "commit": "23288a4dd75c0bb4a0b19fd8adb0048c4bb1e9c8",
+   "stars": 330
+  },
+  {
+   "slug": "leonovk__wg-rest-api",
+   "full_name": "leonovk/wg-rest-api",
+   "group": "ruby",
+   "rank": 12,
+   "score": 11,
+   "commit": "0bc3aa07a163de7d5b601e467fb93c681ec9abab",
+   "stars": 76
+  },
+  {
+   "slug": "chelunfu__qiluo_admin",
+   "full_name": "chelunfu/qiluo_admin",
+   "group": "rust",
+   "rank": 14,
+   "score": 11,
+   "commit": "cf389ed47eba865f0917e9765c798c2bce41bfdf",
+   "stars": 247
+  }
+ ],
+ "skipped": [
+  {
+   "slug": "imdhemy__laravel-in-app-purchases",
+   "rank": 5,
+   "reason": "original Dockerfile does not build",
+   "error": null,
+   "log_tail": "  19 | >>>     && docker-php-ext-enable xdebug |   20 |      | -------------------- | ERROR: failed to build: failed to solve: process \"/bin/sh -c pecl install xdebug     && docker-php-ext-enable xdebug\" did not complete successfully: exit code: 1"
+  },
+  {
+   "slug": "imtaqin__waxum",
+   "rank": 6,
+   "reason": "original Dockerfile does not build",
+   "error": null,
+   "log_tail": "  32 |      |   33 |     RUN mkdir -p /out/app/whatsapp_sessions \\ | -------------------- | ERROR: failed to build: failed to solve: process \"/bin/sh -c cargo build --release\" did not complete successfully: exit code: 101"
+  },
+  {
+   "slug": "physhik__ecg-mit-bih",
+   "rank": 8,
+   "reason": "original Dockerfile does not build",
+   "error": null,
+   "log_tail": "  10 |      |   11 |     WORKDIR /usr/src/app/src/ | -------------------- | ERROR: failed to build: failed to solve: failed to compute cache key: failed to calculate checksum of ref sbp04rjv2saklbrdtbcyv1h9h::000mdrwejab79hc226084w0wd: \"/training2017\": not found"
+  },
+  {
+   "slug": "MGeurts__genealogy",
+   "rank": 13,
+   "reason": "original Dockerfile does not build",
+   "error": null,
+   "log_tail": "d to build: failed to solve: process \"/bin/sh -c composer config --global disable-tls true &&     composer config --global secure-http false &&     composer install --no-dev --no-scripts --no-autoloader --prefer-dist     --ignore-platform-req=ext-intl     --ignore-platform-req=ext-exif     --ignore-platform-req=ext-gd     --ignore-platform-req=ext-xsl\" did not complete successfully: exit code: 100"
+  }
+ ]
+}

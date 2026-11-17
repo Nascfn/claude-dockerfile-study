@@ -1,0 +1,23 @@
+# VCS, CI, and editor metadata
+.git
+.github
+.vscode
+.idea
+.DS_Store
+
+# Build outputs and test artifacts
+bin
+coverage.out
+coverage.html
+*.test
+*.out
+*.log
+
+# Local environment files and secrets must never be sent to the build context
+.env
+.env.*
+
+# Deployment and local-only leftovers
+.vercel
+node_modules
+alicia-notes

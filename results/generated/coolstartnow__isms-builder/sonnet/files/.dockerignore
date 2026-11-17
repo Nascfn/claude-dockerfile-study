@@ -1,0 +1,41 @@
+.git
+.githooks
+.github
+node_modules
+npm-debug.log*
+
+# Secrets and local environment – pass these at runtime (-e / --env-file)
+.env
+.env.*
+!.env.example
+ssl/
+
+# Local/generated runtime data that must not be baked into the image
+data/isms.db
+data/isms.db-shm
+data/isms.db-wal
+data/audit-log.json
+data/.demo_reset_done
+data/.demo_lang_set
+data.bak.*
+*.bak
+*.bak.*
+*.log
+logs/
+
+# Dev / tooling
+.claude
+.idea
+.opencode
+.local-chromium
+.lcm
+tmp
+_wip
+coverage
+.DS_Store
+Thumbs.db
+CLAUDE.md
+AGENTS.md
+Dockerfile
+.dockerignore
+docker-compose*.yml
